@@ -8,6 +8,18 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
 
+		<ImageView
+			android:layout_width="154dp"
+			android:layout_height="140dp"
+			android:layout_above="@+id/collection"
+			android:layout_alignEnd="@+id/delivery"
+			android:layout_alignRight="@+id/delivery"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginBottom="24dp"
+			android:layout_marginEnd="34dp"
+			android:layout_marginRight="34dp"
+			android:src="@drawable/soul" />
+
 		<Button
 			android:id="@+id/shop_expense"
 			android:layout_width="match_parent"
