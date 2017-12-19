@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">SoulLaundry</string>
+
+
+    <string-array name="spinnerItems">
+        <item>Select Cloth Type</item>
+        <item>Shirt</item>
+        <item>Pant</item>
+        <item>Nehru Shirt</item>
+        <item>Paijama</item>
+        <item>Saree</item>
+        <item>Saree Roll</item>
+        <item>Blouse</item>
+        <item>Coat</item>
+        <item>Sherwani</item>
+        <item>Jacket</item>
+        <item>Salwar</item>
+        <item>Kudta</item>
+        <item>Odhni</item>
+        <item>Ghargra</item>
+        <item>Frock</item>
+        <item>Skirt</item>
+        <item>PettyCoat</item>
+        <item>Dhoti</item>
+        <item>Lungi</item>
+        <item>Pheta</item>
+        <item>Cap</item>
+        <item>Tie</item>
+        <item>Blanket</item>
+        <item>Bedsheet</item>
+        <item>PillowCover</item>
+        <item>Curtain</item>
+        <item>Carpet</item>
+        <item>Sofa Cover</item>
+        <item>Satranji</item>
+        <item>Towel</item>
+        <item>Napkin</item>
+        <item>Shoes</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="spinnerItems1">
+
+        <item>Select Price</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="spinnerItems2">
+
+        <item>Select Remark</item>
+        <item>F</item>
+        <item>W</item>
+        <item>DT</item>
+        <item>NR</item>
+        <item>NRC</item>
+
+    </string-array>
+
+
+    <string-array name="spinnerItems3">
+
+        <item>Select Quantity</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>Others</item>
+
+    </string-array>
+
+</resources>

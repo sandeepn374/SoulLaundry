@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "764970134966",
+    "firebase_url": "https://soullaundry-6c269.firebaseio.com",
+    "project_id": "soullaundry-6c269",
+    "storage_bucket": "soullaundry-6c269.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764970134966:android:f8b4cb2aa3d3cd99",
+        "android_client_info": {
+          "package_name": "com.soullaundry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764970134966-tr254h54b25hsp6j62pv7pt4n91468ee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOiINLCMX1IX08TSkx2U_Fzd_Jx4PeQ1M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
