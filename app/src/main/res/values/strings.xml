@@ -2,45 +2,9 @@
     <string name="app_name">SoulLaundry</string>
 
 
-    <string-array name="spinnerItems">
-        <item>Select Cloth Type</item>
-        <item>Shirt</item>
-        <item>Pant</item>
-        <item>Nehru Shirt</item>
-        <item>Paijama</item>
-        <item>Saree</item>
-        <item>Saree Roll</item>
-        <item>Blouse</item>
-        <item>Coat</item>
-        <item>Sherwani</item>
-        <item>Jacket</item>
-        <item>Salwar</item>
-        <item>Kudta</item>
-        <item>Odhni</item>
-        <item>Ghargra</item>
-        <item>Frock</item>
-        <item>Skirt</item>
-        <item>PettyCoat</item>
-        <item>Dhoti</item>
-        <item>Lungi</item>
-        <item>Pheta</item>
-        <item>Cap</item>
-        <item>Tie</item>
-        <item>Blanket</item>
-        <item>Bedsheet</item>
-        <item>PillowCover</item>
-        <item>Curtain</item>
-        <item>Carpet</item>
-        <item>Sofa Cover</item>
-        <item>Satranji</item>
-        <item>Towel</item>
-        <item>Napkin</item>
-        <item>Shoes</item>
-        <item>Others</item>
-    </string-array>
 
 
-    <string-array name="spinnerItems1">
+    <string-array name="price">
 
         <item>Select Price</item>
         <item>10</item>
@@ -57,19 +21,77 @@
     </string-array>
 
 
-    <string-array name="spinnerItems2">
+    <string-array name="service">
 
-        <item>Select Remark</item>
-        <item>F</item>
-        <item>W</item>
-        <item>DT</item>
-        <item>NR</item>
-        <item>NRC</item>
+        <item>Select Service Type</item>
+        <item>Wash/Fold</item>
+        <item>Wash/Iron</item>
+        <item>Ironing</item>
+        <item>Curtains/BedSheets(W/F)</item>
+        <item>Curtains/BedSheets(W/I)</item>
+
+
+    </string-array>
+
+    <string-array name="deltype">
+
+        <item>Select Delivery Type</item>
+        <item>Normal Delivery</item>
+        <item>Express Delivery(Normal * 1.5)</item>
+
+
+
+    </string-array>
+    <string-array name="cloth">
+        <item>Select Cloth Type</item>
+        <item>Double Quilt Blanket</item>
+        <item>Single QuiltBlanket</item>
+        <item>Suit(2pcs)</item>
+        <item>Suit(3pcs)</item>
+        <item>Jacket Blazer</item>
+        <item>Half-JacketBlazer/Coat</item>
+        <item>Leather Jacket</item>
+        <item>Sherwani</item>
+        <item>Ladies Top</item>
+        <item>Ladies Skirt</item>
+        <item>Sweater</item>
+        <item>Kurta</item>
+        <item>Silk Kurta</item>
+        <item>Fancy Kurta</item>
+        <item>Pyjama</item>
+        <item>Silk Pyjama</item>
+        <item>Lehenga</item>
+        <item>Dress -Small</item>
+        <item>Dress- Long</item>
+        <item>Anarkali Dress</item>
+        <item>Selwar</item>
+        <item>Dupatta</item>
+        <item>Gown</item>
+        <item>Frock</item>
+        <item>Shirts /Tshirts</item>
+        <item>Trousers/Jeans</item>
+        <item>Coat</item>
+        <item>OverCoat</item>
+        <item>Carpet</item>
+        <item>Shall</item>
+        <item>PLain Saree</item>
+        <item>Silk Saree</item>
+        <item>Silk Saree (Fancy)</item>
+        <item>Cotton Saree</item>
+        <item>Single Bedsheet</item>
+        <item>Double Bedsheet</item>
+        <item>Pillow Cover</item>
+        <item>Door Curtain</item>
+        <item>Window Curtain</item>
+        <item>Towel</item>
+        <item>Dhoti cotton</item>
+        <item>Dhoti silk</item>
+        <item>Others</item>
 
     </string-array>
 
 
-    <string-array name="spinnerItems3">
+    <string-array name="qty">
 
         <item>Select Quantity</item>
         <item>1</item>

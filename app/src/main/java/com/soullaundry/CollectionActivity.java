@@ -17,6 +17,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -44,22 +46,26 @@ public class CollectionActivity extends Activity
 	EditText edt_name;
 	EditText edt_phone;
 	TextView edt_email;
-	Spinner spinner,spinner1,spinner2,spinner3;
+	Spinner price,cloth,qty,service,deltype;
+
 	Button btn_add,btn_submit;
 	String message;
 	String message1="";
 	String message2="";
 	String message3="";
 	String name,phone,billNumber;
+	String pickDate,DelDate;
 
 	String time;
-	final String[] text = {""};
+	final String[] clothType = {""};
 
-	final String[] text1 = {""};
+	final String[] svc = {""};
 
-	final String[] text2 = {""};
+	final String[] qtySpinner = {""};
 
-	final String[] text3 = {""};
+	final String[] delivery = {""};
+
+	final String[] priceSpinner = {""};
 
 	int total=0;
 
@@ -76,10 +82,12 @@ public class CollectionActivity extends Activity
 		Calendar c = Calendar.getInstance();
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd : HH:mm");// HH:mm:ss");
 		String reg_date = df.format(c.getTime());
-		//showtoast("Currrent Date Time : "+reg_date);
+		pickDate=reg_date;
 
-		c.add(Calendar.DATE, 4);  // number of days to add
+		c.add(Calendar.DATE, 3);  // number of days to add
+
 		time = df.format(c.getTime());
+		DelDate=time;
 		super.onCreate(savedInstanceState);
 		setContentView(com.soullaundry.R.layout.collection);
 		edt_name= (EditText) findViewById(com.soullaundry.R.id.edt_name);
@@ -91,82 +99,26 @@ public class CollectionActivity extends Activity
 		btn_add = (Button) findViewById(com.soullaundry.R.id.btn_add);
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
-
-		spinner = (Spinner) findViewById(com.soullaundry.R.id.spinner);
-
-		spinner1 = (Spinner) findViewById(com.soullaundry.R.id.spinner1);
-
-		spinner2 = (Spinner) findViewById(com.soullaundry.R.id.spinner2);
-
-		spinner3 = (Spinner) findViewById(com.soullaundry.R.id.spinner3);
+		service=(Spinner)findViewById(R.id.service);
+        cloth=(Spinner) findViewById(R.id.cloth);
 
 
+		price = (Spinner) findViewById(com.soullaundry.R.id.price);
 
-		spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+		qty = (Spinner) findViewById(com.soullaundry.R.id.qty);
+		deltype=(Spinner)findViewById(R.id.deltype);
+
+
+
+
+
+		price.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 				// your code here
 
-				if (spinner.getSelectedItem().toString().equals("Others")){
-
-					final AlertDialog.Builder alert = new AlertDialog.Builder(CollectionActivity.this);
-
-
-					final EditText edittext = new EditText(CollectionActivity.this);
-					alert.setMessage("Please enter the cloth type");
-					alert.setTitle("Cloth Type");
-
-					alert.setView(edittext);
-
-
-					alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int whichButton) {
-							//What ever you want to do with the value
-							//Editable YouEditTextValue = edittext.getText();
-							//OR
-
-							text[0] =edittext.getText().toString();
-
-
-
-
-
-						}
-					});
-
-					alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int whichButton) {
-							// what ever you want to do with No option.
-							//alert1.dismiss();
-						}
-					});
-
-					final AlertDialog alert1 = alert.create();
-
-					alert1.show();
-
-
-
-
-
-				}
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> parentView) {
-				// your code here
-			}
-
-		});
-
-
-
-		spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-			@Override
-			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-				// your code here
-
-				if (spinner1.getSelectedItem().toString().equals("Others")){
+				if (price.getSelectedItem().toString().equals("Others")){
 
 					final AlertDialog.Builder alert = new AlertDialog.Builder(CollectionActivity.this);
 
@@ -184,7 +136,7 @@ public class CollectionActivity extends Activity
 							//Editable YouEditTextValue = edittext.getText();
 							//OR
 
-							text1[0] =edittext.getText().toString();
+							priceSpinner[0] =edittext.getText().toString();
 
 
 
@@ -221,12 +173,12 @@ public class CollectionActivity extends Activity
 
 
 
-		spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+		qty.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 				// your code here
 
-				if (spinner3.getSelectedItem().toString().equals("Others")){
+				if (qty.getSelectedItem().toString().equals("Others")){
 
 					final AlertDialog.Builder alert = new AlertDialog.Builder(CollectionActivity.this);
 
@@ -244,7 +196,7 @@ public class CollectionActivity extends Activity
 							//Editable YouEditTextValue = edittext.getText();
 							//OR
 
-							text3[0] =edittext.getText().toString();
+							qtySpinner[0] =edittext.getText().toString();
 
 
 
@@ -401,36 +353,17 @@ if (s.length()==10){
 
 				//String temp=null;
 				 name=edt_name.getText().toString();
-					//temp = edt_name.getText().toString();
-//validation
-				/*if(name.length() == 0) {
-					Toastmsg(CollectionActivity.this, "All fields are required");
 
-				}
-				else if(name.length() != 0){
-					// awesomeValidation.addValidation(this, R.id.edt_event_remarks, "^[2-9]{2}[0-9]{8}$", R.string.mobileerror);
-					Log.v("EditText411", edt_name.getText().toString());
-				}
-*/
 				 billNumber=edt_email.getText().toString();
 
 				 phone=edt_phone.getText().toString();
 
-//validation
-				/*if(phone.length() == 0) {
-					Toastmsg(CollectionActivity.this, "All fields are required");
 
-				}
-				else if(phone.length() != 0){
-					// awesomeValidation.addValidation(this, R.id.edt_event_remarks, "^[2-9]{2}[0-9]{8}$", R.string.mobileerror);
-					Log.v("EditText425", edt_phone.getText().toString());
-				}*/
-
-				if (spinner.getSelectedItem().toString().equals("Others")){
+				if (cloth.getSelectedItem().toString().equals("Others")){
 					System.out.print("cool");
 				}
 					else {
-					text[0] = spinner.getSelectedItem().toString();
+					clothType[0] = cloth.getSelectedItem().toString();
 				}
 
 				//validation
@@ -443,10 +376,10 @@ if (s.length()==10){
 
 */
 
-				if (spinner1.getSelectedItem().toString().equals("Others")){
+				if (price.getSelectedItem().toString().equals("Others")){
 					System.out.print("cool");
 				}else {
-					text1[0] = spinner1.getSelectedItem().toString();
+					priceSpinner[0] = price.getSelectedItem().toString();
 				}
 				//String text2 = spinner2.getSelectedItem().toString();
 //validation
@@ -457,10 +390,10 @@ if (s.length()==10){
 					Log.v("Spinner456",spinner1.toString());
 				}*/
 
-				if (spinner3.getSelectedItem().toString().equals("Others")){
+				if (qty.getSelectedItem().toString().equals("Others")){
 					System.out.print("cool");
 				}else {
-					text3[0] = spinner3.getSelectedItem().toString();
+					qtySpinner[0] = qty.getSelectedItem().toString();
 				}
 				//validation
 				/*if (spinner3.getSelectedItem().toString().trim().equals("Select Quantity")) {
@@ -470,7 +403,7 @@ if (s.length()==10){
 					Log.v("Spinner469",spinner3.toString());
 				}*/
 
-				text2[0]=spinner2.getSelectedItem().toString();
+				//text2[0]=spinner2.getSelectedItem().toString();
 				//if(text[0].equals("Others")){
 //validation
 				/*if (spinner2.getSelectedItem().toString().trim().equals("Select Remark")) {
@@ -486,22 +419,18 @@ if (s.length()==10){
 				else if(phone.length()<9){
 					edt_phone.setError("Please enter valid Phone Number");
 				}
-				else if(spinner.getSelectedItem().toString().trim().equals("Select Cloth Type")){
-					((TextView)spinner.getChildAt(0)).setError("Please Enter Cloth Type");
+				else if(cloth.getSelectedItem().toString().trim().equals("Select Cloth Type")){
+					((TextView)cloth.getChildAt(0)).setError("Please Enter Cloth Type");
 
 				}
-				else if(spinner1.getSelectedItem().toString().trim().equals("Select Price")){
-					((TextView)spinner1.getChildAt(0)).setError("Please Enter Price");
-
-				}
-
-				else if(spinner2.getSelectedItem().toString().trim().equals("Select Remark")){
-					((TextView)spinner2.getChildAt(0)).setError("Please Enter Remark");
+				else if(price.getSelectedItem().toString().trim().equals("Select Price")){
+					((TextView)price.getChildAt(0)).setError("Please Enter Price");
 
 				}
 
-				else if(spinner3.getSelectedItem().toString().trim().equals("Select Quantity")){
-					((TextView)spinner3.getChildAt(0)).setError("Please Enter Quantity");
+
+				else if(qty.getSelectedItem().toString().trim().equals("Select Quantity")){
+					((TextView)qty.getChildAt(0)).setError("Please Enter Quantity");
 
 				}
 
@@ -554,7 +483,7 @@ if (s.length()==10){
 				tv0.setGravity(Gravity.CENTER);
 				tbrow0.addView(tv0);
 				TextView tv1 = new TextView(CollectionActivity.this);
-				tv1.setText(" Remark ");
+				tv1.setText(" SVC Type ");
 				tv1.setTextColor(Color.BLACK);
 				tv1.setGravity(Gravity.CENTER);
 				tbrow0.addView(tv1);
@@ -578,7 +507,7 @@ if (s.length()==10){
 					tbrow.addView(t1v);
 
 					TextView t2v = new TextView(CollectionActivity.this);
-					t2v.setText(billDetailsArrayList.get(i).getRemark());
+					t2v.setText("Put somethng else");
 					t2v.setTextColor(Color.BLACK);
 					t2v.setGravity(Gravity.CENTER);
 					tbrow.addView(t2v);
@@ -619,7 +548,7 @@ if (s.length()==10){
 						mDatabase.keepSynced(true);
 						String userId = mDatabase.push().getKey();
 
-						User user = new User(name, phone, billDetailsArrayList, billNumber, total, total, 0);
+						User user = new User(name, phone, billDetailsArrayList, billNumber, total, total, 0,DelDate,pickDate);
 
 						mDatabase.child(userId).setValue(user);
 						dialog.dismiss();
@@ -745,15 +674,15 @@ if (s.length()==10){
 
 	private void billdetails() {
 
-		BillDetails b=new BillDetails(text[0],text1[0],text2[0],text3[0]);
-		String qty=text3[0];
-		String price=text1[0];
-		total+= Integer.parseInt(text1[0])* Integer.parseInt(text3[0]);
+		BillDetails b=new BillDetails(clothType[0],priceSpinner[0],qtySpinner[0]);
+
+		total+= Integer.parseInt(qtySpinner[0])* Integer.parseInt(priceSpinner[0]);
 		billDetailsArrayList.add(b);
-		spinner.setSelection(0);
-		spinner1.setSelection(0);
-		spinner2.setSelection(0);
-		spinner3.setSelection(0);
+		price.setSelection(0);
+		qty.setSelection(0);
+		cloth.setSelection(0);
+		service.setSelection(0);
+		deltype.setSelection(0);
 		Toastmsg(CollectionActivity.this,"Added");
 	}
 

@@ -58,38 +58,49 @@
                 />
 
 
-
             <Spinner
-            android:id="@+id/spinner"
+                android:id="@+id/cloth"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/cloth"
+                android:spinnerMode="dropdown"
+
+                />
+
+            <Spinner
+            android:id="@+id/price"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/spinnerItems"
+            android:entries="@array/price"
+            android:spinnerMode="dropdown"
+                />
+
+
+            <Spinner
+                android:id="@+id/service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/service"
+                android:spinnerMode="dropdown"
+
+                />
+
+            <Spinner
+            android:id="@+id/qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/qty"
             android:spinnerMode="dropdown"
                 />
 
             <Spinner
-            android:id="@+id/spinner1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/spinnerItems1"
-            android:spinnerMode="dropdown"
+                android:id="@+id/deltype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/deltype"
+                android:spinnerMode="dropdown"
                 />
 
-            <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/spinnerItems2"
-            android:spinnerMode="dropdown"
-                />
-
-            <Spinner
-            android:id="@+id/spinner3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/spinnerItems3"
-            android:spinnerMode="dropdown"
-                />
 
 
 
@@ -110,18 +121,6 @@
 
         </LinearLayout>
 
-    <ListView
-        android:id="@+id/navdrawer"
-        android:layout_width="@dimen/navdrawer_width"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:background="@android:color/white"
-        android:choiceMode="singleChoice"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="0dp"
-        android:drawSelectorOnTop="false">
-
-</ListView>
 
     </android.support.v4.widget.DrawerLayout>
 

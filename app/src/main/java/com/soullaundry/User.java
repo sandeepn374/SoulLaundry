@@ -16,12 +16,14 @@ public class User {
     public int total;
     public int due;
     public int discount;
+    public String deliveryDate;
+    public String pickUpDate;
 
 
     public User() {
     }
 
-    public User(String name, String ph, ArrayList<BillDetails> billDetailsArrayList, String bill, int total, int due, int discount) {
+    public User(String name, String ph, ArrayList<BillDetails> billDetailsArrayList, String bill, int total, int due, int discount,String del,String pick) {
         this.ph=ph;
         this.name = name;
 this.billDetailsArrayList=billDetailsArrayList;
@@ -30,5 +32,7 @@ this.billDetailsArrayList=billDetailsArrayList;
         this.total=total;
         this.due=due;
         this.discount=discount;
+        this.deliveryDate=del;
+        this.pickUpDate=pick;
     }
 }

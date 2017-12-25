@@ -12,6 +12,7 @@ import android.widget.ListView;
 public class SampleActivity extends Activity {
     Button collection;
     Button delivery;
+    Button shop;
 
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
@@ -40,6 +41,16 @@ public class SampleActivity extends Activity {
                 view.getContext().startActivity(Intent);
             }
         });
+        shop=(Button)findViewById(R.id.shop_expense);
+        shop.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i=new Intent(SampleActivity.this,ShopExpenseActivity.class);
+                startActivity(i);
+
+            }
+        });
+
 
     }
     public void onBackPressed(){
