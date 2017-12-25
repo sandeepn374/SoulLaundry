@@ -75,6 +75,28 @@ public class CollectionActivity extends Activity
 		//FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 	}
 
+	private void billdetails() {
+
+		BillDetails b=new BillDetails(clothType[0],priceSpinner[0],qtySpinner[0],svc[0]);
+
+		total+= Integer.parseInt(qtySpinner[0])* Integer.parseInt(priceSpinner[0]);
+		billDetailsArrayList.add(b);
+		price.setSelection(0);
+		qty.setSelection(0);
+		cloth.setSelection(0);
+		service.setSelection(0);
+		deltype.setSelection(0);
+		Toastmsg(CollectionActivity.this,"Added");
+	}
+
+
+	private void Toastmsg(CollectionActivity collectionActivity, String p1)
+	{
+
+		Toast.makeText(this,p1,
+					   Toast.LENGTH_SHORT).show();
+	}
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
@@ -462,6 +484,16 @@ if (s.length()==10){
 				
 				
 				else{
+					Intent j=new Intent(CollectionActivity.this,ConfirmActivity.class);
+					User user = new User(name, phone, billDetailsArrayList, billNumber, total, total, 0,DelDate,pickDate);
+					j.putExtra("MyClass", user);
+					
+					startActivity(j);
+					}
+					
+					}
+					});
+					/*
 
 				final Dialog dialog = new Dialog(CollectionActivity.this);
 				dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -669,34 +701,12 @@ if (s.length()==10){
 
 });
 
-	}
+	}*/
 
-
-	private void billdetails() {
-
-		BillDetails b=new BillDetails(clothType[0],priceSpinner[0],qtySpinner[0]);
-
-		total+= Integer.parseInt(qtySpinner[0])* Integer.parseInt(priceSpinner[0]);
-		billDetailsArrayList.add(b);
-		price.setSelection(0);
-		qty.setSelection(0);
-		cloth.setSelection(0);
-		service.setSelection(0);
-		deltype.setSelection(0);
-		Toastmsg(CollectionActivity.this,"Added");
-	}
-
-
-	private void Toastmsg(CollectionActivity collectionActivity, String p1)
-	{
-		
-		Toast.makeText(this,p1,
-					   Toast.LENGTH_SHORT).show();
-	}
 
 
 	
-	}
+	}}
 
 
 
