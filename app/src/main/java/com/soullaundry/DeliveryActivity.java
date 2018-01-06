@@ -662,12 +662,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
         return false;
     }
 
-    public void onBackPressed(){
-        Intent i=new Intent(DeliveryActivity.this,SampleActivity.class);
-        startActivity(i);
-        setContentView(R.layout.activity_sample);
 
-    }
 
 
 }

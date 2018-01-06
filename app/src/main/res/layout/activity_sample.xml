@@ -25,7 +25,8 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginBottom="197dp"
-			
+			android:background="@drawable/button_selector"
+			android:drawableLeft="@drawable/shopexpense"
 			android:text="SHOP EXPENSE"
 			android:textColor="#ff0000"
 			android:textSize="@dimen/text_size"
@@ -39,7 +40,8 @@
 			android:id="@+id/collection"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			
+			android:background="@drawable/button_selector"
+			android:drawableLeft="@drawable/delivery"
 			android:text="COLLECTION"
 			android:textColor="#ff0000"
 			android:textSize="@dimen/text_size"
@@ -52,19 +54,20 @@
 
 
 		<Button
-                android:id="@+id/delivery"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-			    
-                android:text="   DELIVERY"
-			    android:textColor="#ff0000"
-			    android:textSize="@dimen/text_size"
-			    android:layout_marginBottom="17dp"
-				android:layout_marginLeft="26dp"
-				android:layout_marginStart="26dp"
-				android:layout_above="@+id/shop_expense"
-				android:layout_toRightOf="@+id/collection"
-				android:layout_toEndOf="@+id/collection" />
+			android:id="@+id/delivery"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/button_selector"
+			android:drawableLeft="@drawable/collection"
+			android:text="   DELIVERY"
+			android:textColor="#ff0000"
+			android:textSize="@dimen/text_size"
+			android:layout_marginBottom="17dp"
+			android:layout_marginLeft="26dp"
+			android:layout_marginStart="26dp"
+			android:layout_above="@+id/shop_expense"
+			android:layout_toRightOf="@+id/collection"
+			android:layout_toEndOf="@+id/collection" />
 
 
 	</RelativeLayout>
@@ -83,4 +86,3 @@
 	</ListView>
 
 </android.support.v4.widget.DrawerLayout>
-
