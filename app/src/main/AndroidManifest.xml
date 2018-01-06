@@ -20,8 +20,10 @@
         <activity android:name=".CollectionActivity" />
         <activity android:name=".DeliveryActivity" />
         <activity android:name=".MainActivity" />
-
+		<activity android:name=".ConfirmActivity" />
+		
         <activity android:name=".ShopExpenseActivity" />
+			
     </application>
 
 </manifest>

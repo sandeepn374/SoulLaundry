@@ -1,18 +1,20 @@
 package com.soullaundry;
 
-import java.util.ArrayList;
+import java.io.*;
+import java.util.*;
 
 /**
  * Created by kshravi on 01/11/2017 AD.
  */
 
-public class User {
+public class User implements Serializable {
 
     public String name;
    // public String email;
     public String billNumber;
     public String ph;
    ArrayList<BillDetails> billDetailsArrayList;
+   
     public int total;
     public int due;
     public int discount;

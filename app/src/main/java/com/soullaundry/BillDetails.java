@@ -4,19 +4,24 @@ package com.soullaundry;
  * Created by kshravi on 05/11/2017 AD.
  */
 
-public class BillDetails {
+import java.io.*;
+
+public class BillDetails implements Serializable
+{
 
 
     String clothType;
 
     String qty;
     String price;
+	String svcType;
 
     public BillDetails(){}
-    public BillDetails(String clothType, String price ,String qty){
+    public BillDetails(String clothType, String price ,String qty,String svc){
         this.clothType=clothType;
         this.qty=qty;
         this.price=price;
+		this.svcType=svc;
 
 
     }
