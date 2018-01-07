@@ -59,24 +59,6 @@
 
 
             <Spinner
-                android:id="@+id/cloth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/cloth"
-                android:spinnerMode="dropdown"
-
-                />
-
-            <Spinner
-            android:id="@+id/price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/price"
-            android:spinnerMode="dropdown"
-                />
-
-
-            <Spinner
                 android:id="@+id/service"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,11 +68,42 @@
                 />
 
             <Spinner
-            android:id="@+id/qty"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/qty"
-            android:spinnerMode="dropdown"
+                android:id="@+id/cloth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/cloth"
+                android:spinnerMode="dropdown"
+
+                />
+
+
+    <Spinner
+        android:id="@+id/qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/qty"
+        android:spinnerMode="dropdown"
+        />
+
+
+    <Spinner
+        android:id="@+id/kgpc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/kgpc"
+        android:spinnerMode="dropdown"
+        />
+
+
+
+
+
+            <Spinner
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/price"
+                android:spinnerMode="dropdown"
                 />
 
             <Spinner
@@ -98,6 +111,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/deltype"
+                android:spinnerMode="dropdown"
+                />
+
+
+            <Spinner
+                android:id="@+id/deldays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/deldays"
                 android:spinnerMode="dropdown"
                 />
 

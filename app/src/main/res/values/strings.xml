@@ -21,9 +21,24 @@
     </string-array>
 
 
+    <string-array name="deldays">
+
+        <item>Select Delivery Days</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        </string-array>
+
+
+
+
     <string-array name="service">
 
         <item>Select Service Type</item>
+        <item>Dry Cleaning</item>
         <item>Wash/Fold</item>
         <item>Wash/Iron</item>
         <item>Ironing</item>
@@ -38,6 +53,15 @@
         <item>Select Delivery Type</item>
         <item>Normal Delivery</item>
         <item>Express Delivery(Normal * 1.5)</item>
+
+    </string-array>
+
+
+    <string-array name="kgpc">
+
+        <item>Select KG or Per piece</item>
+        <item>KG</item>
+        <item>Piece</item>
 
 
 
