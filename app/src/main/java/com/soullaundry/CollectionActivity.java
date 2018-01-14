@@ -94,6 +94,8 @@ public class CollectionActivity extends Activity
 		cloth.setSelection(0);
 		service.setSelection(0);
 		deltype.setSelection(0);
+		deldays.setSelection(0);
+		kgpc.setSelection(0);
 		Toastmsg(CollectionActivity.this,"Added");
 	}
 
