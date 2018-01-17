@@ -27,7 +27,7 @@
 			android:layout_marginBottom="197dp"
 			android:background="@drawable/button_selector"
 			android:drawableLeft="@drawable/shopexpense"
-			android:text="SHOP EXPENSE"
+			android:text="SOUL EXPENSE"
 			android:textColor="#ff0000"
 			android:textSize="@dimen/text_size"
 			android:layout_alignParentBottom="true" />
@@ -42,7 +42,7 @@
 			android:layout_height="wrap_content"
 			android:background="@drawable/button_selector"
 			android:drawableLeft="@drawable/delivery"
-			android:text="COLLECTION"
+			android:text="PICK UP"
 			android:textColor="#ff0000"
 			android:textSize="@dimen/text_size"
 			android:layout_marginLeft="35dp"

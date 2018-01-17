@@ -543,11 +543,10 @@ if (s.length()==10){
 							String reg_date = df.format(c.getTime());
 							pickDate=reg_date;
 
-							c.add(Calendar.DATE, Integer.parseInt(deldays.getSelectedItem().toString()));  // number of days to add
+//							c.add(Calendar.DATE, Integer.parseInt(deldays.getSelectedItem().toString()));  // number of days to add
 
 							time = df.format(c.getTime());
 							DelDate=time;
-
 
 							DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("usersG");
 							mDatabase.keepSynced(true);
@@ -562,17 +561,17 @@ if (s.length()==10){
 							try {
 								SmsManager smsManager = SmsManager.getDefault();
 
-								message = "Your order has been done successfully";
+								message = "Your order has been placed successfully with Soul Laundromat";
 								for (int i = 0; i < billDetailsArrayList.size(); i++) {
 
 									String qty = billDetailsArrayList.get(i).getQty();
 									qtyTotal += Integer.parseInt(qty);
 
 								}
-								message1 += "\nSoul Laundry \nThanks for your order \n" + "Bill no:" + billNumber + "\nTotal Price :Rs " + total + "\nDelivery date: " + time ;
-								message2 += "\n\nPaytm Number to Pay : " + "9980461461" ;
-
-								message += message1+message2;
+								message1 += "\n \n Bill no:" + billNumber + "\nTotal Price :Rs " + total + "\nDelivery date: " + time ;
+								message2 += "\n\nPaytm Number for Payment : " + "9980461461" ;
+								message3 += "\n \n Thank you.";
+								message += message1+message2+message3;
 
 								PendingIntent sentPI = PendingIntent.getBroadcast(CollectionActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
 								PendingIntent deliveredPI = PendingIntent.getBroadcast(CollectionActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
