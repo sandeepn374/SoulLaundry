@@ -132,21 +132,20 @@ public class CollectionActivity extends Activity
 		qty = (EditText) findViewById(com.soullaundry.R.id.qty);
 		deltype=(Spinner)findViewById(R.id.deltype);
 		deldays=(Spinner)findViewById(R.id.deldays);
-        cloth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
+        /*cloth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
         {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
             {
-                //Change the selected item's text color
-                ((TextView) view).setTextSize(18);
+                ((TextView) view).se(18);
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent)
             {
             }
-        });
+        });*/
 
 
 

@@ -83,7 +83,7 @@
 
         >
 
-        <!--
+
 
         <TableRow
             android:id="@+id/trConfigPeriodStop"
@@ -119,7 +119,7 @@
             />
         </TableRow>
 
-        -->
+
 
 
         <TableRow
@@ -136,6 +136,7 @@
                 android:layout_height="wrap_content"
                 android:entries="@array/cloth"
                 android:spinnerMode="dropdown"
+                android:dropDownWidth="wrap_content"
 
                 />
 
