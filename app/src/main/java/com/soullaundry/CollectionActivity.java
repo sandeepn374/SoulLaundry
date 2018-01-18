@@ -56,7 +56,7 @@ public class CollectionActivity extends Activity
 		else
 			actualprice=Integer.parseInt(priceSpinner[0]);
 
-		BillDetails b=new BillDetails(clothType[0],actualprice.toString(),qtySpinner[0],svc[0]);
+		BillDetails b=new BillDetails(clothType[0],actualprice.toString(),qty.getText().toString(),svc[0]);
 
 		total+= Integer.parseInt(String.valueOf(qty.getText()))* actualprice;
 		billDetailsArrayList.add(b);
