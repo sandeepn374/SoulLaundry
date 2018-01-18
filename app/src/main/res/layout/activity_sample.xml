@@ -9,7 +9,7 @@
 		android:layout_width="154dp"
 		android:layout_height="140dp"
 		android:layout_gravity="center_horizontal"
-		android:layout_marginBottom="24dp"
+		android:layout_marginBottom="97dp"
 		android:layout_marginEnd="34dp"
 		android:layout_marginRight="34dp"
 		android:src="@drawable/soul" />
@@ -22,7 +22,8 @@
 		android:drawableLeft="@drawable/collection"
 		android:text="PICK UP"
 		android:textColor="#ff0000"
-		android:textSize="@dimen/text_size" />
+		android:textSize="@dimen/text_size"
+		android:layout_marginBottom="97dp"/>
 
 
 	<Button
@@ -33,7 +34,8 @@
 		android:drawableLeft="@drawable/delivery"
 		android:text="DELIVERY"
 		android:textColor="#ff0000"
-		android:textSize="@dimen/text_size" />
+		android:textSize="@dimen/text_size"
+		android:layout_marginBottom="97dp"/>
 
 
 	<Button
@@ -45,7 +47,8 @@
 		android:drawableLeft="@drawable/shopexpense"
 		android:text="SOUL EXPENSE"
 		android:textColor="#ff0000"
-		android:textSize="@dimen/text_size" />
+		android:textSize="@dimen/text_size"
+		android:layout_marginBottom="97dp"/>
 
 
 </LinearLayout>
