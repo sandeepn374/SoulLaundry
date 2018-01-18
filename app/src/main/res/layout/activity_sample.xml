@@ -23,7 +23,9 @@
 		android:text="PICK UP"
 		android:textColor="#ff0000"
 		android:textSize="@dimen/text_size"
-		android:layout_marginBottom="40dp"/>
+		android:layout_marginBottom="40dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"/>
 
 
 	<Button
@@ -35,7 +37,10 @@
 		android:text="DELIVERY"
 		android:textColor="#ff0000"
 		android:textSize="@dimen/text_size"
-		android:layout_marginBottom="40dp"/>
+		android:layout_marginBottom="40dp"
+
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"/>
 
 
 	<Button
@@ -48,7 +53,10 @@
 		android:text="SOUL EXPENSE"
 		android:textColor="#ff0000"
 		android:textSize="@dimen/text_size"
-		android:layout_marginBottom="40dp"/>
+		android:layout_marginBottom="40dp"
+
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"/>
 
 
 </LinearLayout>
