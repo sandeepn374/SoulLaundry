@@ -119,7 +119,7 @@ public class CollectionActivity extends Activity
 		edt_email= (TextView) findViewById(com.soullaundry.R.id.edt_email);
 		addedcontent=(TextView)findViewById(R.id.adddedcontent);
 
-		//btn_add = (Button) findViewById(com.soullaundry.R.id.btn_add);
+		btn_add = (Button) findViewById(com.soullaundry.R.id.btn_add);
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
 		service=(Spinner)findViewById(R.id.service);
@@ -410,7 +410,7 @@ if (s.length()==10){
 				}
 
 
-				
+
 
 				else{
 				billdetails();
