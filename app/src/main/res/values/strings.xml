@@ -6,7 +6,8 @@
 
     <string-array name="price">
 
-        <item>Select Price</item>
+
+        <item>Price</item>
         <item>10</item>
         <item>20</item>
         <item>30</item>
@@ -67,7 +68,8 @@
 
     </string-array>
     <string-array name="cloth">
-        <item>Select Cloth Type</item>
+
+        <item>Cloth</item>
         <item>Double Quilt Blanket</item>
         <item>Single QuiltBlanket</item>
         <item>Suit(2pcs)</item>
@@ -115,21 +117,5 @@
     </string-array>
 
 
-    <string-array name="qty">
-
-        <item>Select Quantity</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>Others</item>
-
-    </string-array>
 
 </resources>

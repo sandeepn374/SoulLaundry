@@ -46,9 +46,9 @@ public class CollectionActivity extends Activity
 
 
 	EditText edt_name;
-	EditText edt_phone;
-	TextView edt_email;
-	Spinner price,cloth,qty,service,deltype,deldays,kgpc;
+	EditText edt_phone,qty;
+	TextView edt_email,addedcontent;
+	Spinner price,cloth,service,deltype,deldays,kgpc;
 
 	Button btn_add,btn_submit;
 	String message;
@@ -73,9 +73,6 @@ public class CollectionActivity extends Activity
 
 	ArrayList<BillDetails> billDetailsArrayList= new ArrayList<BillDetails>();
 
-	static {
-		//FirebaseDatabase.getInstance().setPersistenceEnabled(true);
-	}
 
 	public void billdetails() {
 		Integer actualprice = 0;
@@ -114,14 +111,15 @@ public class CollectionActivity extends Activity
 
 		super.onCreate(savedInstanceState);
 		setContentView(com.soullaundry.R.layout.collection);
-		kgpc=(Spinner)findViewById(R.id.kgpc);
+	//	kgpc=(Spinner)findViewById(R.id.kgpc);
 		edt_name= (EditText) findViewById(com.soullaundry.R.id.edt_name);
 
 		edt_phone= (EditText) findViewById(com.soullaundry.R.id.edt_phone);
 
 		edt_email= (TextView) findViewById(com.soullaundry.R.id.edt_email);
+		addedcontent=(TextView)findViewById(R.id.adddedcontent);
 
-		btn_add = (Button) findViewById(com.soullaundry.R.id.btn_add);
+		//btn_add = (Button) findViewById(com.soullaundry.R.id.btn_add);
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
 		service=(Spinner)findViewById(R.id.service);
@@ -131,7 +129,7 @@ public class CollectionActivity extends Activity
 		price = (Spinner) findViewById(com.soullaundry.R.id.price);
 
 
-		qty = (Spinner) findViewById(com.soullaundry.R.id.qty);
+		qty = (EditText) findViewById(com.soullaundry.R.id.qty);
 		deltype=(Spinner)findViewById(R.id.deltype);
 		deldays=(Spinner)findViewById(R.id.deldays);
 
@@ -196,7 +194,7 @@ public class CollectionActivity extends Activity
 
 
 
-
+/*
 		qty.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -249,6 +247,8 @@ public class CollectionActivity extends Activity
 			}
 
 		});
+
+		*/
 		edt_phone.addTextChangedListener(new TextWatcher() {
 
 			public void afterTextChanged(Editable s) {
@@ -393,11 +393,6 @@ if (s.length()==10){
 					priceSpinner[0] = price.getSelectedItem().toString();
 				}
 
-				if (qty.getSelectedItem().toString().equals("Others")){
-					System.out.print("cool");
-				}else {
-					qtySpinner[0] = qty.getSelectedItem().toString();
-				}
 
 				if((name.length() == 0)){
 					edt_name.setError("Please Enter  Name");
@@ -415,17 +410,7 @@ if (s.length()==10){
 				}
 
 
-				else if(qty.getSelectedItem().toString().trim().equals("Select Quantity")){
-					((TextView)qty.getChildAt(0)).setError("Please Enter Quantity");
-
-				}
-				//
-
-
-				else if(deldays.getSelectedItem().toString().trim().equals("Select Delivery Days")){
-					((TextView)qty.getChildAt(0)).setError("Please Enter Delivery Days");
-
-				}
+				
 
 				else{
 				billdetails();

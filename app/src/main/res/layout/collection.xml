@@ -58,6 +58,7 @@
                 />
 
 
+
             <TextView
 
                 android:layout_width="match_parent"
@@ -76,14 +77,58 @@
 
                 />
 
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <!--
+
+        <TableRow
+            android:id="@+id/trConfigPeriodStop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
 
             <TextView
 
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cloth"
+                android:text="Cloth  "
                 android:textStyle="bold"
                 />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity   "
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Price   "
+            android:textStyle="bold"
+            />
+        </TableRow>
+
+        -->
+
+
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
 
             <Spinner
                 android:id="@+id/cloth"
@@ -95,52 +140,15 @@
                 />
 
 
-            <TextView
 
+
+            <EditText
+                android:id="@+id/qty"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Quantity"
-                android:textStyle="bold"
+                android:hint="  quantity  "
+                android:spinnerMode="dropdown"
                 />
-
-
-    <Spinner
-        android:id="@+id/qty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/qty"
-        android:spinnerMode="dropdown"
-        />
-
-
-
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Kg pr Per piece"
-                android:textStyle="bold"
-                />
-
-    <Spinner
-        android:id="@+id/kgpc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/kgpc"
-        android:spinnerMode="dropdown"
-        />
-
-
-
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Price"
-                android:textStyle="bold"
-                />
-
-
 
 
             <Spinner
@@ -149,18 +157,57 @@
                 android:layout_height="wrap_content"
                 android:entries="@array/price"
                 android:spinnerMode="dropdown"
+
                 />
-
-
-
 
 
             <Button
                 android:id="@+id/btn_add"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Add"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+
+
+
+
+<!--
+
+            <Spinner
+                android:id="@+id/kgpc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/kgpc"
+                android:spinnerMode="dropdown"
+                />
+
+                -->
+
+
+
+
+
+
+
+
+           <!--
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Add Item"
                 />
+
+                -->
 
 
             <TextView
@@ -205,6 +252,16 @@
              android:layout_height="wrap_content"
              android:text="Submit Order"
                     />
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/adddedcontent"
+                />
 
         </LinearLayout>
 
