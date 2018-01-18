@@ -58,7 +58,7 @@ public class CollectionActivity extends Activity
 
 		BillDetails b=new BillDetails(clothType[0],actualprice.toString(),qtySpinner[0],svc[0]);
 
-		total+= Integer.parseInt(qtySpinner[0])* actualprice;
+		total+= Integer.parseInt(String.valueOf(qty.getText()))* actualprice;
 		billDetailsArrayList.add(b);
 		price.setSelection(0);
 		qty.setSelection(0);
