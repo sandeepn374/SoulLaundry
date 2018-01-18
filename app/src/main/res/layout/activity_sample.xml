@@ -5,56 +5,49 @@
 	android:orientation="vertical">
 
 
-		<ImageView
-			android:layout_width="154dp"
-			android:layout_height="140dp"
-			android:layout_gravity="center_horizontal"
-			android:layout_marginBottom="24dp"
-			android:layout_marginEnd="34dp"
-			android:layout_marginRight="34dp"
-			android:src="@drawable/soul" />
+	<ImageView
+		android:layout_width="154dp"
+		android:layout_height="140dp"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="24dp"
+		android:layout_marginEnd="34dp"
+		android:layout_marginRight="34dp"
+		android:src="@drawable/soul" />
 
-		<Button
-			android:id="@+id/collection"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginBottom="197dp"
-			android:background="@drawable/button_selector"
-			android:drawableLeft="@drawable/shopexpense"
-			android:text="PICK UP"
-			android:textColor="#ff0000"
-			android:textSize="@dimen/text_size"
-			 />
+	<Button
+		android:id="@+id/collection"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/button_selector"
+		android:drawableLeft="@drawable/shopexpense"
+		android:text="PICK UP"
+		android:textColor="#ff0000"
+		android:textSize="@dimen/text_size" />
 
 
+	<Button
+		android:id="@+id/delivery"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/button_selector"
+		android:drawableLeft="@drawable/shopexpense"
+		android:text="DELIVERY"
+		android:textColor="#ff0000"
+		android:textSize="@dimen/text_size" />
 
 
-		<Button
-			android:id="@+id/delivery"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginBottom="197dp"
-			android:background="@drawable/button_selector"
-			android:drawableLeft="@drawable/shopexpense"
-			android:text="DELIVERY"
-			android:textColor="#ff0000"
-			android:textSize="@dimen/text_size"
-			 />
+	<Button
+		android:id="@+id/shop_expense"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+
+		android:background="@drawable/button_selector"
+		android:drawableLeft="@drawable/shopexpense"
+		android:text="SOUL EXPENSE"
+		android:textColor="#ff0000"
+		android:textSize="@dimen/text_size" />
 
 
-		<Button
-			android:id="@+id/shop_expense"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginBottom="197dp"
-			android:background="@drawable/button_selector"
-			android:drawableLeft="@drawable/shopexpense"
-			android:text="SOUL EXPENSE"
-			android:textColor="#ff0000"
-			android:textSize="@dimen/text_size"
-			/>
-
-
-	</LinearLayout>
+</LinearLayout>
 
 
