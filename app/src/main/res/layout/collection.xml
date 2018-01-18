@@ -132,7 +132,7 @@
 
             <Spinner
                 android:id="@+id/cloth"
-                android:layout_width="30dp"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:entries="@array/cloth"
                 android:spinnerMode="dropdown"
