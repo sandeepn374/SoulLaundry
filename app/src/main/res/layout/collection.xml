@@ -153,7 +153,7 @@
 
             <Spinner
                 android:id="@+id/price"
-                android:layout_width="match_parent"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:entries="@array/price"
                 android:spinnerMode="dropdown"
@@ -164,9 +164,9 @@
 
             <Button
                 android:id="@+id/btn_add"
-                android:layout_width="match_parent"
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:text="Add"
+                android:text="+"
                 />
 
 
