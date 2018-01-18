@@ -19,7 +19,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:background="@drawable/button_selector"
-		android:drawableLeft="@drawable/shopexpense"
+		android:drawableLeft="@drawable/collection"
 		android:text="PICK UP"
 		android:textColor="#ff0000"
 		android:textSize="@dimen/text_size" />
@@ -30,7 +30,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:background="@drawable/button_selector"
-		android:drawableLeft="@drawable/shopexpense"
+		android:drawableLeft="@drawable/delivery"
 		android:text="DELIVERY"
 		android:textColor="#ff0000"
 		android:textSize="@dimen/text_size" />
