@@ -58,6 +58,15 @@
                 />
 
 
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:textStyle="bold"
+                />
+
+
             <Spinner
                 android:id="@+id/service"
                 android:layout_width="match_parent"
@@ -65,6 +74,15 @@
                 android:entries="@array/service"
                 android:spinnerMode="dropdown"
 
+                />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cloth"
+                android:textStyle="bold"
                 />
 
             <Spinner
@@ -77,6 +95,15 @@
                 />
 
 
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textStyle="bold"
+                />
+
+
     <Spinner
         android:id="@+id/qty"
         android:layout_width="match_parent"
@@ -86,6 +113,15 @@
         />
 
 
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kg pr Per piece"
+                android:textStyle="bold"
+                />
+
     <Spinner
         android:id="@+id/kgpc"
         android:layout_width="match_parent"
@@ -94,6 +130,15 @@
         android:spinnerMode="dropdown"
         />
 
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textStyle="bold"
+                />
 
 
 
@@ -106,22 +151,6 @@
                 android:spinnerMode="dropdown"
                 />
 
-            <Spinner
-                android:id="@+id/deltype"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/deltype"
-                android:spinnerMode="dropdown"
-                />
-
-
-            <Spinner
-                android:id="@+id/deldays"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/deldays"
-                android:spinnerMode="dropdown"
-                />
 
 
 
@@ -131,6 +160,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Add Item"
+                />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Type"
+                android:textStyle="bold"
+                />
+
+
+            <Spinner
+                android:id="@+id/deltype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/deltype"
+                android:spinnerMode="dropdown"
+                />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Days"
+                android:textStyle="bold"
+                />
+
+
+            <Spinner
+                android:id="@+id/deldays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/deldays"
+                android:spinnerMode="dropdown"
                 />
 
 

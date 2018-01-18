@@ -93,8 +93,6 @@ public class CollectionActivity extends Activity
 		qty.setSelection(0);
 		cloth.setSelection(0);
 		service.setSelection(0);
-		deltype.setSelection(0);
-		deldays.setSelection(0);
 		kgpc.setSelection(0);
 		Toastmsg(CollectionActivity.this,"Added");
 	}
@@ -543,7 +541,8 @@ if (s.length()==10){
 							String reg_date = df.format(c.getTime());
 							pickDate=reg_date;
 
-//							c.add(Calendar.DATE, Integer.parseInt(deldays.getSelectedItem().toString()));  // number of days to add
+							System.out.println(deldays.getSelectedItem().toString());
+							c.add(Calendar.DATE, Integer.parseInt(deldays.getSelectedItem().toString()));  // number of days to add
 
 							time = df.format(c.getTime());
 							DelDate=time;
