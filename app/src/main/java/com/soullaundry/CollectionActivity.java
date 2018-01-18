@@ -1,44 +1,18 @@
 package com.soullaundry;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.PendingIntent;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.telephony.SmsManager;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
-import android.view.Gravity;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.Window;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
-
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
+import android.app.*;
+import android.content.*;
+import android.graphics.*;
+import android.os.*;
+import android.telephony.*;
+import android.text.*;
+import android.util.*;
+import android.view.*;
+import android.view.View.*;
+import android.widget.*;
+import com.google.firebase.database.*;
+import java.text.*;
+import java.util.*;
 
 
 public class CollectionActivity extends Activity
@@ -132,24 +106,9 @@ public class CollectionActivity extends Activity
 		qty = (EditText) findViewById(com.soullaundry.R.id.qty);
 		deltype=(Spinner)findViewById(R.id.deltype);
 		deldays=(Spinner)findViewById(R.id.deldays);
-        /*cloth.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
-        {
+      
 
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
-            {
-                ((TextView) view).se(18);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent)
-            {
-            }
-        });*/
-
-
-
-
+		
 
 
 
