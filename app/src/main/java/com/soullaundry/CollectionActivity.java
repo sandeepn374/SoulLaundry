@@ -134,6 +134,10 @@ public class CollectionActivity extends Activity
 		deldays=(Spinner)findViewById(R.id.deldays);
 
 
+        ArrayAdapter simple_adapter = new ArrayAdapter<>(CollectionActivity.this, R.layout.layout2);
+
+        cloth.setAdapter(simple_adapter);
+
 
 
 
