@@ -1,267 +1,276 @@
-<?xml version="1.0" encoding="utf-8"?>   
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+	>
 
 
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Phone No"
-                android:textStyle="bold"
-               />
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Phone No"
+			android:textStyle="bold"
+		/>
 
-            <EditText
-                android:id="@+id/edt_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="date"
-                android:maxLength="10"/>
-
-
-             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                 android:text="Name"
-                android:textStyle="bold" />
-
-            <EditText
-             android:id="@+id/edt_name"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:inputType="text" />
+		<EditText
+			android:id="@+id/edt_phone"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="date"
+			android:maxLength="10"/>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Bill No"
-                android:textStyle="bold"
-               android:inputType="none"
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Name"
+			android:textStyle="bold" />
 
-                />
-
-            <TextView
-                android:id="@+id/edt_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:text="A0001"
-                />
+		<EditText
+			android:id="@+id/edt_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text" />
 
 
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Bill No"
+			android:textStyle="bold"
+			android:inputType="none"
 
-            <TextView
+		/>
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Service"
-                android:textStyle="bold"
-                />
-
-
-            <Spinner
-                android:id="@+id/service"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/service"
-                android:spinnerMode="dropdown"
-
-                />
-
-
-        <LinearLayout
-            android:id="@+id/trConfigPeriodStop"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cloth  "
-                android:textStyle="bold"
-                />
-
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quantity   "
-            android:textStyle="bold"
-            />
-
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="   Price   "
-            android:textStyle="bold"
-            />
-        </LinearLayout>
+		<TextView
+			android:id="@+id/edt_email"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text"
+			android:text="A0001"
+		/>
 
 
 
+		<TextView
 
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" 
-			>
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Service"
+			android:textStyle="bold"
+		/>
 
 
-            <Spinner
-                android:id="@+id/cloth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/cloth"
-                android:spinnerMode="dropdown"
-                android:layout_gravity="center_vertical"
-                
+		<Spinner
+			android:id="@+id/service"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:entries="@array/service"
+			android:spinnerMode="dropdown"
 
+		/>
+
+		<TableLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+
+        >
+
+
+
+			<TableRow
+				android:id="@+id/trConfigPeriodStop"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:weightSum="1" >
+
+				<TextView
+
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Cloth  "
+					android:textStyle="bold"
                 />
 
 
+				<TextView
+
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Quantity   "
+					android:textStyle="bold"
+				/>
 
 
-            <EditText
-                android:id="@+id/qty"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:hint="qty"
-                android:layout_gravity="center_vertical"
-                />
+				<TextView
+
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="   Price   "
+					android:textStyle="bold"
+				/>
+			</TableRow>
 
 
-            <Spinner
-                android:id="@+id/price"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/price"
-                android:spinnerMode="dropdown"
-				android:layout_gravity="center_vertical"
+
+
+			<TableRow
+
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:weightSum="1" >
+
+
+				<Spinner
+					android:id="@+id/cloth"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:entries="@array/cloth"
+					android:spinnerMode="dropdown"
+
+					android:maxWidth="30dp"
 
                 />
 
 
 
-            <Button
-                android:id="@+id/btn_add"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:text="+"
-				android:layout_gravity="center_vertical"
+
+				<EditText
+					android:id="@+id/qty"
+					android:layout_width="60dp"
+					android:layout_height="wrap_content"
+					android:hint="qty"
+					android:spinnerMode="dropdown"
                 />
 
 
-        </LinearLayout>
+				<Spinner
+					android:id="@+id/price"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:entries="@array/price"
+					android:spinnerMode="dropdown"
 
-
-
-   
-
-
-
-
-
-
-
-
-
-<!--
-
-            <Spinner
-                android:id="@+id/kgpc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/kgpc"
-                android:spinnerMode="dropdown"
-                />
-
-                -->
-
-
-
-
-
-
-
-
-           <!--
-            <Button
-                android:id="@+id/btn_add"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Add Item"
-                />
-
-                -->
-
-
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Delivery Type"
-                android:textStyle="bold"
                 />
 
 
-            <Spinner
-                android:id="@+id/deltype"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/deltype"
-                android:spinnerMode="dropdown"
+
+				<Button
+					android:id="@+id/btn_add"
+					android:layout_width="40dp"
+					android:layout_height="wrap_content"
+					android:text="+"
                 />
 
 
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Delivery Days"
-                android:textStyle="bold"
-                />
-
-
-            <Spinner
-                android:id="@+id/deldays"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/deldays"
-                android:spinnerMode="dropdown"
-                />
-
-
-            <Button
-             android:id="@+id/btn_submit"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:text="Submit Order"
-                    />
+			</TableRow>
 
 
 
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:id="@+id/adddedcontent"
-                />
-
-        </LinearLayout>
+		</TableLayout>
 
 
+
+
+
+
+
+
+
+		<!--
+
+		<Spinner
+		android:id="@+id/kgpc"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:entries="@array/kgpc"
+		android:spinnerMode="dropdown"
+		/>
+
+		-->
+
+
+
+
+
+
+
+
+		<!--
+		<Button
+		android:id="@+id/btn_add"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Add Item"
+		/>
+
+		-->
+
+
+		<TextView
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Delivery Type"
+			android:textStyle="bold"
+		/>
+
+
+		<Spinner
+			android:id="@+id/deltype"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:entries="@array/deltype"
+			android:spinnerMode="dropdown"
+		/>
+
+
+		<TextView
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Delivery Days"
+			android:textStyle="bold"
+		/>
+
+
+		<Spinner
+			android:id="@+id/deldays"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:entries="@array/deldays"
+			android:spinnerMode="dropdown"
+		/>
+
+
+		<Button
+			android:id="@+id/btn_submit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Submit Order"
+		/>
+
+
+
+		<TextView
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:id="@+id/adddedcontent"
+		/>
+
+	</LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
 
