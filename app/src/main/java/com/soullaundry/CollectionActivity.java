@@ -48,25 +48,6 @@ public class CollectionActivity extends Activity
 	ArrayList<BillDetails> billDetailsArrayList= new ArrayList<BillDetails>();
 
 
-	public void billdetails() {
-		Integer actualprice = 0;
-
-		if(deltype.getSelectedItem().toString().equals("Express Delivery(Normal * 1.5)"))
-		 actualprice= (int) (Integer.parseInt(priceSpinner[0])*1.5);
-		else
-			actualprice=Integer.parseInt(priceSpinner[0]);
-
-		BillDetails b=new BillDetails(clothType[0],actualprice.toString(),qty.getText().toString(),svc[0]);
-
-		total+= Integer.parseInt(String.valueOf(qty.getText()))* actualprice;
-		billDetailsArrayList.add(b);
-		price.setSelection(0);
-		qty.setSelection(0);
-		cloth.setSelection(0);
-		service.setSelection(0);
-		kgpc.setSelection(0);
-		Toastmsg(CollectionActivity.this,"Added");
-	}
 
 
 	private void Toastmsg(CollectionActivity collectionActivity, String p1)
@@ -168,62 +149,6 @@ public class CollectionActivity extends Activity
 		});
 
 
-
-/*
-		qty.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-			@Override
-			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-				// your code here
-
-				if (qty.getSelectedItem().toString().equals("Others")){
-
-					final AlertDialog.Builder alert = new AlertDialog.Builder(CollectionActivity.this);
-
-
-					final EditText edittext = new EditText(CollectionActivity.this);
-					alert.setMessage("Please enter the Quantity");
-					alert.setTitle("Quantity");
-
-					alert.setView(edittext);
-
-
-					alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int whichButton) {
-
-							qtySpinner[0] =edittext.getText().toString();
-
-
-
-
-
-						}
-					});
-
-					alert.setNegativeButton("No Option", new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int whichButton) {
-
-						}
-					});
-
-					final AlertDialog alert1 = alert.create();
-
-					alert1.show();
-
-
-
-
-
-				}
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> parentView) {
-				// your code here
-			}
-
-		});
-
-		*/
 		edt_phone.addTextChangedListener(new TextWatcher() {
 
 			public void afterTextChanged(Editable s) {
@@ -388,7 +313,26 @@ if (s.length()==10){
 
 
 				else{
-				billdetails();
+			
+					
+					Integer actualprice = 0;
+
+					if(deltype.getSelectedItem().toString().equals("Express Delivery(Normal * 1.5)"))
+						actualprice= (int) (Integer.parseInt(priceSpinner[0])*1.5);
+					else
+						actualprice=Integer.parseInt(priceSpinner[0]);
+
+					BillDetails b=new BillDetails(clothType[0],actualprice.toString(),qty.getText().toString(),svc[0]);
+
+					total+= Integer.parseInt(String.valueOf(qty.getText()))* actualprice;
+					billDetailsArrayList.add(b);
+					price.setSelection(0);
+					qty.setSelection(0);
+					cloth.setSelection(0);
+					service.setSelection(0);
+					kgpc.setSelection(0);
+					Toastmsg(CollectionActivity.this,"Added");
+					
 				}
 
 
