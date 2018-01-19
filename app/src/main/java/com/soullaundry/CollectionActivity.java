@@ -223,10 +223,9 @@ if (s.length()==10){
 			@Override
 			public void onDataChange(DataSnapshot dataSnapshot) {
 
-				//String billNumber=null;
+		
 				for (DataSnapshot child: dataSnapshot.getChildren()) {
-					Log.d("User key", child.getKey());
-					Log.d("User val", child.child("billNumber").getValue().toString());
+					
 					billNumber=child.child("billNumber").getValue().toString();
 
 				}
