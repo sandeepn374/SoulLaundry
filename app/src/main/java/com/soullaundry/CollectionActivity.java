@@ -147,7 +147,7 @@ public class CollectionActivity extends Activity
 		deltype=(Spinner)findViewById(R.id.deltype);
 		deldays=(Spinner)findViewById(R.id.deldays);
       
-
+		addedcontent=(TextView)findViewById(R.id.adddedcontent);
 		
 
 
@@ -381,6 +381,7 @@ if (s.length()==10){
 						actualprice=Integer.parseInt(priceSpinner[0]);
 
 					BillDetails b=new BillDetails(clothType[0],actualprice.toString(),qty.getText().toString(),svc[0]);
+					addedcontent.append("\n"+clothType[0]+"  "+actualprice.toString()+" "+qty.getText().toString()+" "+svc[0]);
 
 					total+= Integer.parseInt(String.valueOf(qty.getText()))* actualprice;
 					billDetailsArrayList.add(b);
@@ -388,7 +389,7 @@ if (s.length()==10){
 					qty.setSelection(0);
 					//cloth.setSelection(0);
 					service.setSelection(0);
-					kgpc.setSelection(0);
+					//kgpc.setSelection(0);
 					Toastmsg(CollectionActivity.this,"Added");
 					
 				}
