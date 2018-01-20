@@ -6,13 +6,15 @@ import android.graphics.*;
 import android.os.*;
 import android.telephony.*;
 import android.text.*;
-import android.util.*;
 import android.view.*;
 import android.view.View.*;
 import android.widget.*;
+import android.widget.AdapterView.*;
 import com.google.firebase.database.*;
 import java.text.*;
 import java.util.*;
+
+import android.view.View.OnClickListener;
 
 
 public class CollectionActivity extends Activity
@@ -48,6 +50,33 @@ public class CollectionActivity extends Activity
 	ArrayList<BillDetails> billDetailsArrayList= new ArrayList<BillDetails>();
 
 
+    private void initCustomSpinner() {
+
+        Spinner spinnerCustom= (Spinner) findViewById(R.id.cloth);
+        // Spinner Drop down elements
+        ArrayList<String> languages = new ArrayList<String>();
+        languages.add("Andorid");
+        languages.add("IOS");
+        languages.add("PHP");
+        languages.add("Java");
+        languages.add(".Net");
+        CustomSpinnerAdapter customSpinnerAdapter=new CustomSpinnerAdapter(CollectionActivity.this,languages);
+        spinnerCustom.setAdapter(customSpinnerAdapter);
+        spinnerCustom.setOnItemSelectedListener(new OnItemSelectedListener() {
+				@Override
+				public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+					String item = parent.getItemAtPosition(position).toString();
+
+					Toast.makeText(parent.getContext(), "Android Custom Spinner Example Output..." + item, Toast.LENGTH_LONG).show();
+				}
+
+				@Override
+				public void onNothingSelected(AdapterView<?> parent) {
+
+				}
+			});
+    }
 
 
 	private void Toastmsg(CollectionActivity collectionActivity, String p1)
@@ -66,6 +95,7 @@ public class CollectionActivity extends Activity
 
 		super.onCreate(savedInstanceState);
 		setContentView(com.soullaundry.R.layout.collection);
+		initCustomSpinner();
 	//	kgpc=(Spinner)findViewById(R.id.kgpc);
 		edt_name= (EditText) findViewById(com.soullaundry.R.id.edt_name);
 
@@ -78,7 +108,7 @@ public class CollectionActivity extends Activity
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
 		service=(Spinner)findViewById(R.id.service);
-        cloth=(Spinner) findViewById(R.id.cloth);
+       // cloth=(Spinner) findViewById(R.id.cloth);
 
 
 		price = (Spinner) findViewById(com.soullaundry.R.id.price);
@@ -278,13 +308,13 @@ if (s.length()==10){
 				 phone=edt_phone.getText().toString();
 
 
-				if (cloth.getSelectedItem().toString().equals("Others")){
+				/*if (cloth.getSelectedItem().toString().equals("Others")){
 					System.out.print("cool");
 				}
 					else {
 					clothType[0] = cloth.getSelectedItem().toString();
 				}
-
+*/
 
 				if (price.getSelectedItem().toString().equals("Others")){
 					System.out.print("cool");
@@ -299,10 +329,10 @@ if (s.length()==10){
 				else if(phone.length()<9){
 					edt_phone.setError("Please enter valid Phone Number");
 				}
-				else if(cloth.getSelectedItem().toString().trim().equals("Select Cloth Type")){
+				/*else if(cloth.getSelectedItem().toString().trim().equals("Select Cloth Type")){
 					((TextView)cloth.getChildAt(0)).setError("Please Enter Cloth Type");
 
-				}
+				}*/
 				else if(price.getSelectedItem().toString().trim().equals("Select Price")){
 					((TextView)price.getChildAt(0)).setError("Please Enter Price");
 
@@ -327,7 +357,7 @@ if (s.length()==10){
 					billDetailsArrayList.add(b);
 					price.setSelection(0);
 					qty.setSelection(0);
-					cloth.setSelection(0);
+					//cloth.setSelection(0);
 					service.setSelection(0);
 					kgpc.setSelection(0);
 					Toastmsg(CollectionActivity.this,"Added");
@@ -538,7 +568,65 @@ if (s.length()==10){
 
 
 	
-	}}
+	}
+	
+	
+
+    public class CustomSpinnerAdapter extends BaseAdapter implements SpinnerAdapter {
+
+        private final Context activity;
+        private ArrayList<String> asr;
+
+        public CustomSpinnerAdapter(Context context,ArrayList<String> asr) {
+            this.asr=asr;
+            activity = context;
+        }
+
+
+
+        public int getCount()
+        {
+            return asr.size();
+        }
+
+        public Object getItem(int i)
+        {
+            return asr.get(i);
+        }
+
+        public long getItemId(int i)
+        {
+            return (long)i;
+        }
+
+
+
+        @Override
+        public View getDropDownView(int position, View convertView, ViewGroup parent) {
+            TextView txt = new TextView(CollectionActivity.this);
+            txt.setPadding(16, 16, 16, 16);
+            txt.setTextSize(18);
+            txt.setGravity(Gravity.CENTER_VERTICAL);
+            txt.setText(asr.get(position));
+            txt.setTextColor(Color.parseColor("#000000"));
+            return  txt;
+        }
+
+        public View getView(int i, View view, ViewGroup viewgroup) {
+            TextView txt = new TextView(CollectionActivity.this);
+            txt.setGravity(Gravity.LEFT);
+            txt.setPadding(0, 0, 0, 0);
+            txt.setTextSize(10);
+           // txt.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_down, 0);
+            txt.setText(asr.get(i));
+            txt.setTextColor(Color.parseColor("#110000"));
+            return  txt;
+        }
+
+    }
+	
+	
+	}
 
 
 

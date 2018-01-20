@@ -129,7 +129,7 @@
 				android:layout_marginTop="8dp"
 				android:weightSum="1" >
 
-
+<!--
 				<Spinner
 					android:id="@+id/cloth"
 					android:layout_width="match_parent"
@@ -137,11 +137,18 @@
 					android:entries="@array/cloth"
 					android:spinnerMode="dropdown"
 
-					android:maxWidth="30dp"
+					android:maxWidth="0dp"
 
-                />
+                />-->
 
 
+				<Spinner
+
+					android:spinnerMode="dropdown"
+					android:id="@+id/cloth"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				/>
 
 
 				<EditText
