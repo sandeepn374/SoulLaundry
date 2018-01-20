@@ -351,13 +351,13 @@ if (s.length()==10){
 					priceSpinner[0] = price.getSelectedItem().toString();
 				}
 
-
-				if((name.length() == 0)){
-					edt_name.setError("Please Enter  Name");
-				}
-				else if(phone.length()<9){
+				if(phone.length()<9){
 					edt_phone.setError("Please enter valid Phone Number");
 				}
+				else if((name.length() == 0)){
+					edt_name.setError("Please Enter  Name");
+				}
+				
 				else if(cloth.getSelectedItem().toString().trim().equals("Cloth")){
 					((TextView)cloth.getChildAt(0)).setError("Please Enter Cloth Type");
 
@@ -368,6 +368,11 @@ if (s.length()==10){
 				}
 
 
+				else if(service.getSelectedItem().toString().trim().equals("Select Service Type")){
+					((TextView)price.getChildAt(0)).setError("Please select service type ");
+
+				}
+				
 
 
 				else{
