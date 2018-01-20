@@ -369,7 +369,7 @@ if (s.length()==10){
 
 
 				else if(service.getSelectedItem().toString().trim().equals("Select Service Type")){
-					((TextView)price.getChildAt(0)).setError("Please select service type ");
+					((TextView)service.getChildAt(0)).setError("Please select service type ");
 
 				}
 				
