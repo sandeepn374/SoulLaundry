@@ -55,11 +55,53 @@ public class CollectionActivity extends Activity
         Spinner spinnerCustom= (Spinner) findViewById(R.id.cloth);
         // Spinner Drop down elements
         ArrayList<String> languages = new ArrayList<String>();
-        languages.add("Andorid");
-        languages.add("IOS");
-        languages.add("PHP");
-        languages.add("Java");
-        languages.add(".Net");
+        
+		languages.add("Cloth");
+		languages.add("Double Quilt Blanket");
+		languages.add("Single QuiltBlanket");
+        languages.add("Suit(2pcs)");
+        languages.add("Suit(3pcs)");
+        languages.add("Jacket Blazer");
+        languages.add("Half-JacketBlazer");
+		languages.add("Leather Jacket");
+        languages.add("Sherwani");
+        languages.add("Ladies Top");
+		languages.add("Ladies Skirt");
+        languages.add("Sweater");
+		languages.add("Kurta");
+        languages.add("Silk Kurta");
+        languages.add("Fancy Kurta");
+		languages.add("Pyjama");
+        languages.add("Silk Pyjama");
+        languages.add("Lehenga");
+        languages.add("Dress -Small");
+        languages.add("Dress- Long");
+		languages.add("Anarkali Dress");
+        languages.add("Selwar");
+		languages.add("Dupatta");
+		languages.add("Gown ");
+		languages.add("Frock ");
+		languages.add("Shirts /Tshirts ");
+        languages.add("Trousers/Jeans ");
+		languages.add("Coat ");
+        languages.add("OverCoat ");
+        languages.add("Carpet ");
+		languages.add("Shall ");
+		languages.add("PLain Saree ");
+		languages.add("Silk Saree ");
+        languages.add("Silk Saree (Fancy)");
+		languages.add("Cotton Saree ");
+        languages.add("Single Bedsheet ");
+        languages.add("Double Bedsheet ");
+        languages.add("Pillow Cover ");
+		languages.add("Door Curtain ");
+        languages.add("Window Curtain");
+		languages.add("Towel ");
+		languages.add("Dhoti cotton ");
+		languages.add("Dhoti silk");
+		languages.add("Others ");
+			
+		
         CustomSpinnerAdapter customSpinnerAdapter=new CustomSpinnerAdapter(CollectionActivity.this,languages);
         spinnerCustom.setAdapter(customSpinnerAdapter);
         spinnerCustom.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -68,7 +110,7 @@ public class CollectionActivity extends Activity
 
 					String item = parent.getItemAtPosition(position).toString();
 
-					Toast.makeText(parent.getContext(), "Android Custom Spinner Example Output..." + item, Toast.LENGTH_LONG).show();
+					//Toast.makeText(parent.getContext(), "Android Custom Spinner Example Output..." + item, Toast.LENGTH_LONG).show();
 				}
 
 				@Override
