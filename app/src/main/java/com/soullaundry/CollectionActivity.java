@@ -362,7 +362,7 @@ if (s.length()==10){
 					((TextView)cloth.getChildAt(0)).setError("Please Enter Cloth Type");
 
 				}
-				else if(price.getSelectedItem().toString().trim().equals("Select Price")){
+				else if(price.getSelectedItem().toString().trim().equals("Price")){
 					((TextView)price.getChildAt(0)).setError("Please Enter Price");
 
 				}
