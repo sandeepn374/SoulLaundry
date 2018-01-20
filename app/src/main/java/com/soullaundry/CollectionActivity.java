@@ -52,7 +52,7 @@ public class CollectionActivity extends Activity
 
     private void initCustomSpinner() {
 
-        Spinner spinnerCustom= (Spinner) findViewById(R.id.cloth);
+        cloth= (Spinner) findViewById(R.id.cloth);
         // Spinner Drop down elements
         ArrayList<String> languages = new ArrayList<String>();
         
@@ -103,21 +103,8 @@ public class CollectionActivity extends Activity
 			
 		
         CustomSpinnerAdapter customSpinnerAdapter=new CustomSpinnerAdapter(CollectionActivity.this,languages);
-        spinnerCustom.setAdapter(customSpinnerAdapter);
-        spinnerCustom.setOnItemSelectedListener(new OnItemSelectedListener() {
-				@Override
-				public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-					String item = parent.getItemAtPosition(position).toString();
-
-					//Toast.makeText(parent.getContext(), "Android Custom Spinner Example Output..." + item, Toast.LENGTH_LONG).show();
-				}
-
-				@Override
-				public void onNothingSelected(AdapterView<?> parent) {
-
-				}
-			});
+        cloth.setAdapter(customSpinnerAdapter);
+    		
     }
 
 
@@ -150,7 +137,7 @@ public class CollectionActivity extends Activity
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
 		service=(Spinner)findViewById(R.id.service);
-       // cloth=(Spinner) findViewById(R.id.cloth);
+       
 
 
 		price = (Spinner) findViewById(com.soullaundry.R.id.price);
@@ -350,13 +337,13 @@ if (s.length()==10){
 				 phone=edt_phone.getText().toString();
 
 
-				/*if (cloth.getSelectedItem().toString().equals("Others")){
+				if (cloth.getSelectedItem().toString().equals("Others")){
 					System.out.print("cool");
 				}
 					else {
 					clothType[0] = cloth.getSelectedItem().toString();
 				}
-*/
+
 
 				if (price.getSelectedItem().toString().equals("Others")){
 					System.out.print("cool");
@@ -371,10 +358,10 @@ if (s.length()==10){
 				else if(phone.length()<9){
 					edt_phone.setError("Please enter valid Phone Number");
 				}
-				/*else if(cloth.getSelectedItem().toString().trim().equals("Select Cloth Type")){
+				else if(cloth.getSelectedItem().toString().trim().equals("Cloth")){
 					((TextView)cloth.getChildAt(0)).setError("Please Enter Cloth Type");
 
-				}*/
+				}
 				else if(price.getSelectedItem().toString().trim().equals("Select Price")){
 					((TextView)price.getChildAt(0)).setError("Please Enter Price");
 
