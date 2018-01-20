@@ -386,7 +386,7 @@ if (s.length()==10){
 						actualprice=Integer.parseInt(priceSpinner[0]);
 
 					BillDetails b=new BillDetails(clothType[0],actualprice.toString(),qty.getText().toString(),svc[0]);
-					addedcontent.append("\n"+clothType[0]+"  "+actualprice.toString()+" "+qty.getText().toString()+" "+svc[0]);
+					addedcontent.append("\n"+clothType[0]+"  price= "+actualprice.toString()+" qty="+qty.getText().toString()+" svc"+svc[0]);
 
 					total+= Integer.parseInt(String.valueOf(qty.getText()))* actualprice;
 					billDetailsArrayList.add(b);

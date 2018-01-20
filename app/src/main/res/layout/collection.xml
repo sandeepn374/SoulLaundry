@@ -157,6 +157,7 @@
 					android:layout_height="wrap_content"
 					android:hint="qty"
 					android:spinnerMode="dropdown"
+					android:inputType="date"
                 />
 
 
@@ -175,7 +176,7 @@
 					android:id="@+id/btn_add"
 					android:layout_width="40dp"
 					android:layout_height="wrap_content"
-					android:text="+"
+					android:text="Add"
                 />
 
 
