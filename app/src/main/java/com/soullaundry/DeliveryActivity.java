@@ -2,10 +2,12 @@ package com.soullaundry;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.telephony.SmsManager;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -214,16 +216,35 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                                 @Override
                                 public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 
+                                    try {
+                                        SmsManager smsManager = SmsManager.getDefault();
 
-                                    if (paid2.getSelectedItem().toString().equals("Payment Mode")){
-
-                                        paid.setVisibility(View.VISIBLE);
-
-
+                                       String message = "Thank you for using the service of SoulLaundry"+"\n"+"For more details Contact"+"\n"+"9980461461";
 
 
 
+                                        PendingIntent sentPI = PendingIntent.getBroadcast(DeliveryActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
+                                        PendingIntent deliveredPI = PendingIntent.getBroadcast(DeliveryActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
 
+
+                                        SmsManager sms = SmsManager.getDefault();
+                                        ArrayList<String> parts = sms.divideMessage(message);
+
+                                        ArrayList<PendingIntent> sendList = new ArrayList<PendingIntent>();
+                                        sendList.add(sentPI);
+
+                                        ArrayList<PendingIntent> deliverList = new ArrayList<PendingIntent>();
+                                        deliverList.add(deliveredPI);
+
+                                        sms.sendMultipartTextMessage("+91" + user.ph, null, parts, sendList, deliverList);
+                                        //smsManager.sendTextMessage("+91"+phone, null,message, null, null);
+                                        Toast.makeText(getApplicationContext(), "SMS Sent!",
+                                                Toast.LENGTH_LONG).show();
+                                    } catch (Exception e) {
+                                        Toast.makeText(getApplicationContext(),
+                                                "SMS failed, please try again later!",
+                                                Toast.LENGTH_LONG).show();
+                                        e.printStackTrace();
                                     }
                                 }
 
