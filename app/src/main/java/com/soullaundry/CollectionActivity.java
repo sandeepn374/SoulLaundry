@@ -455,11 +455,6 @@ if (s.length()==10){
 						tv0.setTextColor(Color.BLACK);
 						tv0.setGravity(Gravity.CENTER);
 						tbrow0.addView(tv0);
-						TextView tv1 = new TextView(CollectionActivity.this);
-						tv1.setText(" SVC Type ");
-						tv1.setTextColor(Color.BLACK);
-						tv1.setGravity(Gravity.CENTER);
-						tbrow0.addView(tv1);
 						TextView tv2 = new TextView(CollectionActivity.this);
 						tv2.setText(" Quantity ");
 						tv2.setTextColor(Color.BLACK);
@@ -479,11 +474,6 @@ if (s.length()==10){
 							t1v.setGravity(Gravity.CENTER);
 							tbrow.addView(t1v);
 
-							TextView t2v = new TextView(CollectionActivity.this);
-							t2v.setText(billDetailsArrayList.get(i).svcType);
-							t2v.setTextColor(Color.BLACK);
-							t2v.setGravity(Gravity.CENTER);
-							tbrow.addView(t2v);
 							TextView t3v = new TextView(CollectionActivity.this);
 							t3v.setText(billDetailsArrayList.get(i).getQty());
 							t3v.setTextColor(Color.BLACK);
