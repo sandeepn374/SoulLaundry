@@ -238,8 +238,8 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             paid.setTextColor(Color.BLACK);
                             paid.setGravity(Gravity.LEFT);
                             paid.setLayoutParams(params);
-                           // paid.setVisibility(View.INVISIBLE);
-
+                            paid.setWidth(30);
+                            paid.setHeight(30);
                             paid.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
@@ -296,9 +296,6 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             tr4.addView(paid2);
                             tr4.addView(paid);
 
-                            Button paid3 = new Button(DeliveryActivity.this);
-                            Button paid4 = new Button(DeliveryActivity.this);
-                            Button returnB = new Button(DeliveryActivity.this);
                             TableRow tr5 = new TableRow(DeliveryActivity.this);
                             tr5.setLayoutParams(params);
                             TableRow tr18 = new TableRow(DeliveryActivity.this);
