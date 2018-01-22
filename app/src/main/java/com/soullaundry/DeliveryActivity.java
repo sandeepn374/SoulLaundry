@@ -203,7 +203,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
                             int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, getResources().getDisplayMetrics());
                             paid.setLayoutParams(new TableRow.LayoutParams(width, height));
-                            // paid.setWidth(5);
+                            paid.setVisibility(View.INVISIBLE);
 
                             paid.setOnClickListener(new View.OnClickListener() {
                                 @Override
@@ -254,7 +254,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             });
 
                             String[] array = {"Payment Mode", "Cash", "Paytm","Online"};
-                            String abc = "";
+
 
 
                             Spinner paid2 = new Spinner(DeliveryActivity.this);
@@ -268,8 +268,9 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
 
 
                             tr4.setLayoutParams(params);
-                            tr4.addView(paid);
                             tr4.addView(paid2);
+                            tr4.addView(paid);
+
                             Button paid3 = new Button(DeliveryActivity.this);
                             paid3.setText("Partially paid and delivered");
                             paid3.setTextColor(Color.BLACK);
