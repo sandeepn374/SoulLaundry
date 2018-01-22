@@ -266,48 +266,55 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                                         e.printStackTrace();
                                     }
 
-                                    user.due = 0;
+                                    if (paid2.getSelectedItem().toString().trim().equals("Payment Mode")) {
+                                        ((TextView) paid2.getChildAt(0)).setError("Please select payment mode");
+
+                                    }
+                                    else {
+
+                                        user.due = 0;
 
 
-                                    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
-                                    mDatabase.keepSynced(true);
-                                    Query query = mDatabase.child("usersG").orderByChild("billNumber");
-                                    query.addListenerForSingleValueEvent(new ValueEventListener() {
-                                        @Override
-                                        public void onDataChange(DataSnapshot dataSnapshot) {
+                                        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
+                                        mDatabase.keepSynced(true);
+                                        Query query = mDatabase.child("usersG").orderByChild("billNumber");
+                                        query.addListenerForSingleValueEvent(new ValueEventListener() {
+                                            @Override
+                                            public void onDataChange(DataSnapshot dataSnapshot) {
 
-                                            //String billNumber=null;
-                                            for (DataSnapshot child : dataSnapshot.getChildren()) {
-                                                Log.d("User key", child.getKey());
-                                                Log.d("User val", child.child("billNumber").getValue().toString());
-                                                String billNumber = child.child("billNumber").getValue().toString();
-                                                if (billNumber.equals(user.billNumber)) {
-                                                    child.getRef().child("due").setValue(0);
+                                                //String billNumber=null;
+                                                for (DataSnapshot child : dataSnapshot.getChildren()) {
+                                                    Log.d("User key", child.getKey());
+                                                    Log.d("User val", child.child("billNumber").getValue().toString());
+                                                    String billNumber = child.child("billNumber").getValue().toString();
+                                                    if (billNumber.equals(user.billNumber)) {
+                                                        child.getRef().child("due").setValue(0);
 
-                                                    child.getRef().child("discount").setValue(0);
-                                                    child.getRef().child("paymentMode").setValue(paid2.getSelectedItem().toString());
+                                                        child.getRef().child("discount").setValue(0);
+                                                        child.getRef().child("paymentMode").setValue(paid2.getSelectedItem().toString());
 
-                                                    setContentView(com.soullaundry.R.layout.delivery);
+                                                        setContentView(com.soullaundry.R.layout.delivery);
 
-                                                    simpleSearchView = (SearchView) findViewById(com.soullaundry.R.id.simpleSearchView);
-                                                    simpleSearchView.setOnQueryTextListener(DeliveryActivity.this);
-                                                    Toastmsg(DeliveryActivity.this, "Bill Has been Updated");
+                                                        simpleSearchView = (SearchView) findViewById(com.soullaundry.R.id.simpleSearchView);
+                                                        simpleSearchView.setOnQueryTextListener(DeliveryActivity.this);
+                                                        Toastmsg(DeliveryActivity.this, "Bill Has been Updated");
+
+                                                    }
 
                                                 }
 
+
                                             }
 
+                                            @Override
+                                            public void onCancelled(DatabaseError databaseError) {
 
-                                        }
-
-                                        @Override
-                                        public void onCancelled(DatabaseError databaseError) {
-
-                                        }
-                                    });
-                                    ;
+                                            }
+                                        });
+                                        ;
 
 
+                                    }
                                 }
                             });
 
