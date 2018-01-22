@@ -216,10 +216,29 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                                 @Override
                                 public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 
+                                }
+
+                                @Override
+                                public void onNothingSelected(AdapterView<?> parentView) {
+                                    // your code here
+                                }
+
+                            });
+
+
+                            paid.setTextColor(Color.BLACK);
+                            paid.setGravity(Gravity.CENTER);
+                           // paid.setLayoutParams(trparams);
+
+                            paid.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+
+
                                     try {
                                         SmsManager smsManager = SmsManager.getDefault();
 
-                                       String message = "Thank you for using the service of SoulLaundry"+"\n"+"For more details Contact"+"\n"+"9980461461";
+                                        String message = "Thank you for using the service of SoulLaundry"+"\n"+"For more details Contact"+"\n"+"9980461461";
 
 
 
@@ -246,23 +265,6 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                                                 Toast.LENGTH_LONG).show();
                                         e.printStackTrace();
                                     }
-                                }
-
-                                @Override
-                                public void onNothingSelected(AdapterView<?> parentView) {
-                                    // your code here
-                                }
-
-                            });
-
-
-                            paid.setTextColor(Color.BLACK);
-                            paid.setGravity(Gravity.CENTER);
-                           // paid.setLayoutParams(trparams);
-
-                            paid.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View view) {
 
                                     user.due = 0;
 
