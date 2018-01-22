@@ -13,7 +13,7 @@ public class User implements Serializable {
    // public String email;
     public String billNumber;
     public String ph;
-   ArrayList<BillDetails> billDetailsArrayList;
+   public ArrayList<BillDetails> billDetailsArrayList;
    
     public int total;
     public int due;

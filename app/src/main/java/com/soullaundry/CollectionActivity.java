@@ -567,7 +567,8 @@ if (s.length()==10){
 								}
 								edt_name.setText("");
 								edt_phone.setText("");
-
+Intent i=new Intent(CollectionActivity.this,SampleActivity.class);
+startActivity(i);
 
 							}
 						});
