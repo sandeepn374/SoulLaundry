@@ -391,8 +391,8 @@ if (s.length()==10){
 					total+= Integer.parseInt(String.valueOf(qty.getText()))* actualprice;
 					billDetailsArrayList.add(b);
 					price.setSelection(0);
-					qty.setSelection(0);
-					//cloth.setSelection(0);
+					qty.setText("");
+					cloth.setSelection(0);
 					//service.setSelection(0);
 					//kgpc.setSelection(0);
 					Toastmsg(CollectionActivity.this,"Added");
