@@ -88,6 +88,42 @@
 			android:spinnerMode="dropdown"
 			/>
 
+
+		<TextView
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Delivery Type"
+			android:textStyle="bold"
+			/>
+
+
+		<Spinner
+			android:id="@+id/deltype"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:entries="@array/deltype"
+			android:spinnerMode="dropdown"
+			/>
+
+
+		<TextView
+
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Delivery Days"
+			android:textStyle="bold"
+			/>
+
+
+		<Spinner
+			android:id="@+id/deldays"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:entries="@array/deldays"
+			android:spinnerMode="dropdown"
+			/>
+
 		<TableLayout
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
@@ -227,40 +263,6 @@
 		-->
 
 
-		<TextView
-
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Delivery Type"
-			android:textStyle="bold"
-		/>
-
-
-		<Spinner
-			android:id="@+id/deltype"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:entries="@array/deltype"
-			android:spinnerMode="dropdown"
-		/>
-
-
-		<TextView
-
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Delivery Days"
-			android:textStyle="bold"
-		/>
-
-
-		<Spinner
-			android:id="@+id/deldays"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:entries="@array/deldays"
-			android:spinnerMode="dropdown"
-		/>
 
 
 		<Button
