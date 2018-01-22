@@ -85,7 +85,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             final User user = snapshot.getValue(User.class);
 
                             System.out.println("db" + user.ph);
-                            if (user.ph.equals(text)) {
+                            if (user.ph.equals(text) || user.name.contains(text)) {
                                 users.add(user);
 
                             }
