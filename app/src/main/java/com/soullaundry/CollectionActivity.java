@@ -23,7 +23,7 @@ public class CollectionActivity extends Activity
 
 	EditText edt_name;
 	EditText edt_phone,qty;
-	TextView edt_email,addedcontent;
+	TextView edt_email,addedcontent,qtytext;
 	Spinner price,cloth,service,deltype,deldays,kgpc;
 
 	Button btn_add,btn_submit;
@@ -137,6 +137,7 @@ public class CollectionActivity extends Activity
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
 		service=(Spinner)findViewById(R.id.service);
+		qtytext=(TextView)findViewById(R.id.qtyText);
        
 
 
@@ -162,7 +163,7 @@ public class CollectionActivity extends Activity
 
 
 qty.setHint("Kg");
-
+qtytext.setText("KG");
 
 
 
