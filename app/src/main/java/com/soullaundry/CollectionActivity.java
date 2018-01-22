@@ -422,178 +422,182 @@ if (s.length()==10){
 				
 				
 				
-				else{
+				else {
+					if (deldays.getSelectedItem().toString().trim().equals("Select Delivery Days")) {
+						((TextView) deldays.getChildAt(0)).setError("Please select delivery days");
 
-					final Dialog dialog = new Dialog(CollectionActivity.this);
-					dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-					dialog.setCancelable(false);
-					dialog.setContentView(com.soullaundry.R.layout.layout);
+					}
+					else if(deltype.getSelectedItem().toString().trim().equals("Select Delivery Type"))
+					{
+						((TextView) deltype.getChildAt(0)).setError("Please select delivery type");
 
-					TableLayout stk = (TableLayout) dialog.findViewById(com.soullaundry.R.id.table_main);
-					TableRow tbrow99 = new TableRow(CollectionActivity.this);
-					TextView tv99 = new TextView(CollectionActivity.this);
-					tv99.setText("Bill Number - " + billNumber);
-					tv99.setGravity(Gravity.CENTER);
-					tbrow99.addView(tv99);
-					stk.addView(tbrow99);
-
-					TableRow tbrow0 = new TableRow(CollectionActivity.this);
-					TextView tv0 = new TextView(CollectionActivity.this);
-					tv0.setText(" Cloth Type ");
-					tv0.setTextColor(Color.BLACK);
-					tv0.setGravity(Gravity.CENTER);
-					tbrow0.addView(tv0);
-					TextView tv1 = new TextView(CollectionActivity.this);
-					tv1.setText(" SVC Type ");
-					tv1.setTextColor(Color.BLACK);
-					tv1.setGravity(Gravity.CENTER);
-					tbrow0.addView(tv1);
-					TextView tv2 = new TextView(CollectionActivity.this);
-					tv2.setText(" Quantity ");
-					tv2.setTextColor(Color.BLACK);
-					tv2.setGravity(Gravity.CENTER);
-					tbrow0.addView(tv2);
-					TextView tv3 = new TextView(CollectionActivity.this);
-					tv3.setText(" Price ");
-					tv3.setTextColor(Color.BLACK);
-					tv3.setGravity(Gravity.CENTER);
-					tbrow0.addView(tv3);
-					stk.addView(tbrow0);
-					for (int i = 0; i < billDetailsArrayList.size(); i++) {
-						TableRow tbrow = new TableRow(CollectionActivity.this);
-						TextView t1v = new TextView(CollectionActivity.this);
-						t1v.setText(billDetailsArrayList.get(i).getClothType());
-						t1v.setTextColor(Color.BLACK);
-						t1v.setGravity(Gravity.CENTER);
-						tbrow.addView(t1v);
-
-						TextView t2v = new TextView(CollectionActivity.this);
-						t2v.setText(billDetailsArrayList.get(i).svcType);
-						t2v.setTextColor(Color.BLACK);
-						t2v.setGravity(Gravity.CENTER);
-						tbrow.addView(t2v);
-						TextView t3v = new TextView(CollectionActivity.this);
-						t3v.setText(billDetailsArrayList.get(i).getQty());
-						t3v.setTextColor(Color.BLACK);
-						t3v.setGravity(Gravity.CENTER);
-						tbrow.addView(t3v);
-						TextView t4v = new TextView(CollectionActivity.this);
-						t4v.setText(billDetailsArrayList.get(i).getPrice());
-						t4v.setTextColor(Color.BLACK);
-						t4v.setGravity(Gravity.CENTER);
-						tbrow.addView(t4v);
-						stk.addView(tbrow);
 					}
 
-
-					TableRow tr81 = new TableRow(CollectionActivity.this);
-					TextView tv81 = new TextView(CollectionActivity.this);
-					tv81.setText("Total Bill - " + total);
-					tv81.setTextColor(Color.BLACK);
-					tv81.setGravity(Gravity.CENTER);
-					tr81.addView(tv81);
-					stk.addView(tr81);
+						else {
 
 
-					Button confirm = (Button) dialog.findViewById(com.soullaundry.R.id.btn_dialog);
-					confirm.setText("Confirm");
-					confirm.setTextColor(Color.BLACK);
+						final Dialog dialog = new Dialog(CollectionActivity.this);
+						dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+						dialog.setCancelable(false);
+						dialog.setContentView(com.soullaundry.R.layout.layout);
 
-					confirm.setOnClickListener(new OnClickListener() {
-						@Override
-						public void onClick(View view) {
+						TableLayout stk = (TableLayout) dialog.findViewById(com.soullaundry.R.id.table_main);
+						TableRow tbrow99 = new TableRow(CollectionActivity.this);
+						TextView tv99 = new TextView(CollectionActivity.this);
+						tv99.setText("Bill Number - " + billNumber);
+						tv99.setGravity(Gravity.CENTER);
+						tbrow99.addView(tv99);
+						stk.addView(tbrow99);
+
+						TableRow tbrow0 = new TableRow(CollectionActivity.this);
+						TextView tv0 = new TextView(CollectionActivity.this);
+						tv0.setText(" Cloth Type ");
+						tv0.setTextColor(Color.BLACK);
+						tv0.setGravity(Gravity.CENTER);
+						tbrow0.addView(tv0);
+						TextView tv1 = new TextView(CollectionActivity.this);
+						tv1.setText(" SVC Type ");
+						tv1.setTextColor(Color.BLACK);
+						tv1.setGravity(Gravity.CENTER);
+						tbrow0.addView(tv1);
+						TextView tv2 = new TextView(CollectionActivity.this);
+						tv2.setText(" Quantity ");
+						tv2.setTextColor(Color.BLACK);
+						tv2.setGravity(Gravity.CENTER);
+						tbrow0.addView(tv2);
+						TextView tv3 = new TextView(CollectionActivity.this);
+						tv3.setText(" Price ");
+						tv3.setTextColor(Color.BLACK);
+						tv3.setGravity(Gravity.CENTER);
+						tbrow0.addView(tv3);
+						stk.addView(tbrow0);
+						for (int i = 0; i < billDetailsArrayList.size(); i++) {
+							TableRow tbrow = new TableRow(CollectionActivity.this);
+							TextView t1v = new TextView(CollectionActivity.this);
+							t1v.setText(billDetailsArrayList.get(i).getClothType());
+							t1v.setTextColor(Color.BLACK);
+							t1v.setGravity(Gravity.CENTER);
+							tbrow.addView(t1v);
+
+							TextView t2v = new TextView(CollectionActivity.this);
+							t2v.setText(billDetailsArrayList.get(i).svcType);
+							t2v.setTextColor(Color.BLACK);
+							t2v.setGravity(Gravity.CENTER);
+							tbrow.addView(t2v);
+							TextView t3v = new TextView(CollectionActivity.this);
+							t3v.setText(billDetailsArrayList.get(i).getQty());
+							t3v.setTextColor(Color.BLACK);
+							t3v.setGravity(Gravity.CENTER);
+							tbrow.addView(t3v);
+							TextView t4v = new TextView(CollectionActivity.this);
+							t4v.setText(billDetailsArrayList.get(i).getPrice());
+							t4v.setTextColor(Color.BLACK);
+							t4v.setGravity(Gravity.CENTER);
+							tbrow.addView(t4v);
+							stk.addView(tbrow);
+						}
 
 
-							Calendar c = Calendar.getInstance();
-							SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd : HH:mm");// HH:mm:ss");
-							String reg_date = df.format(c.getTime());
-							pickDate=reg_date;
+						TableRow tr81 = new TableRow(CollectionActivity.this);
+						TextView tv81 = new TextView(CollectionActivity.this);
+						tv81.setText("Total Bill - " + total);
+						tv81.setTextColor(Color.BLACK);
+						tv81.setGravity(Gravity.CENTER);
+						tr81.addView(tv81);
+						stk.addView(tr81);
 
-							System.out.println(deldays.getSelectedItem().toString());
-							c.add(Calendar.DATE, Integer.parseInt(deldays.getSelectedItem().toString()));  // number of days to add
 
-							time = df.format(c.getTime());
-							DelDate=time;
+						Button confirm = (Button) dialog.findViewById(com.soullaundry.R.id.btn_dialog);
+						confirm.setText("Confirm");
+						confirm.setTextColor(Color.BLACK);
 
-							DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("usersG");
-							mDatabase.keepSynced(true);
-							String userId = mDatabase.push().getKey();
+						confirm.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View view) {
 
-							User user = new User(name, phone, billDetailsArrayList, billNumber, total, total, 0,DelDate,pickDate);
 
-							mDatabase.child(userId).setValue(user);
-							dialog.dismiss();
-							//Toastmsg(CollectionActivity.this,"Your Order has been placed Successfully");
-							int qtyTotal = 0;
-							try {
-								SmsManager smsManager = SmsManager.getDefault();
+								Calendar c = Calendar.getInstance();
+								SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd : HH:mm");// HH:mm:ss");
+								String reg_date = df.format(c.getTime());
+								pickDate = reg_date;
 
-								message = "Your order has been placed successfully with Soul Laundromat";
-								for (int i = 0; i < billDetailsArrayList.size(); i++) {
+								System.out.println(deldays.getSelectedItem().toString());
+								c.add(Calendar.DATE, Integer.parseInt(deldays.getSelectedItem().toString()));  // number of days to add
 
-									String qty = billDetailsArrayList.get(i).getQty();
-									qtyTotal += Integer.parseInt(qty);
+								time = df.format(c.getTime());
+								DelDate = time;
 
+								DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("usersG");
+								mDatabase.keepSynced(true);
+								String userId = mDatabase.push().getKey();
+
+								User user = new User(name, phone, billDetailsArrayList, billNumber, total, total, 0, DelDate, pickDate);
+
+								mDatabase.child(userId).setValue(user);
+								dialog.dismiss();
+								//Toastmsg(CollectionActivity.this,"Your Order has been placed Successfully");
+								int qtyTotal = 0;
+								try {
+									SmsManager smsManager = SmsManager.getDefault();
+
+									message = "Your order has been placed successfully with Soul Laundromat";
+									for (int i = 0; i < billDetailsArrayList.size(); i++) {
+
+										String qty = billDetailsArrayList.get(i).getQty();
+										qtyTotal += Integer.parseInt(qty);
+
+									}
+									message1 += "\n \n Bill no:" + billNumber + "\nTotal Price :Rs " + total + "\nDelivery date: " + time;
+									message2 += "\n\nPaytm Number for Payment : " + "9980461461";
+									message3 += "\n \n Thank you.";
+									message += message1 + message2 + message3;
+
+									PendingIntent sentPI = PendingIntent.getBroadcast(CollectionActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
+									PendingIntent deliveredPI = PendingIntent.getBroadcast(CollectionActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
+
+
+									SmsManager sms = SmsManager.getDefault();
+									ArrayList<String> parts = sms.divideMessage(message);
+
+									ArrayList<PendingIntent> sendList = new ArrayList<PendingIntent>();
+									sendList.add(sentPI);
+
+									ArrayList<PendingIntent> deliverList = new ArrayList<PendingIntent>();
+									deliverList.add(deliveredPI);
+
+									sms.sendMultipartTextMessage("+91" + phone, null, parts, sendList, deliverList);
+									//smsManager.sendTextMessage("+91"+phone, null,message, null, null);
+									Toast.makeText(getApplicationContext(), "SMS Sent!",
+											Toast.LENGTH_LONG).show();
+								} catch (Exception e) {
+									Toast.makeText(getApplicationContext(),
+											"SMS failed, please try again later!",
+											Toast.LENGTH_LONG).show();
+									e.printStackTrace();
 								}
-								message1 += "\n \n Bill no:" + billNumber + "\nTotal Price :Rs " + total + "\nDelivery date: " + time ;
-								message2 += "\n\nPaytm Number for Payment : " + "9980461461" ;
-								message3 += "\n \n Thank you.";
-								message += message1+message2+message3;
-
-								PendingIntent sentPI = PendingIntent.getBroadcast(CollectionActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
-								PendingIntent deliveredPI = PendingIntent.getBroadcast(CollectionActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
+								edt_name.setText("");
+								edt_phone.setText("");
 
 
-								SmsManager sms = SmsManager.getDefault();
-								ArrayList<String> parts = sms.divideMessage(message);
-
-								ArrayList<PendingIntent> sendList = new ArrayList<PendingIntent>();
-								sendList.add(sentPI);
-
-								ArrayList<PendingIntent> deliverList = new ArrayList<PendingIntent>();
-								deliverList.add(deliveredPI);
-
-								sms.sendMultipartTextMessage("+91" + phone, null, parts, sendList, deliverList);
-								//smsManager.sendTextMessage("+91"+phone, null,message, null, null);
-								Toast.makeText(getApplicationContext(), "SMS Sent!",
-										Toast.LENGTH_LONG).show();
-							} catch (Exception e) {
-								Toast.makeText(getApplicationContext(),
-										"SMS failed, please try again later!",
-										Toast.LENGTH_LONG).show();
-								e.printStackTrace();
 							}
-							edt_name.setText("");
-							edt_phone.setText("");
+						});
+
+						Button cancel = (Button) dialog.findViewById(com.soullaundry.R.id.btn_dialog3);
+						cancel.setText("Cancel");
+						cancel.setTextColor(Color.BLACK);
+
+						cancel.setOnClickListener(new OnClickListener() {
+							public void onClick(View view) {
+
+								dialog.dismiss();
+							}
+						});
 
 
+						dialog.show();
 
 
-
-						}
-					});
-
-					Button cancel = (Button) dialog.findViewById(com.soullaundry.R.id.btn_dialog3);
-					cancel.setText("Cancel");
-					cancel.setTextColor(Color.BLACK);
-
-					cancel.setOnClickListener(new OnClickListener() {
-						public void onClick(View view) {
-
-							dialog.dismiss();
-						}
-					});
-
-
-					dialog.show();
-
-
-
-
-
-
-
-
+					}
 				}
 					
 					}
