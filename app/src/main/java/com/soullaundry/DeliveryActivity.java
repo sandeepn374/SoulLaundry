@@ -334,14 +334,14 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             TableRow tr5 = new TableRow(DeliveryActivity.this);
 
                             tr5.setLayoutParams(params);
-                            tr5.addView(paid3);
-                            tr5.addView(paid4);
+                           // tr5.addView(paid3);
+                            //tr5.addView(paid4);
 
 
                             TableRow tr18 = new TableRow(DeliveryActivity.this);
 
                             tr18.setLayoutParams(params);
-                            tr18.addView(returnB);
+                            //tr18.addView(returnB);
 
 
                             layoutINNER.addView(tr4);
