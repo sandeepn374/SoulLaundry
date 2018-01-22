@@ -393,7 +393,7 @@ if (s.length()==10){
 					price.setSelection(0);
 					qty.setSelection(0);
 					//cloth.setSelection(0);
-					service.setSelection(0);
+					//service.setSelection(0);
 					//kgpc.setSelection(0);
 					Toastmsg(CollectionActivity.this,"Added");
 					

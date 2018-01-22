@@ -11,7 +11,6 @@ public class BillDetails implements Serializable
 
 
     String clothType;
-
     String qty;
     String price;
 	String svcType;
