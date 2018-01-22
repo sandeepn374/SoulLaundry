@@ -151,6 +151,59 @@ public class CollectionActivity extends Activity
 		addedcontent=(TextView)findViewById(R.id.adddedcontent);
 
 
+        service.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+
+                if (service.getSelectedItem().toString().equals("Wash/Iron")){
+
+
+
+                    qty.setHint("Kg");
+                    qtytext.setText("KG");
+                    price.setSelection(10);
+
+
+
+                }
+                else if (service.getSelectedItem().toString().equals("Wash/Fold"))
+                {
+                    qtytext.setText("KG");
+                    qty.setHint("kg");
+                    price.setSelection(8);
+
+                }
+                else if(service.getSelectedItem().toString().equals("Only Iron")){
+
+                    qty.setHint("piece");
+                    qtytext.setText("piece");
+                    price.setSelection(1);
+                }
+
+                else if(service.getSelectedItem().toString().equals("BedSheets/Innerwear")){
+
+                    qtytext.setText("KG");
+                    qty.setHint("kg");
+                    price.setSelection(11);
+                }
+                else if(service.getSelectedItem().toString().equals("Blanket")){
+
+                    qtytext.setText("KG");
+                    qty.setHint("kg");
+                    price.setSelection(12);
+                }
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // your code here
+            }
+
+        });
+
+
 
 
 		kgpc.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

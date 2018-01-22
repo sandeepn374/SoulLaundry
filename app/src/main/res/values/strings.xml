@@ -15,9 +15,11 @@
         <item>50</item>
         <item>60</item>
         <item>70</item>
+        <item>75</item>
         <item>80</item>
         <item>90</item>
         <item>100</item>
+        <item>150</item>
         <item>Others</item>
     </string-array>
 
@@ -42,9 +44,10 @@
         <item>Dry Cleaning</item>
         <item>Wash/Fold</item>
         <item>Wash/Iron</item>
-        <item>Ironing</item>
-        <item>Curtains/BedSheets(W/F)</item>
-        <item>Curtains/BedSheets(W/I)</item>
+        <item>Only Iron</item>
+
+        <item>BedSheets/Innerwear</item>
+        <item>Blanket</item>
 
 
     </string-array>
