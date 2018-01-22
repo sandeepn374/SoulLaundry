@@ -303,16 +303,51 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             });
 
 
+                            tr4.setLayoutParams(params);
+                            tr4.addView(paid);
+                            tr4.addView(paid2);
+                            Button paid3 = new Button(DeliveryActivity.this);
+                            paid3.setText("Partially paid and delivered");
+                            paid3.setTextColor(Color.BLACK);
+                            paid3.setWidth(10);
+
+
+
+                            Button paid4 = new Button(DeliveryActivity.this);
+                            paid4.setText("Discounted  and delivered");
+                            paid4.setTextColor(Color.BLACK);
+                            paid4.setGravity(Gravity.LEFT);
+
+
+
+
+                            Button returnB = new Button(DeliveryActivity.this);
+                            returnB.setText("Return");
+                            returnB.setTextColor(Color.BLACK);
+                            returnB.setGravity(Gravity.CENTER);
 
 
 
 
 
 
+                            TableRow tr5 = new TableRow(DeliveryActivity.this);
 
+                            tr5.setLayoutParams(params);
+                            tr5.addView(paid3);
+                            tr5.addView(paid4);
+
+
+                            TableRow tr18 = new TableRow(DeliveryActivity.this);
+
+                            tr18.setLayoutParams(params);
+                            tr18.addView(returnB);
 
 
                             layoutINNER.addView(tr4);
+
+                            layoutINNER.addView(tr5);
+                            layoutINNER.addView(tr18);
 
 
                             LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
@@ -320,6 +355,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             main.addView(layoutINNER);
 
                         }
+
 
 
 
