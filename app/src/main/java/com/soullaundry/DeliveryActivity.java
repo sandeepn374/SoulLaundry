@@ -10,6 +10,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -196,7 +197,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             TableRow tr4 = new TableRow(DeliveryActivity.this);
 
 
-                            Button paid = new Button(DeliveryActivity.this);
+                            final Button paid = new Button(DeliveryActivity.this);
                             paid.setText("Paid");
                             paid.setTextColor(Color.BLACK);
                             paid.setGravity(Gravity.LEFT);
@@ -257,13 +258,35 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
 
 
 
-                            Spinner paid2 = new Spinner(DeliveryActivity.this);
+                            final Spinner paid2 = new Spinner(DeliveryActivity.this);
                             ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(DeliveryActivity.this
                                     , android.R.layout.simple_spinner_item, array); //selected item will look like a spinner set from XML
                             spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                             paid2.setAdapter(spinnerArrayAdapter);
 
-                            // paid2.setLayoutParams(new TableRow.LayoutParams(width, height));
+                            paid2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                                @Override
+                                public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+
+                                    if (!paid2.getSelectedItem().toString().equals("Payment Mode")){
+
+                                        paid.setVisibility(View.VISIBLE);
+
+
+
+
+
+
+                                    }
+                                }
+
+                                @Override
+                                public void onNothingSelected(AdapterView<?> parentView) {
+                                    // your code here
+                                }
+
+                            });
 
 
 
@@ -272,37 +295,10 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             tr4.addView(paid);
 
                             Button paid3 = new Button(DeliveryActivity.this);
-                            paid3.setText("Partially paid and delivered");
-                            paid3.setTextColor(Color.BLACK);
-                            paid3.setWidth(10);
-
-
-
                             Button paid4 = new Button(DeliveryActivity.this);
-                            paid4.setText("Discounted  and delivered");
-                            paid4.setTextColor(Color.BLACK);
-                            paid4.setGravity(Gravity.LEFT);
-
-
-
-
                             Button returnB = new Button(DeliveryActivity.this);
-                            returnB.setText("Return");
-                            returnB.setTextColor(Color.BLACK);
-                            returnB.setGravity(Gravity.CENTER);
-
-
-
-
-
-
                             TableRow tr5 = new TableRow(DeliveryActivity.this);
-
                             tr5.setLayoutParams(params);
-                           // tr5.addView(paid3);
-                            //tr5.addView(paid4);
-
-
                             TableRow tr18 = new TableRow(DeliveryActivity.this);
 
                             tr18.setLayoutParams(params);
