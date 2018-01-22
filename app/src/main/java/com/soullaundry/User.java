@@ -20,7 +20,7 @@ public class User implements Serializable {
     public int discount;
     public String deliveryDate;
     public String pickUpDate;
-    public String paymentMode;
+    public String paymentMode="";
 
 
     public User() {
