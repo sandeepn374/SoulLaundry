@@ -200,8 +200,8 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             paid.setText("Paid");
                             paid.setTextColor(Color.BLACK);
                             paid.setGravity(Gravity.LEFT);
-                            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, getResources().getDisplayMetrics());
-                            int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+                            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50, getResources().getDisplayMetrics());
+                            int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, getResources().getDisplayMetrics());
                             paid.setLayoutParams(new TableRow.LayoutParams(width, height));
                             // paid.setWidth(5);
 
