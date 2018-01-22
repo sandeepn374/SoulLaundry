@@ -24,7 +24,7 @@ public class CollectionActivity extends Activity
 	EditText edt_name;
 	EditText edt_phone,qty;
 	TextView edt_email,addedcontent,qtytext;
-	Spinner price,cloth,service,deltype,deldays,kgpc;
+	Spinner price,cloth,service,deltype,deldays;
 
 	Button btn_add,btn_submit;
 	String message;
@@ -125,7 +125,7 @@ public class CollectionActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(com.soullaundry.R.layout.collection);
 		initCustomSpinner();
-		kgpc=(Spinner)findViewById(R.id.kgpc);
+		//kgpc=(Spinner)findViewById(R.id.kgpc);
 		edt_name= (EditText) findViewById(com.soullaundry.R.id.edt_name);
 
 		edt_phone= (EditText) findViewById(com.soullaundry.R.id.edt_phone);
@@ -206,35 +206,6 @@ public class CollectionActivity extends Activity
 
 
 
-		kgpc.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-			@Override
-			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-
-
-				if (kgpc.getSelectedItem().toString().equals("KG")){
-
-
-
-qty.setHint("Kg");
-qtytext.setText("KG");
-
-
-
-				}
-				else
-                {
-                    qtytext.setText("Quantity");
-                    qty.setHint("qty");
-
-                }
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> parentView) {
-				// your code here
-			}
-
-		});
 
 
 		deltype.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
