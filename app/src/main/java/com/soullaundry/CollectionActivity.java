@@ -168,6 +168,12 @@ qtytext.setText("KG");
 
 
 				}
+				else
+                {
+                    qtytext.setText("Quantity");
+                    qty.setHint("qty");
+
+                }
 			}
 
 			@Override
