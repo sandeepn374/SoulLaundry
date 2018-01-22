@@ -197,6 +197,11 @@ deldays.setSelection(1);
 
 
 				}
+				else
+				{
+					deldays.setSelection(0);
+
+				}
 			}
 
 			@Override
