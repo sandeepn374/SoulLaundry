@@ -196,13 +196,49 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
 
                             TableRow tr4 = new TableRow(DeliveryActivity.this);
 
-
                             final Button paid = new Button(DeliveryActivity.this);
                             paid.setText("Paid");
+
+
+                            String[] array = {"Payment Mode", "Cash", "Paytm","Online"};
+
+
+
+                            final Spinner paid2 = new Spinner(DeliveryActivity.this);
+                            ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(DeliveryActivity.this
+                                    , android.R.layout.simple_spinner_item, array); //selected item will look like a spinner set from XML
+                            spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                            paid2.setAdapter(spinnerArrayAdapter);
+
+                            paid2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                                @Override
+                                public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+
+                                    if (paid2.getSelectedItem().toString().equals("Payment Mode")){
+
+                                        paid.setVisibility(View.VISIBLE);
+
+
+
+
+
+
+                                    }
+                                }
+
+                                @Override
+                                public void onNothingSelected(AdapterView<?> parentView) {
+                                    // your code here
+                                }
+
+                            });
+
+
                             paid.setTextColor(Color.BLACK);
                             paid.setGravity(Gravity.LEFT);
                             paid.setLayoutParams(params);
-                            paid.setVisibility(View.INVISIBLE);
+                           // paid.setVisibility(View.INVISIBLE);
 
                             paid.setOnClickListener(new View.OnClickListener() {
                                 @Override
@@ -227,6 +263,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                                                     child.getRef().child("due").setValue(0);
 
                                                     child.getRef().child("discount").setValue(0);
+                                                    child.getRef().child("paymentMode").setValue(paid2.getSelectedItem().toString());
 
                                                     setContentView(com.soullaundry.R.layout.delivery);
 
@@ -252,39 +289,6 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                                 }
                             });
 
-                            String[] array = {"Payment Mode", "Cash", "Paytm","Online"};
-
-
-
-                            final Spinner paid2 = new Spinner(DeliveryActivity.this);
-                            ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(DeliveryActivity.this
-                                    , android.R.layout.simple_spinner_item, array); //selected item will look like a spinner set from XML
-                            spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                            paid2.setAdapter(spinnerArrayAdapter);
-
-                            paid2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                                @Override
-                                public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-
-
-                                    if (!paid2.getSelectedItem().toString().equals("Payment Mode")){
-
-                                        paid.setVisibility(View.VISIBLE);
-
-
-
-
-
-
-                                    }
-                                }
-
-                                @Override
-                                public void onNothingSelected(AdapterView<?> parentView) {
-                                    // your code here
-                                }
-
-                            });
 
 
 
