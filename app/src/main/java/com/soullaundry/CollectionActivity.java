@@ -125,7 +125,7 @@ public class CollectionActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(com.soullaundry.R.layout.collection);
 		initCustomSpinner();
-	//	kgpc=(Spinner)findViewById(R.id.kgpc);
+		kgpc=(Spinner)findViewById(R.id.kgpc);
 		edt_name= (EditText) findViewById(com.soullaundry.R.id.edt_name);
 
 		edt_phone= (EditText) findViewById(com.soullaundry.R.id.edt_phone);
@@ -161,7 +161,7 @@ public class CollectionActivity extends Activity
 
 
 
-
+qty.setHint("Kg");
 
 
 
