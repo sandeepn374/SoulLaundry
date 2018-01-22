@@ -148,6 +148,33 @@ public class CollectionActivity extends Activity
 		deldays=(Spinner)findViewById(R.id.deldays);
       
 		addedcontent=(TextView)findViewById(R.id.adddedcontent);
+
+
+
+
+		kgpc.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+
+				if (kgpc.getSelectedItem().toString().equals("KG")){
+
+
+
+
+
+
+
+
+				}
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parentView) {
+				// your code here
+			}
+
+		});
 		
 
 
@@ -364,6 +391,10 @@ if (s.length()==10){
 				}
 				else if(price.getSelectedItem().toString().trim().equals("Price")){
 					((TextView)price.getChildAt(0)).setError("Please Enter Price");
+
+				}
+				else if(qty.length()==0){
+					qty.setError("PLease enter quantity");
 
 				}
 
