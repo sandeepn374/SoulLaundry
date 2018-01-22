@@ -329,7 +329,10 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             layoutINNER.addView(tr5);
                             layoutINNER.addView(tr18);
 
-
+                            View line = new View(DeliveryActivity.this);
+                            line.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, 10));
+                            line.setBackgroundColor(Color.rgb(51, 51, 51));
+                            layoutINNER.addView(line);
                             LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
 
                             main.addView(layoutINNER);
