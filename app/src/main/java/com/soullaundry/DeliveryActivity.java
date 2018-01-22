@@ -133,7 +133,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             else
                                 tv4.setTextColor(Color.RED);
 
-                            tv5.setText("Discount  " + user.discount+"\n"+rem);
+
 
                             totDue += user.due;
                             TableRow.LayoutParams trparams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);
@@ -201,9 +201,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             paid.setText("Paid");
                             paid.setTextColor(Color.BLACK);
                             paid.setGravity(Gravity.LEFT);
-                            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, getResources().getDisplayMetrics());
-                            int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 30, getResources().getDisplayMetrics());
-                            paid.setLayoutParams(new TableRow.LayoutParams(width, height));
+                            paid.setLayoutParams(params);
                             paid.setVisibility(View.INVISIBLE);
 
                             paid.setOnClickListener(new View.OnClickListener() {
@@ -302,7 +300,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                             TableRow tr18 = new TableRow(DeliveryActivity.this);
 
                             tr18.setLayoutParams(params);
-                            //tr18.addView(returnB);
+
 
 
                             layoutINNER.addView(tr4);
