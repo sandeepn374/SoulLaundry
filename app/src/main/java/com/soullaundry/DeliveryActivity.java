@@ -10,10 +10,12 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -28,6 +30,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import static java.security.AccessController.getContext;
 
 public class DeliveryActivity extends Activity implements SearchView.OnQueryTextListener {
 
@@ -193,7 +197,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
 
 
                             Button paid = new Button(DeliveryActivity.this);
-                            paid.setText("Paid And Delivered");
+                            paid.setText("Paid");
                             paid.setTextColor(Color.BLACK);
                             paid.setGravity(Gravity.LEFT);
                             int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 60, getResources().getDisplayMetrics());
@@ -249,10 +253,16 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                                 }
                             });
 
-                            Button paid2 = new Button(DeliveryActivity.this);
-                            paid2.setText("Payment Mode");
-                            paid2.setTextColor(Color.BLACK);
-                            paid2.setGravity(Gravity.LEFT);
+                            String[] array = {"Payment Mode", "Cash", "Paytm","Online"};
+                            String abc = "";
+
+
+                            Spinner paid2 = new Spinner(DeliveryActivity.this);
+                            ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(DeliveryActivity.this
+                                    , android.R.layout.simple_spinner_item, array); //selected item will look like a spinner set from XML
+                            spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                            paid2.setAdapter(spinnerArrayAdapter);
+
                             // paid2.setLayoutParams(new TableRow.LayoutParams(width, height));
 
 
