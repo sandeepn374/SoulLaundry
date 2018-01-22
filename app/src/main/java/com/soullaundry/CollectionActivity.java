@@ -176,6 +176,29 @@ qtytext.setText("KG");
 			}
 
 		});
+
+
+		deltype.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+
+				if (deltype.getSelectedItem().toString().equals("Express Delivery(Normal * 1.5)")){
+
+
+deldays.setSelection(1);
+
+
+
+				}
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parentView) {
+				// your code here
+			}
+
+		});
 		
 
 
