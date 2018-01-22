@@ -236,7 +236,7 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
 
 
                             paid.setTextColor(Color.BLACK);
-                            paid.setGravity(Gravity.LEFT);
+                            paid.setGravity(Gravity.RIGHT);
                             paid.setLayoutParams(params);
                             paid.setWidth(30);
                             paid.setHeight(30);
