@@ -79,7 +79,7 @@ public class ShopExpenseActivity extends Activity  {
                             tv2.setText("Bill Number " + user.billNumber);
                             tv3.setText("Amount " + user.total);
                             tv4.setText("Due  " + user.due);
-                            tv5.setText("PickUpDate "+user.pickUpDate+"\n"+"DeliveryDate "+user.deliveryDate);
+                            tv5.setText("PickUpDate "+user.pickUpDate+"\n"+"DeliveryDate "+user.deliveryDate+"\n"+"Payment Mode"+user.paymentMode);
                             if (user.due==0)
                                 tv4.setTextColor(Color.GREEN);
                             else
