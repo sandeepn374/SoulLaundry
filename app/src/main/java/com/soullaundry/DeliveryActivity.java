@@ -235,42 +235,44 @@ public class DeliveryActivity extends Activity implements SearchView.OnQueryText
                                 public void onClick(View view) {
 
 
-                                    try {
-                                        SmsManager smsManager = SmsManager.getDefault();
-
-                                        String message = "Thank you for using the service of SoulLaundry"+"\n"+"For more details Contact"+"\n"+"9980461461";
-
-
-
-                                        PendingIntent sentPI = PendingIntent.getBroadcast(DeliveryActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
-                                        PendingIntent deliveredPI = PendingIntent.getBroadcast(DeliveryActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
-
-
-                                        SmsManager sms = SmsManager.getDefault();
-                                        ArrayList<String> parts = sms.divideMessage(message);
-
-                                        ArrayList<PendingIntent> sendList = new ArrayList<PendingIntent>();
-                                        sendList.add(sentPI);
-
-                                        ArrayList<PendingIntent> deliverList = new ArrayList<PendingIntent>();
-                                        deliverList.add(deliveredPI);
-
-                                        sms.sendMultipartTextMessage("+91" + user.ph, null, parts, sendList, deliverList);
-                                        //smsManager.sendTextMessage("+91"+phone, null,message, null, null);
-                                        Toast.makeText(getApplicationContext(), "SMS Sent!",
-                                                Toast.LENGTH_LONG).show();
-                                    } catch (Exception e) {
-                                        Toast.makeText(getApplicationContext(),
-                                                "SMS failed, please try again later!",
-                                                Toast.LENGTH_LONG).show();
-                                        e.printStackTrace();
-                                    }
 
                                     if (paid2.getSelectedItem().toString().trim().equals("Payment Mode")) {
                                         ((TextView) paid2.getChildAt(0)).setError("Please select payment mode");
 
                                     }
                                     else {
+
+
+                                        try {
+                                            SmsManager smsManager = SmsManager.getDefault();
+
+                                            String message = "Thank you for using the service of SoulLaundry"+"\n"+"For more details Contact"+"\n"+"9980461461";
+
+
+
+                                            PendingIntent sentPI = PendingIntent.getBroadcast(DeliveryActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
+                                            PendingIntent deliveredPI = PendingIntent.getBroadcast(DeliveryActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
+
+
+                                            SmsManager sms = SmsManager.getDefault();
+                                            ArrayList<String> parts = sms.divideMessage(message);
+
+                                            ArrayList<PendingIntent> sendList = new ArrayList<PendingIntent>();
+                                            sendList.add(sentPI);
+
+                                            ArrayList<PendingIntent> deliverList = new ArrayList<PendingIntent>();
+                                            deliverList.add(deliveredPI);
+
+                                            sms.sendMultipartTextMessage("+91" + user.ph, null, parts, sendList, deliverList);
+                                            //smsManager.sendTextMessage("+91"+phone, null,message, null, null);
+                                            Toast.makeText(getApplicationContext(), "SMS Sent!",
+                                                    Toast.LENGTH_LONG).show();
+                                        } catch (Exception e) {
+                                            Toast.makeText(getApplicationContext(),
+                                                    "SMS failed, please try again later!",
+                                                    Toast.LENGTH_LONG).show();
+                                            e.printStackTrace();
+                                        }
 
                                         user.due = 0;
 
