@@ -9,6 +9,7 @@ public class StateVO {
 
     private String title;
     private boolean selected;
+    public String qty;
 
     public String getTitle() {
         return title;
@@ -25,4 +26,8 @@ public class StateVO {
     public void setSelected(boolean selected) {
         this.selected = selected;
     }
+
+
+
+
 }

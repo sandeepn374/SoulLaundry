@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -51,12 +52,14 @@ public class MyAdapter extends ArrayAdapter<StateVO> {
                     .findViewById(R.id.text);
             holder.mCheckBox = (CheckBox) convertView
                     .findViewById(R.id.checkbox);
+            holder.mQty=(EditText)convertView.findViewById(R.id.qtyText);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
         holder.mTextView.setText(listState.get(position).getTitle());
+        holder.mQty.setHint("Qty");
 
         // To check weather checked event fire from getview() or user input
         isFromView = true;
@@ -86,5 +89,6 @@ public class MyAdapter extends ArrayAdapter<StateVO> {
         //just commit
         private TextView mTextView;
         private CheckBox mCheckBox;
+        private EditText mQty;
     }
 }
