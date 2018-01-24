@@ -5,6 +5,8 @@ package com.soullaundry;
  */
 
 public class StateVO {
+
+
     private String title;
     private boolean selected;
 
