@@ -59,7 +59,7 @@ public class MyAdapter extends ArrayAdapter<StateVO> {
         }
 
         holder.mTextView.setText(listState.get(position).getTitle());
-        holder.mQty.setHint("Qty");
+        //holder.mQty.setHint("Qty");
 
         // To check weather checked event fire from getview() or user input
         isFromView = true;
