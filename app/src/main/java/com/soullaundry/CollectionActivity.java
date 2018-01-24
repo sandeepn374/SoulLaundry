@@ -564,6 +564,9 @@ if (s.length()==10){
 
 		btn_submit.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
+
+				Intent z=new Intent(CollectionActivity.this,CustomTabActivity.class);
+				startActivity(z);
 		
 
 				if(billDetailsArrayList.size()==0){
