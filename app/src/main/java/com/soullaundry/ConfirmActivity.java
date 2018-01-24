@@ -118,8 +118,8 @@ public class ConfirmActivity extends Activity{
 						String message = "Your order has been done successfully";
 						for (int i = 0; i < billDetailsArrayList.size(); i++) {
 
-							String qty = billDetailsArrayList.get(i).getQty();
-							qtyTotal += Integer.parseInt(qty);
+							int qty = billDetailsArrayList.get(i).getQty();
+							qtyTotal += qty;
 
 						}
 						String message1 = "ABC Drycleaners \nThanks for your order \n" + "Bill no:" + user.billNumber + " Quantity: " + qtyTotal + "\nTotal Price :Rs " + user.total + "\nDelivery date: " + user.deliveryDate + "\nFor terms and conditions please refer abcdrycleaners.com";

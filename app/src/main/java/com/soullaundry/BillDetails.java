@@ -11,12 +11,12 @@ public class BillDetails implements Serializable
 
 
     String clothType;
-    String qty;
+    int qty;
     String price;
 	String svcType;
 
     public BillDetails(){}
-    public BillDetails(String clothType, String price ,String qty,String svc){
+    public BillDetails(String clothType, String price ,int qty,String svc){
         this.clothType=clothType;
         this.qty=qty;
         this.price=price;
@@ -30,7 +30,7 @@ public class BillDetails implements Serializable
         return this.clothType;
     }
 
-    public String getQty(){
+    public int getQty(){
         return this.qty;
     }
     public String getPrice(){

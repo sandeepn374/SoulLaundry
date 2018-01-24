@@ -9,13 +9,13 @@ import java.util.*;
 
 public class User implements Serializable {
 
-    public String name;
+    public String name="";
    // public String email;
-    public String billNumber;
-    public String ph;
+    public String billNumber="";
+    public String ph="";
    public ArrayList<BillDetails> billDetailsArrayList;
    
-    public int total;
+    public int total=0;
     public int due;
     public int discount;
     public String deliveryDate;

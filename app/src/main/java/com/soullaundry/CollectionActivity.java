@@ -23,10 +23,10 @@ public class CollectionActivity extends Activity
 
 	EditText edt_name;
 	EditText edt_phone,qty;
-	TextView edt_email,addedcontent,qtytext;
+	TextView edt_email,qtytext;
 	Spinner price,cloth,service,deltype,deldays;
 
-	Button btn_add,btn_submit;
+	Button btn_submit;
 	String message;
 	String message1="";
 	String message2="";
@@ -50,63 +50,6 @@ public class CollectionActivity extends Activity
 	ArrayList<BillDetails> billDetailsArrayList= new ArrayList<BillDetails>();
 
 
-    private void initCustomSpinner() {
-
-        cloth= (Spinner) findViewById(R.id.cloth);
-        // Spinner Drop down elements
-        ArrayList<String> languages = new ArrayList<String>();
-        
-		languages.add("Cloth");
-		languages.add("Double Quilt Blanket");
-		languages.add("Single QuiltBlanket");
-        languages.add("Suit(2pcs)");
-        languages.add("Suit(3pcs)");
-        languages.add("Jacket Blazer");
-        languages.add("Half-JacketBlazer");
-		languages.add("Leather Jacket");
-        languages.add("Sherwani");
-        languages.add("Ladies Top");
-		languages.add("Ladies Skirt");
-        languages.add("Sweater");
-		languages.add("Kurta");
-        languages.add("Silk Kurta");
-        languages.add("Fancy Kurta");
-		languages.add("Pyjama");
-        languages.add("Silk Pyjama");
-        languages.add("Lehenga");
-        languages.add("Dress -Small");
-        languages.add("Dress- Long");
-		languages.add("Anarkali Dress");
-        languages.add("Selwar");
-		languages.add("Dupatta");
-		languages.add("Gown ");
-		languages.add("Frock ");
-		languages.add("Shirts /Tshirts ");
-        languages.add("Trousers/Jeans ");
-		languages.add("Coat ");
-        languages.add("OverCoat ");
-        languages.add("Carpet ");
-		languages.add("Shall ");
-		languages.add("PLain Saree ");
-		languages.add("Silk Saree ");
-        languages.add("Silk Saree (Fancy)");
-		languages.add("Cotton Saree ");
-        languages.add("Single Bedsheet ");
-        languages.add("Double Bedsheet ");
-        languages.add("Pillow Cover ");
-		languages.add("Door Curtain ");
-        languages.add("Window Curtain");
-		languages.add("Towel ");
-		languages.add("Dhoti cotton ");
-		languages.add("Dhoti silk");
-		languages.add("Others ");
-			
-		
-        CustomSpinnerAdapter customSpinnerAdapter=new CustomSpinnerAdapter(CollectionActivity.this,languages);
-        cloth.setAdapter(customSpinnerAdapter);
-    		
-    }
-
 
 	private void Toastmsg(CollectionActivity collectionActivity, String p1)
 	{
@@ -124,236 +67,26 @@ public class CollectionActivity extends Activity
 
 		super.onCreate(savedInstanceState);
 		setContentView(com.soullaundry.R.layout.collection);
-		initCustomSpinner();
-		//kgpc=(Spinner)findViewById(R.id.kgpc);
 		edt_name= (EditText) findViewById(com.soullaundry.R.id.edt_name);
 
 		edt_phone= (EditText) findViewById(com.soullaundry.R.id.edt_phone);
 
 		edt_email= (TextView) findViewById(com.soullaundry.R.id.edt_email);
-		addedcontent=(TextView)findViewById(R.id.adddedcontent);
-
-		btn_add = (Button) findViewById(com.soullaundry.R.id.btn_add);
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
-		service=(Spinner)findViewById(R.id.service);
-		qtytext=(TextView)findViewById(R.id.qtyText);
+
+
        
 
 
-		price = (Spinner) findViewById(com.soullaundry.R.id.price);
-
-
-		qty = (EditText) findViewById(com.soullaundry.R.id.qty);
-		deltype=(Spinner)findViewById(R.id.deltype);
-		deldays=(Spinner)findViewById(R.id.deldays);
-      
-		addedcontent=(TextView)findViewById(R.id.adddedcontent);
-
-		Spinner spinner = (Spinner) findViewById(R.id.spinner);
-
-		ArrayList<String> languages = new ArrayList<String>();
-
-		languages.add("Cloth");
-		languages.add("Double Quilt Blanket");
-		languages.add("Single QuiltBlanket");
-		languages.add("Suit(2pcs)");
-		languages.add("Suit(3pcs)");
-		languages.add("Jacket Blazer");
-		languages.add("Half-JacketBlazer");
-		languages.add("Leather Jacket");
-		languages.add("Sherwani");
-		languages.add("Ladies Top");
-		languages.add("Ladies Skirt");
-		languages.add("Sweater");
-		languages.add("Kurta");
-		languages.add("Silk Kurta");
-		languages.add("Fancy Kurta");
-		languages.add("Pyjama");
-		languages.add("Silk Pyjama");
-		languages.add("Lehenga");
-		languages.add("Dress -Small");
-		languages.add("Dress- Long");
-		languages.add("Anarkali Dress");
-		languages.add("Selwar");
-		languages.add("Dupatta");
-		languages.add("Gown ");
-		languages.add("Frock ");
-		languages.add("Shirts /Tshirts ");
-		languages.add("Trousers/Jeans ");
-		languages.add("Coat ");
-		languages.add("OverCoat ");
-		languages.add("Carpet ");
-		languages.add("Shall ");
-		languages.add("PLain Saree ");
-		languages.add("Silk Saree ");
-		languages.add("Silk Saree (Fancy)");
-		languages.add("Cotton Saree ");
-		languages.add("Single Bedsheet ");
-		languages.add("Double Bedsheet ");
-		languages.add("Pillow Cover ");
-		languages.add("Door Curtain ");
-		languages.add("Window Curtain");
-		languages.add("Towel ");
-		languages.add("Dhoti cotton ");
-		languages.add("Dhoti silk");
-		languages.add("Others ");
-
-		ArrayList<StateVO> listVOs = new ArrayList<>();
-
-		for (int i = 0; i < languages.size(); i++) {
-			StateVO stateVO = new StateVO();
-			stateVO.setTitle(languages.get(i));
-			listVOs.add(stateVO);
-		}
-
-
-		MyAdapter myAdapter = new MyAdapter(CollectionActivity.this, 0,
-				listVOs);
-		spinner.setAdapter(myAdapter);
-
-
-        service.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-
-
-                if (service.getSelectedItem().toString().equals("Wash/Iron")){
-
-
-
-                    qty.setHint("Kg");
-                    qtytext.setText("KG");
-                    price.setSelection(10);
-
-
-
-                }
-                else if (service.getSelectedItem().toString().equals("Wash/Fold"))
-                {
-                    qtytext.setText("KG");
-                    qty.setHint("kg");
-                    price.setSelection(8);
-
-                }
-                else if(service.getSelectedItem().toString().equals("Only Iron")){
-
-                    qty.setHint("piece");
-                    qtytext.setText("piece");
-                    price.setSelection(1);
-                }
-
-                else if(service.getSelectedItem().toString().equals("BedSheets/Innerwear")){
-
-                    qtytext.setText("KG");
-                    qty.setHint("kg");
-                    price.setSelection(11);
-                }
-                else if(service.getSelectedItem().toString().equals("Blanket")){
-
-                    qtytext.setText("KG");
-                    qty.setHint("kg");
-                    price.setSelection(12);
-                }
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parentView) {
-                // your code here
-            }
-
-        });
 
 
 
 
-
-
-		deltype.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-			@Override
-			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-
-
-				if (deltype.getSelectedItem().toString().equals("Express Delivery(Normal * 1.5)")){
-
-
-deldays.setSelection(1);
-
-
-
-				}
-				else
-				{
-					deldays.setSelection(0);
-
-				}
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> parentView) {
-				// your code here
-			}
-
-		});
 		
 
 
 
-        price.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-			@Override
-			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-
-
-				if (price.getSelectedItem().toString().equals("Others")){
-
-					final AlertDialog.Builder alert = new AlertDialog.Builder(CollectionActivity.this);
-
-
-					final EditText edittext = new EditText(CollectionActivity.this);
-					alert.setMessage("Please enter the price");
-					alert.setTitle("Price");
-
-					alert.setView(edittext);
-
-
-					alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int whichButton) {
-
-
-							priceSpinner[0] =edittext.getText().toString();
-
-
-
-
-
-						}
-					});
-
-					alert.setNegativeButton("No ", new DialogInterface.OnClickListener() {
-						public void onClick(DialogInterface dialog, int whichButton) {
-							// what ever you want to do with No option.
-							//alert1.dismiss();
-						}
-					});
-
-					final AlertDialog alert1 = alert.create();
-
-					alert1.show();
-
-
-
-
-
-				}
-			}
-
-			@Override
-			public void onNothingSelected(AdapterView<?> parentView) {
-				// your code here
-			}
-
-		});
 
 
 		edt_phone.addTextChangedListener(new TextWatcher() {
@@ -371,9 +104,11 @@ deldays.setSelection(1);
 
 										System.out.println("db" + user.ph);
 										System.out.println("et" + edt_phone.getText());
-										if (user.ph.equals(edt_phone.getText())) {
-											name=user.name;
-											edt_name.setText(user.name);
+										if(user.ph!=null) {
+											if (user.ph.equals(edt_phone.getText())) {
+												name = user.name;
+												edt_name.setText(user.name);
+											}
 										}
 										//System.out.println(user.email);
 									}
@@ -403,8 +138,10 @@ if (s.length()==10){
 						System.out.println("et"+edt_phone.getText());
 						String db=user.ph;
 						String et=s.toString();
-						if(db.equals(et)){
-							edt_name.setText(user.name);
+						if(db!=null) {
+							if (db.equals(et)) {
+								edt_name.setText(user.name);
+							}
 						}
 						//System.out.println(user.email);
 					}
@@ -432,7 +169,7 @@ if (s.length()==10){
 
 		
 				for (DataSnapshot child: dataSnapshot.getChildren()) {
-					
+					if(child.child("billNumber").getValue()!=null)
 					billNumber=child.child("billNumber").getValue().toString();
 
 				}
@@ -473,7 +210,7 @@ if (s.length()==10){
 
 
 
-		btn_add.setOnClickListener(new OnClickListener(){
+		/*btn_add.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View view){
 
@@ -537,7 +274,7 @@ if (s.length()==10){
 					else
 						actualprice=Integer.parseInt(priceSpinner[0]);
 
-					BillDetails b=new BillDetails(clothType[0],actualprice.toString(),qty.getText().toString(),svc[0]);
+					BillDetails b=new BillDetails(clothType[0],"kjs",9,svc[0]);
 					addedcontent.append("\n"+clothType[0]+"  price= "+actualprice.toString()+" qty="+qty.getText().toString());
 
 					total+= Integer.parseInt(String.valueOf(qty.getText()))* actualprice;
@@ -558,194 +295,45 @@ if (s.length()==10){
 
 
 
-		});
+		});*/
 
 
 
 		btn_submit.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
 
-				Intent z=new Intent(CollectionActivity.this,CustomTabActivity.class);
-				startActivity(z);
-		
-
-				if(billDetailsArrayList.size()==0){
 
 
-					Toastmsg(CollectionActivity.this,"You have not entered any bill to submit");
+				name=edt_name.getText().toString();
+
+				billNumber=edt_email.getText().toString();
+
+				phone=edt_phone.getText().toString();
+
+
+				if(phone.length()!=10){
+					edt_phone.setError("Please enter valid Phone Number");
 				}
-				
-				
-				
+				else if((name.length() == 0)){
+					edt_name.setError("Please Enter  Name");
+				}
 				else {
-					if (deldays.getSelectedItem().toString().trim().equals("Select Delivery Days")) {
-						((TextView) deldays.getChildAt(0)).setError("Please select delivery days");
 
-					}
-					else if(deltype.getSelectedItem().toString().trim().equals("Select Delivery Type"))
-					{
-						((TextView) deltype.getChildAt(0)).setError("Please select delivery type");
+					Intent z = new Intent(CollectionActivity.this, CustomTabActivity.class);
 
-					}
+					z.putExtra("name", name);
 
-						else {
+					z.putExtra("phone", phone);
+					z.putExtra("billNumber",billNumber);
+					startActivity(z);
 
-
-						final Dialog dialog = new Dialog(CollectionActivity.this);
-						dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-						dialog.setCancelable(false);
-						dialog.setContentView(com.soullaundry.R.layout.layout);
-
-						TableLayout stk = (TableLayout) dialog.findViewById(com.soullaundry.R.id.table_main);
-						TableRow tbrow99 = new TableRow(CollectionActivity.this);
-						TextView tv99 = new TextView(CollectionActivity.this);
-						tv99.setText("Bill Number - " + billNumber);
-						tv99.setGravity(Gravity.CENTER);
-						tbrow99.addView(tv99);
-						stk.addView(tbrow99);
-
-						TableRow tbrow0 = new TableRow(CollectionActivity.this);
-						TextView tv0 = new TextView(CollectionActivity.this);
-						tv0.setText(" Cloth Type ");
-						tv0.setTextColor(Color.BLACK);
-						tv0.setGravity(Gravity.CENTER);
-						tbrow0.addView(tv0);
-						TextView tv2 = new TextView(CollectionActivity.this);
-						tv2.setText(" Quantity ");
-						tv2.setTextColor(Color.BLACK);
-						tv2.setGravity(Gravity.CENTER);
-						tbrow0.addView(tv2);
-						TextView tv3 = new TextView(CollectionActivity.this);
-						tv3.setText(" Price ");
-						tv3.setTextColor(Color.BLACK);
-						tv3.setGravity(Gravity.CENTER);
-						tbrow0.addView(tv3);
-						stk.addView(tbrow0);
-						for (int i = 0; i < billDetailsArrayList.size(); i++) {
-							TableRow tbrow = new TableRow(CollectionActivity.this);
-							TextView t1v = new TextView(CollectionActivity.this);
-							t1v.setText(billDetailsArrayList.get(i).getClothType());
-							t1v.setTextColor(Color.BLACK);
-							t1v.setGravity(Gravity.CENTER);
-							tbrow.addView(t1v);
-
-							TextView t3v = new TextView(CollectionActivity.this);
-							t3v.setText(billDetailsArrayList.get(i).getQty());
-							t3v.setTextColor(Color.BLACK);
-							t3v.setGravity(Gravity.CENTER);
-							tbrow.addView(t3v);
-							TextView t4v = new TextView(CollectionActivity.this);
-							t4v.setText(billDetailsArrayList.get(i).getPrice());
-							t4v.setTextColor(Color.BLACK);
-							t4v.setGravity(Gravity.CENTER);
-							tbrow.addView(t4v);
-							stk.addView(tbrow);
-						}
-
-
-						TableRow tr81 = new TableRow(CollectionActivity.this);
-						TextView tv81 = new TextView(CollectionActivity.this);
-						tv81.setText("Total Bill - " + total);
-						tv81.setTextColor(Color.BLACK);
-						tv81.setGravity(Gravity.CENTER);
-						tr81.addView(tv81);
-						stk.addView(tr81);
-
-
-						Button confirm = (Button) dialog.findViewById(com.soullaundry.R.id.btn_dialog);
-						confirm.setText("Confirm");
-						confirm.setTextColor(Color.BLACK);
-
-						confirm.setOnClickListener(new OnClickListener() {
-							@Override
-							public void onClick(View view) {
-
-
-								Calendar c = Calendar.getInstance();
-								SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd : HH:mm");// HH:mm:ss");
-								String reg_date = df.format(c.getTime());
-								pickDate = reg_date;
-
-								System.out.println(deldays.getSelectedItem().toString());
-								c.add(Calendar.DATE, Integer.parseInt(deldays.getSelectedItem().toString()));  // number of days to add
-
-								time = df.format(c.getTime());
-								DelDate = time;
-
-								DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("usersG");
-								mDatabase.keepSynced(true);
-								String userId = mDatabase.push().getKey();
-
-								User user = new User(name, phone, billDetailsArrayList, billNumber, total, total, 0, DelDate, pickDate);
-
-								mDatabase.child(userId).setValue(user);
-								dialog.dismiss();
-								//Toastmsg(CollectionActivity.this,"Your Order has been placed Successfully");
-								int qtyTotal = 0;
-								try {
-									SmsManager smsManager = SmsManager.getDefault();
-
-									message = "Your order has been placed successfully with Soul Laundromat";
-									for (int i = 0; i < billDetailsArrayList.size(); i++) {
-
-										String qty = billDetailsArrayList.get(i).getQty();
-										qtyTotal += Integer.parseInt(qty);
-
-									}
-									message1 += "\n \n Bill no:" + billNumber + "\nTotal Price :Rs " + total + "\nDelivery date: " + time;
-									message2 += "\n\nPaytm Number for Payment : " + "9980461461";
-									message3 += "\n \n Thank you.";
-									message += message1 + message2 + message3;
-
-									PendingIntent sentPI = PendingIntent.getBroadcast(CollectionActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
-									PendingIntent deliveredPI = PendingIntent.getBroadcast(CollectionActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
-
-
-									SmsManager sms = SmsManager.getDefault();
-									ArrayList<String> parts = sms.divideMessage(message);
-
-									ArrayList<PendingIntent> sendList = new ArrayList<PendingIntent>();
-									sendList.add(sentPI);
-
-									ArrayList<PendingIntent> deliverList = new ArrayList<PendingIntent>();
-									deliverList.add(deliveredPI);
-
-									sms.sendMultipartTextMessage("+91" + phone, null, parts, sendList, deliverList);
-									//smsManager.sendTextMessage("+91"+phone, null,message, null, null);
-									Toast.makeText(getApplicationContext(), "SMS Sent!",
-											Toast.LENGTH_LONG).show();
-								} catch (Exception e) {
-									Toast.makeText(getApplicationContext(),
-											"SMS failed, please try again later!",
-											Toast.LENGTH_LONG).show();
-									e.printStackTrace();
-								}
-								edt_name.setText("");
-								edt_phone.setText("");
-Intent i=new Intent(CollectionActivity.this,SampleActivity.class);
-startActivity(i);
-
-							}
-						});
-
-						Button cancel = (Button) dialog.findViewById(com.soullaundry.R.id.btn_dialog3);
-						cancel.setText("Cancel");
-						cancel.setTextColor(Color.BLACK);
-
-						cancel.setOnClickListener(new OnClickListener() {
-							public void onClick(View view) {
-
-								dialog.dismiss();
-							}
-						});
-
-
-						dialog.show();
-
-
-					}
 				}
-					
+
+
+
+
+
+
 					}
 					});
 
@@ -755,60 +343,7 @@ startActivity(i);
 	
 	}
 	
-	
 
-    public class CustomSpinnerAdapter extends BaseAdapter implements SpinnerAdapter {
-
-        private final Context activity;
-        private ArrayList<String> asr;
-
-        public CustomSpinnerAdapter(Context context,ArrayList<String> asr) {
-            this.asr=asr;
-            activity = context;
-        }
-
-
-
-        public int getCount()
-        {
-            return asr.size();
-        }
-
-        public Object getItem(int i)
-        {
-            return asr.get(i);
-        }
-
-        public long getItemId(int i)
-        {
-            return (long)i;
-        }
-
-
-
-        @Override
-        public View getDropDownView(int position, View convertView, ViewGroup parent) {
-            TextView txt = new TextView(CollectionActivity.this);
-            txt.setPadding(16, 16, 16, 16);
-            txt.setTextSize(18);
-            txt.setGravity(Gravity.CENTER_VERTICAL);
-            txt.setText(asr.get(position));
-            txt.setTextColor(Color.parseColor("#000000"));
-            return  txt;
-        }
-
-        public View getView(int i, View view, ViewGroup viewgroup) {
-            TextView txt = new TextView(CollectionActivity.this);
-            txt.setGravity(Gravity.LEFT);
-            txt.setPadding(0, 0, 0, 0);
-            txt.setTextSize(10);
-           // txt.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_down, 0);
-            txt.setText(asr.get(i));
-            txt.setTextColor(Color.parseColor("#110000"));
-            return  txt;
-        }
-
-    }
 	
 	
 	}
