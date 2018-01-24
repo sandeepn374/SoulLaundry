@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -76,11 +77,9 @@ public class CustomTabActivity extends AppCompatActivity {
 
             }
         });
+        Fragment customFragment = (CallsFragment) getSupportFragmentManager().getFragments().get(0);
 
-        int index = viewPager.getCurrentItem();
-        ViewPagerAdapter adapter = ((ViewPagerAdapter)viewPager.getAdapter());
-        final CallsFragment tabFragment = (CallsFragment) adapter.getFragment(0);
-        ScrollView add=(ScrollView)tabFragment.getView();
+        ScrollView add=(ScrollView) customFragment.getView();
         Button adder=(Button) add.findViewById(R.id.adder);
 
         adder.setOnClickListener(new View.OnClickListener() {
