@@ -95,6 +95,9 @@ ArrayList<Detail> sending=new ArrayList<Detail>();
 
 passData(sending);
 
+                Toast.makeText(getContext(),"Entry Added to the Bill",
+                       Toast.LENGTH_SHORT).show();
+
             }
         });
         return rootView;
