@@ -27,7 +27,7 @@ public class CustomTabActivity extends AppCompatActivity {
 
     ChatFragment chatFragment;
     CallsFragment callsFragment;
-    ContactsFragment contactsFragment;
+    ContactsFragment contactsFragment,OnlyIron;
 
     String[] tabTitle={"Dry Cleaning","Wash/Fold","Wash/Iron"};
     int[] unreadCount={0,5,0};
@@ -89,13 +89,13 @@ public class CustomTabActivity extends AppCompatActivity {
         callsFragment=new CallsFragment();
         chatFragment=new ChatFragment();
         contactsFragment=new ContactsFragment();
-        adapter.addFragment(callsFragment,"CALLS");
-        adapter.addFragment(chatFragment,"CHAT");
-        adapter.addFragment(contactsFragment,"CONTACTS");
+        OnlyIron=new ContactsFragment();
 
-        adapter.addFragment(callsFragment,"CALLS");
-        adapter.addFragment(chatFragment,"CHAT");
-        adapter.addFragment(contactsFragment,"CONTACTS");
+        adapter.addFragment(callsFragment,"Dry Cleaning");
+        adapter.addFragment(chatFragment,"Wash/Fold");
+        adapter.addFragment(contactsFragment,"Wash/Iron");
+
+        adapter.addFragment(OnlyIron,"OnlyIron");
         viewPager.setAdapter(adapter);
     }
 
