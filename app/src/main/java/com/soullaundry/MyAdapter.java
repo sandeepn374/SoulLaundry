@@ -82,6 +82,8 @@ public class MyAdapter extends ArrayAdapter<StateVO> {
     }
 
     private class ViewHolder {
+
+        //just commit
         private TextView mTextView;
         private CheckBox mCheckBox;
     }
