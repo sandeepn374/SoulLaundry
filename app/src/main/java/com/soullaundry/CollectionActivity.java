@@ -150,6 +150,23 @@ public class CollectionActivity extends Activity
       
 		addedcontent=(TextView)findViewById(R.id.adddedcontent);
 
+		final String[] select_qualification = {
+				"Select Qualification", "10th / Below", "12th", "Diploma", "UG",
+				"PG", "Phd"};
+		Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+		ArrayList<StateVO> listVOs = new ArrayList<>();
+
+		for (int i = 0; i < select_qualification.length; i++) {
+			StateVO stateVO = new StateVO();
+			stateVO.setTitle(select_qualification[i]);
+			stateVO.setSelected(false);
+			listVOs.add(stateVO);
+		}
+		MyAdapter myAdapter = new MyAdapter(CollectionActivity.this, 0,
+				listVOs);
+		spinner.setAdapter(myAdapter);
+
 
         service.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
