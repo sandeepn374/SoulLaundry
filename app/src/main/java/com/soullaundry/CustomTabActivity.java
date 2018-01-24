@@ -95,7 +95,7 @@ public class CustomTabActivity extends AppCompatActivity {
         adapter.addFragment(chatFragment,"Wash/Fold");
         adapter.addFragment(contactsFragment,"Wash/Iron");
 
-        adapter.addFragment(OnlyIron,"OnlyIron");
+        adapter.addFragment(OnlyIron,"Only Iron");
         viewPager.setAdapter(adapter);
     }
 
