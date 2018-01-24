@@ -150,19 +150,65 @@ public class CollectionActivity extends Activity
       
 		addedcontent=(TextView)findViewById(R.id.adddedcontent);
 
-		final String[] select_qualification = {
-				"Select Qualification", "10th / Below", "12th", "Diploma", "UG",
-				"PG", "Phd"};
 		Spinner spinner = (Spinner) findViewById(R.id.spinner);
+
+		ArrayList<String> languages = new ArrayList<String>();
+
+		languages.add("Cloth");
+		languages.add("Double Quilt Blanket");
+		languages.add("Single QuiltBlanket");
+		languages.add("Suit(2pcs)");
+		languages.add("Suit(3pcs)");
+		languages.add("Jacket Blazer");
+		languages.add("Half-JacketBlazer");
+		languages.add("Leather Jacket");
+		languages.add("Sherwani");
+		languages.add("Ladies Top");
+		languages.add("Ladies Skirt");
+		languages.add("Sweater");
+		languages.add("Kurta");
+		languages.add("Silk Kurta");
+		languages.add("Fancy Kurta");
+		languages.add("Pyjama");
+		languages.add("Silk Pyjama");
+		languages.add("Lehenga");
+		languages.add("Dress -Small");
+		languages.add("Dress- Long");
+		languages.add("Anarkali Dress");
+		languages.add("Selwar");
+		languages.add("Dupatta");
+		languages.add("Gown ");
+		languages.add("Frock ");
+		languages.add("Shirts /Tshirts ");
+		languages.add("Trousers/Jeans ");
+		languages.add("Coat ");
+		languages.add("OverCoat ");
+		languages.add("Carpet ");
+		languages.add("Shall ");
+		languages.add("PLain Saree ");
+		languages.add("Silk Saree ");
+		languages.add("Silk Saree (Fancy)");
+		languages.add("Cotton Saree ");
+		languages.add("Single Bedsheet ");
+		languages.add("Double Bedsheet ");
+		languages.add("Pillow Cover ");
+		languages.add("Door Curtain ");
+		languages.add("Window Curtain");
+		languages.add("Towel ");
+		languages.add("Dhoti cotton ");
+		languages.add("Dhoti silk");
+		languages.add("Others ");
 
 		ArrayList<StateVO> listVOs = new ArrayList<>();
 
-		for (int i = 0; i < select_qualification.length; i++) {
+		for (int i = 0; i < languages.size(); i++) {
 			StateVO stateVO = new StateVO();
-			stateVO.setTitle(select_qualification[i]);
+			stateVO.setTitle(languages.get(i));
 			stateVO.setSelected(false);
 			listVOs.add(stateVO);
 		}
+
+
 		MyAdapter myAdapter = new MyAdapter(CollectionActivity.this, 0,
 				listVOs);
 		spinner.setAdapter(myAdapter);
