@@ -47,6 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="Add"
                 android:layout_alignParentRight="true"
+                android:id="@+id/adder"
                 />
 
 

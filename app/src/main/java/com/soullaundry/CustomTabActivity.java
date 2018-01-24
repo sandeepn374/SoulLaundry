@@ -2,6 +2,7 @@ package com.soullaundry;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -9,6 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -76,7 +79,19 @@ public class CustomTabActivity extends AppCompatActivity {
 
         int index = viewPager.getCurrentItem();
         ViewPagerAdapter adapter = ((ViewPagerAdapter)viewPager.getAdapter());
-        final CallsFragment tabFragment = (CallsFragment) adapter.getFragment(index);
+        final CallsFragment tabFragment = (CallsFragment) adapter.getFragment(0);
+        ScrollView add=(ScrollView)tabFragment.getView();
+        Button adder=(Button) add.findViewById(R.id.adder);
+
+        adder.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+
+
+                Toast.makeText(CustomTabActivity.this,"adder added your stuff",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
@@ -90,7 +105,7 @@ public class CustomTabActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager)
     {
 
-        
+
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         callsFragment=new CallsFragment();
         chatFragment=new CallsFragment();
