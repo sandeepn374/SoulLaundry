@@ -9,7 +9,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:text="text"
-        android:textAlignment="gravity" />
+        android:textAlignment="gravity"
+
+
+        />
 
     <CheckBox
         android:id="@+id/checkbox"
