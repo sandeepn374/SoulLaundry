@@ -71,7 +71,7 @@ ArrayList<Detail> sending=new ArrayList<Detail>();
                                // passs+=edi.getText();
 
                             }
-                            else
+                            else if(x==1)
                             {
                                 EditText ediqty=(EditText)row.getChildAt(x);
                                 System.out.println("murugan"+ediqty.getText()+ediqty.getText().toString().length());
