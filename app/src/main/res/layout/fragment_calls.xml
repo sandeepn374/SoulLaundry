@@ -132,6 +132,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -155,6 +166,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -182,6 +204,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -205,6 +238,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -232,6 +276,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -255,6 +310,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -282,6 +348,16 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -305,6 +381,16 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -332,6 +418,16 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -355,6 +451,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -382,6 +489,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -405,6 +523,16 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -432,6 +560,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -455,6 +594,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -482,6 +632,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -505,6 +666,16 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -532,6 +703,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -555,6 +737,16 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -582,6 +774,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -607,6 +810,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -630,6 +844,16 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -658,6 +882,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -683,6 +918,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
         <TableRow
 
@@ -705,6 +951,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -733,6 +990,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
 
@@ -757,6 +1025,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -785,6 +1064,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
 
@@ -811,6 +1101,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
 
@@ -835,6 +1136,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -864,6 +1176,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -887,6 +1210,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -915,6 +1249,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
 
@@ -939,6 +1284,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -967,6 +1323,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -990,6 +1357,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1019,6 +1397,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
 
@@ -1043,6 +1432,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1070,6 +1470,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -1095,6 +1506,17 @@ android:id="@+id/IdTable"
                 android:text="0"
                 android:textStyle="bold"
                 />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -1118,6 +1540,17 @@ android:id="@+id/IdTable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
