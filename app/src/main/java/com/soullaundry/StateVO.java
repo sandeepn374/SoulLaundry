@@ -8,7 +8,7 @@ public class StateVO {
 
 
     private String title;
-    private boolean selected;
+
     public String qty;
 
     public String getTitle() {
@@ -19,13 +19,6 @@ public class StateVO {
         this.title = title;
     }
 
-    public boolean isSelected() {
-        return selected;
-    }
-
-    public void setSelected(boolean selected) {
-        this.selected = selected;
-    }
 
 
 

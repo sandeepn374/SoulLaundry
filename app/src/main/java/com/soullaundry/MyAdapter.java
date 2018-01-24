@@ -50,8 +50,7 @@ public class MyAdapter extends ArrayAdapter<StateVO> {
             holder = new ViewHolder();
             holder.mTextView = (TextView) convertView
                     .findViewById(R.id.text);
-            holder.mCheckBox = (CheckBox) convertView
-                    .findViewById(R.id.checkbox);
+
             holder.mQty=(EditText)convertView.findViewById(R.id.qtyText);
             convertView.setTag(holder);
         } else {
@@ -61,26 +60,7 @@ public class MyAdapter extends ArrayAdapter<StateVO> {
         holder.mTextView.setText(listState.get(position).getTitle());
         //holder.mQty.setHint("Qty");
 
-        // To check weather checked event fire from getview() or user input
-        isFromView = true;
-        holder.mCheckBox.setChecked(listState.get(position).isSelected());
-        isFromView = false;
 
-        if ((position == 0)) {
-            holder.mCheckBox.setVisibility(View.INVISIBLE);
-        } else {
-            holder.mCheckBox.setVisibility(View.VISIBLE);
-        }
-        holder.mCheckBox.setTag(position);
-        holder.mCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                int getPosition = (Integer) buttonView.getTag();
-
-
-            }
-        });
         return convertView;
     }
 
@@ -88,7 +68,7 @@ public class MyAdapter extends ArrayAdapter<StateVO> {
 
         //just commit
         private TextView mTextView;
-        private CheckBox mCheckBox;
+
         private EditText mQty;
     }
 }

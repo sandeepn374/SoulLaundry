@@ -204,7 +204,6 @@ public class CollectionActivity extends Activity
 		for (int i = 0; i < languages.size(); i++) {
 			StateVO stateVO = new StateVO();
 			stateVO.setTitle(languages.get(i));
-			stateVO.setSelected(false);
 			listVOs.add(stateVO);
 		}
 
