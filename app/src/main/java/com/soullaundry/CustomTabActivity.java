@@ -265,7 +265,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
 
                                     }
-                                    message1 += "\n \n Bill no:" + billNumber + "\nTotal Price :Rs " + total + "\nDelivery date: " + time;
+                                    message1 += "\n \n Bill no:" + billNumberI + "\nTotal Price :Rs " + total + "\nDelivery date: " + time;
                                     message2 += "\n\nPaytm Number for Payment : " + "9980461461";
                                     message3 += "\n \n Thank you.";
                                     message += message1 + message2 + message3;

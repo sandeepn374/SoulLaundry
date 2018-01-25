@@ -339,6 +339,8 @@ if (s.length()==10){
 
 					z.putExtra("phone", phone);
 					z.putExtra("billNumber",billNumber);
+					z.putExtra("deltype",deltype.getSelectedItem().toString());
+					z.putExtra("deldays", deldays.getSelectedItem().toString());
 					startActivity(z);
 
 				}
