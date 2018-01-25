@@ -108,7 +108,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
 
@@ -153,7 +153,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -188,7 +188,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -223,7 +223,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -258,7 +258,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -294,7 +294,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -330,7 +330,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -365,7 +365,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -400,7 +400,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -435,7 +435,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -470,7 +470,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -506,7 +506,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -541,7 +541,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -577,7 +577,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -612,7 +612,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -646,7 +646,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -680,7 +680,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -715,7 +715,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -750,7 +750,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -786,7 +786,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -821,7 +821,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -855,7 +855,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -891,7 +891,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -926,7 +926,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -961,7 +961,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -997,7 +997,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1034,7 +1034,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1070,7 +1070,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1106,7 +1106,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1142,7 +1142,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1179,7 +1179,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1213,7 +1213,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1249,7 +1249,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1286,7 +1286,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1323,7 +1323,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1358,7 +1358,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1396,7 +1396,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1433,7 +1433,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1469,7 +1469,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1504,7 +1504,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1542,7 +1542,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:textStyle="bold"
                 />
         </TableRow>

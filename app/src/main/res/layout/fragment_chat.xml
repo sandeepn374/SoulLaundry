@@ -118,7 +118,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="rate"
                 android:textStyle="bold"
                 />
@@ -127,7 +127,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="discount"
                 android:textStyle="bold"
                 />
@@ -170,7 +170,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="rate"
                 android:textStyle="bold"
                 />
@@ -180,7 +180,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="discount"
                 android:textStyle="bold"
                 />
@@ -216,7 +216,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="rate"
                 android:textStyle="bold"
                 />
@@ -226,7 +226,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="discount"
                 android:textStyle="bold"
                 />
@@ -263,7 +263,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="rate"
                 android:textStyle="bold"
                 />
@@ -273,7 +273,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="discount"
                 android:textStyle="bold"
                 />
@@ -308,7 +308,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="rate"
                 android:textStyle="bold"
                 />
@@ -318,7 +318,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="discount"
                 android:textStyle="bold"
                 />
@@ -355,7 +355,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="rate"
                 android:textStyle="bold"
                 />
@@ -365,7 +365,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:inputType="number"
                 android:hint="discount"
                 android:textStyle="bold"
                 />
