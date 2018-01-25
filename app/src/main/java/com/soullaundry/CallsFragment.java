@@ -51,7 +51,7 @@ public class CallsFragment extends Fragment {
 
 ArrayList<Detail> sending=new ArrayList<Detail>();
 
-                for (int i = 1; i < layout.getChildCount(); i++) {
+                for (int i = 2; i < layout.getChildCount(); i++) {
                     View child = layout.getChildAt(i);
 
                     if (child instanceof TableRow) {
