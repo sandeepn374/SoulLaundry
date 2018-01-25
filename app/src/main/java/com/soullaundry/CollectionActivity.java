@@ -25,7 +25,7 @@ public class CollectionActivity extends AppCompatActivity
 
 
 	EditText edt_name;
-	EditText edt_phone,qty;
+	EditText edt_phone,qty,edit_email_id;
 	TextView edt_email,qtytext;
 	Spinner price,cloth,service,deltype,deldays;
 
@@ -34,7 +34,7 @@ public class CollectionActivity extends AppCompatActivity
 	String message1="";
 	String message2="";
 	String message3="";
-	String name,phone,billNumber;
+	String name,phone,billNumber,emailStr;
 	String pickDate,DelDate;
 
 	String time;
@@ -79,6 +79,7 @@ public class CollectionActivity extends AppCompatActivity
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
 		deltype=(Spinner)findViewById(R.id.deltype);
 		deldays=(Spinner)findViewById(R.id.deldays);
+		edit_email_id=(EditText)findViewById(R.id.edt_email_id);
 
 
        
@@ -314,13 +315,22 @@ if (s.length()==10){
 				billNumber=edt_email.getText().toString();
 
 				phone=edt_phone.getText().toString();
+				emailStr=edit_email_id.getText().toString().trim();
+
+				String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+				//String email = emailValidate.getText().toString().trim();
 
 
-				if(phone.length()!=10){
-					edt_phone.setError("Please enter valid Phone Number");
+				if(phone.length()!=0 && emailStr.length()!=0){
+					Toast.makeText(getApplicationContext(),
+							"Please enter either Email or Phone Number",
+							Toast.LENGTH_LONG).show();
 				}
-				else if((name.length() == 0)){
+				 else if((name.length() == 0)){
 					edt_name.setError("Please Enter  Name");
+				}
+				else if((phone.length() != 10)){
+					edt_phone.setError("Please Enter valid phone number");
 				}
 				else if(deltype.getSelectedItem().toString().equals("Select Delivery Type")){
 
