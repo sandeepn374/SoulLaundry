@@ -15,6 +15,7 @@ public class BillDetails implements Serializable
     public String price;
 	public String svcType="";
 
+
     public BillDetails(){}
     public BillDetails(String clothType, String price ,int qty,String svc){
         this.clothType=clothType;

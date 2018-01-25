@@ -76,6 +76,7 @@ ArrayList<Detail> sending=new ArrayList<Detail>();
                                     d.count=Integer.parseInt(ediqty.getText().toString());
 
 
+
                                     sending.add(d);
 
                                 }
