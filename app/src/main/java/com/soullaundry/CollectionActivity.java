@@ -327,7 +327,7 @@ if (s.length()==10){
 				}
 				else if(deldays.getSelectedItem().toString().equals("Select Delivery Days")){
 
-					((TextView)deltype.getChildAt(0)).setError("Please select Delivery days");
+					((TextView)deldays.getChildAt(0)).setError("Please select Delivery days");
 
 
 				}
