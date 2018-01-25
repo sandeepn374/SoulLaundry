@@ -76,6 +76,8 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
     ArrayList<BillDetails> billDetailsArrayList= new ArrayList<BillDetails>();
     public Button submitaall;
 
+    public ViewPagerAdapter adapter;
+
 
     private void Toastmsg(CustomTabActivity collectionActivity, String p1)
     {
@@ -320,7 +322,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
     {
 
 
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+         adapter = new ViewPagerAdapter(getSupportFragmentManager());
         callsFragment=new CallsFragment();
         chatFragment=new CallsFragment();
         contactsFragment=new CallsFragment();
@@ -366,14 +368,31 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
     @Override
     public void onDataPass(ArrayList<Detail> data) {
         Log.d("LOG","hello " + data);
+
         for(int i=0;i<data.size();i++){
+
+
             Log.d("LOG","hello " + data.get(i).cloth+"  "+data.get(i).count);
 
+           System.out.println( viewPager.getCurrentItem());
+
+
+           int pos=viewPager.getCurrentItem();
 
             Integer actualprice = 0;
+            String service="";
+
+            if(pos==0)
+                service="Dry Cean";
+            else if(pos==1)
+                service="Wash /Fold";
+            else if(pos==2)
+                service="Wash / Iron";
+            else if(pos==3)
+                service="Only Iron";
 
 
-            BillDetails b=new BillDetails(data.get(i).cloth,"10",data.get(i).count,"some service type");
+            BillDetails b=new BillDetails(data.get(i).cloth,"10",data.get(i).count,service);
 
             total+= data.get(i).count* 10;
             billDetailsArrayList.add(b);

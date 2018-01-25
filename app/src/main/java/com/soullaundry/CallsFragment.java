@@ -47,13 +47,7 @@ public class CallsFragment extends Fragment {
 
             @Override
             public void onClick(View view) {
-                //Implement the code to run on button click here
 
-
-               // Toast.makeText(getContext(),"adder added your stuff",
-                 //       Toast.LENGTH_SHORT).show();
-
-                //passData("aakash");
 
 ArrayList<Detail> sending=new ArrayList<Detail>();
 
@@ -80,6 +74,7 @@ ArrayList<Detail> sending=new ArrayList<Detail>();
                                     TextView edi = (TextView) row.getChildAt(0);
                                     d.cloth=edi.getText().toString();
                                     d.count=Integer.parseInt(ediqty.getText().toString());
+
 
                                     sending.add(d);
 
