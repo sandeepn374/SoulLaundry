@@ -49,7 +49,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
     CallsFragment callsFragment;
     CallsFragment contactsFragment,OnlyIron;
 
-    String[] tabTitle={"Dry Cleaning","Wash/Fold","Wash/Iron"};
+    String[] tabTitle={"Wash/Fold","Wash/Iron","Only Iron","Dry Cleaning"};
     int[] unreadCount={0,5,0};
 
 
