@@ -40,6 +40,8 @@ import static java.security.AccessController.getContext;
 public class DeliveryActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
 
+
+
     SearchView simpleSearchView;
 
 

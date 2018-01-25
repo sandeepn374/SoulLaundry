@@ -22,6 +22,8 @@ public class CollectionActivity extends AppCompatActivity
 {
 
 
+
+
 	EditText edt_name;
 	EditText edt_phone,qty;
 	TextView edt_email,qtytext;

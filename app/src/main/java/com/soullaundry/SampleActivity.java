@@ -17,6 +17,8 @@ public class SampleActivity extends AppCompatActivity {
     Button delivery;
     Button shop;
 
+
+    
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private boolean drawerArrowColor;
