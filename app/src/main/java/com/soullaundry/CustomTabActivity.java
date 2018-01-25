@@ -199,7 +199,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                             tbrow.addView(t2v);
 
                             TextView t3v = new TextView(CustomTabActivity.this);
-                            t3v.setText(billDetailsArrayList.get(i).getQty());
+                            t3v.setText(billDetailsArrayList.get(i).qty);
                             t3v.setTextColor(Color.BLACK);
                             t3v.setGravity(Gravity.CENTER);
                             tbrow.addView(t3v);
@@ -268,7 +268,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                                     message1 += "\n \n Bill no:" + billNumber + "\nTotal Price :Rs " + total + "\nDelivery date: " + time;
                                     message2 += "\n\nPaytm Number for Payment : " + "9980461461";
                                     message3 += "\n \n Thank you.";
-                                    message += message1 + message2 + message3;
+                                   // message += message1 + message2 + message3;
 
                                     PendingIntent sentPI = PendingIntent.getBroadcast(CustomTabActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
                                     PendingIntent deliveredPI = PendingIntent.getBroadcast(CustomTabActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
