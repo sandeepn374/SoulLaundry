@@ -93,12 +93,12 @@
                 />
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
+                android:hint="rate"
                 android:textStyle="bold"
                 />
 
@@ -136,13 +136,12 @@
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
+                android:hint="rate"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -173,13 +172,12 @@
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
+                android:hint="rate"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -211,12 +209,12 @@
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
+                android:hint="rate"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -246,14 +244,12 @@
                 android:textStyle="bold"
                 />
 
-
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
+                android:hint="rate"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -285,12 +281,12 @@
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
+                android:hint="rate"
                 android:textStyle="bold"
                 />
         </TableRow>
