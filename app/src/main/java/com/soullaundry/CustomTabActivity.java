@@ -215,7 +215,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
                         TableRow tr81 = new TableRow(CustomTabActivity.this);
                         TextView tv81 = new TextView(CustomTabActivity.this);
-                        tv81.setText("Total Bill - " + total);
+                        tv81.setText("Total Bill = " + total);
                         tv81.setTextColor(Color.BLACK);
                         tv81.setGravity(Gravity.CENTER);
                         tr81.addView(tv81);
@@ -414,10 +414,16 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
             total+= (data.get(i).count* data.get(i).rate)-data.get(i).discount;
 
+
+
             billDetailsArrayList.add(b);
 
 
         }
+
+        String deltypeI=getIntent().getStringExtra("deltype");
+        if(deltypeI.equals("Express Delivery(Normal * 1.5)"))
+            total= (int) (total*1.5);
 
 
 

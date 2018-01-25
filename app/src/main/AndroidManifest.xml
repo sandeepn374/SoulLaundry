@@ -55,7 +55,10 @@
 
         <activity android:name=".CollectionActivity" />
         <activity android:name=".DeliveryActivity" />
-        <activity android:name=".CustomTabActivity" />
+        <activity android:name=".CustomTabActivity"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
 		<activity android:name=".ConfirmActivity" />
 		
         <activity android:name=".ShopExpenseActivity" />
