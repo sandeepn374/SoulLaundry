@@ -68,7 +68,6 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:entries="@array/deltype"
-
 			android:id="@+id/deltype">
 
 		</Spinner>
@@ -83,7 +82,6 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:entries="@array/deldays"
-
 			android:id="@+id/deldays">
 
 		</Spinner>
