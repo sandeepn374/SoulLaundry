@@ -77,6 +77,7 @@ ArrayList<Detail> sending=new ArrayList<Detail>();
                                         TextView edi = (TextView) row.getChildAt(0);
                                         d.cloth=edi.getText().toString();
                                         d.count=Integer.parseInt(ediqty.getText().toString());
+                                        d.rate=Integer.parseInt(rate.getText().toString());
 
 
 
