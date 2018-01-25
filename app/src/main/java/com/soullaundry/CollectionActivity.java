@@ -81,6 +81,30 @@ public class CollectionActivity extends AppCompatActivity
 		deldays=(Spinner)findViewById(R.id.deldays);
 		edit_email_id=(EditText)findViewById(R.id.edt_email_id);
 
+		deltype.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+				// your code here
+
+				if (deltype.getSelectedItem().toString().equals("Express Delivery(Normal * 1.5)")){
+deldays.setSelection(1);
+else
+	deldays.setSelection(0);
+
+
+
+
+
+				}
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parentView) {
+				// your code here
+			}
+
+		});
+
 
        
 
