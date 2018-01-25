@@ -199,7 +199,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                             tbrow.addView(t2v);
 
                             TextView t3v = new TextView(CustomTabActivity.this);
-                            t3v.setText("some qty");
+                            t3v.setText(billDetailsArrayList.get(i).getQty());
                             t3v.setTextColor(Color.BLACK);
                             t3v.setGravity(Gravity.CENTER);
                             tbrow.addView(t3v);
