@@ -344,11 +344,12 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
         contactsFragment=new CallsFragment();
         OnlyIron=new CallsFragment();
 
-        adapter.addFragment(callsFragment,"Dry Cleaning");
         adapter.addFragment(chatFragment,"Wash/Fold");
         adapter.addFragment(contactsFragment,"Wash/Iron");
 
         adapter.addFragment(OnlyIron,"Only Iron");
+
+        adapter.addFragment(callsFragment,"Dry Cleaning");
         viewPager.setAdapter(adapter);
     }
 
