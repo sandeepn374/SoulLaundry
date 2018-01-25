@@ -153,7 +153,9 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                         TableLayout stk = (TableLayout) dialog.findViewById(com.soullaundry.R.id.table_main);
                         TableRow tbrow99 = new TableRow(CustomTabActivity.this);
                         TextView tv99 = new TextView(CustomTabActivity.this);
-                        tv99.setText("Bill Number - " + billNumber);
+
+                    String billNumberI = getIntent().getStringExtra("billNumber");
+                        tv99.setText("Bill Number - " + billNumberI);
                         tv99.setGravity(Gravity.CENTER);
                         tbrow99.addView(tv99);
                         stk.addView(tbrow99);
