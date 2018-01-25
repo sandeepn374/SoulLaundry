@@ -229,6 +229,9 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                             @Override
                             public void onClick(View view) {
 
+                                String deldaysI=getIntent().getStringExtra("deldays");
+
+
 
                                 Calendar c = Calendar.getInstance();
                                 SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd : HH:mm");// HH:mm:ss");
@@ -236,7 +239,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                                 pickDate = reg_date;
 
                                 //System.out.println(deldays.getSelectedItem().toString());
-                                c.add(Calendar.DATE, 3);  // number of days to add
+                                c.add(Calendar.DATE, Integer.parseInt((deldaysI)));  // number of days to add
 
                                 time = df.format(c.getTime());
                                 DelDate = time;
@@ -250,6 +253,8 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                                 String phoneI = getIntent().getStringExtra("phone");
 
                                 String billNumberI = getIntent().getStringExtra("billNumber");
+
+
 
                                 User user = new User(nameI, phoneI, billDetailsArrayList, billNumberI, total, total, 0, DelDate, pickDate);
 
