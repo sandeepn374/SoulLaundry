@@ -168,6 +168,11 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                         tv0.setTextColor(Color.BLACK);
                         tv0.setGravity(Gravity.CENTER);
                         tbrow0.addView(tv0);
+                    TextView tv1 = new TextView(CustomTabActivity.this);
+                    tv1.setText(" Svc Type ");
+                    tv1.setTextColor(Color.BLACK);
+                    tv1.setGravity(Gravity.CENTER);
+                    tbrow0.addView(tv1);
                         TextView tv2 = new TextView(CustomTabActivity.this);
                         tv2.setText(" Quantity ");
                         tv2.setTextColor(Color.BLACK);
@@ -186,6 +191,12 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                             t1v.setTextColor(Color.BLACK);
                             t1v.setGravity(Gravity.CENTER);
                             tbrow.addView(t1v);
+
+                            TextView t2v = new TextView(CustomTabActivity.this);
+                            t2v.setText(billDetailsArrayList.get(i).svcType);
+                            t2v.setTextColor(Color.BLACK);
+                            t2v.setGravity(Gravity.CENTER);
+                            tbrow.addView(t2v);
 
                             TextView t3v = new TextView(CustomTabActivity.this);
                             t3v.setText("some qty");
