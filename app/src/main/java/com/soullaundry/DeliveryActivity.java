@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.util.TypedValue;
@@ -36,7 +37,7 @@ import java.util.HashMap;
 
 import static java.security.AccessController.getContext;
 
-public class DeliveryActivity extends Activity implements SearchView.OnQueryTextListener {
+public class DeliveryActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
 
     SearchView simpleSearchView;

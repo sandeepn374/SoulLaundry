@@ -16,6 +16,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Phone No"
+			android:layout_marginTop="75dp"
 			android:textStyle="bold"
 		/>
 
@@ -44,6 +45,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Bill No"
+			android:layout_marginTop="20dp"
 			android:textStyle="bold"
 			android:inputType="none"
 
@@ -56,20 +58,32 @@
 			android:inputType="text"
 			android:text="A0001"
 		/>
-
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Delivery type"
+			android:layout_marginTop="20dp"
+			android:textStyle="bold"/>
 		<Spinner
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:entries="@array/deltype"
+
 			android:id="@+id/deltype">
 
 		</Spinner>
-
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Delivery days"
+			android:layout_marginTop="20dp"
+			android:textStyle="bold"/>
 
 		<Spinner
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:entries="@array/deldays"
+
 			android:id="@+id/deldays">
 
 		</Spinner>
@@ -78,6 +92,7 @@
 			android:id="@+id/btn_submit"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
 			android:text="Click to Proceed"
 		/>
 

@@ -4,6 +4,7 @@ import android.app.*;
 import android.content.*;
 import android.graphics.*;
 import android.os.*;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.*;
 import android.text.*;
 import android.view.*;
@@ -17,7 +18,7 @@ import java.util.*;
 import android.view.View.OnClickListener;
 
 
-public class CollectionActivity extends Activity
+public class CollectionActivity extends AppCompatActivity
 {
 
 

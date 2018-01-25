@@ -399,7 +399,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
             String service="";
 
             if(pos==0)
-                service="Dry Cean";
+                service="Dry Clean";
             else if(pos==1)
                 service="Wash /Fold";
             else if(pos==2)
