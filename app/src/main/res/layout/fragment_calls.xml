@@ -350,12 +350,11 @@ android:id="@+id/IdTable"
                 />
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -386,12 +385,11 @@ android:id="@+id/IdTable"
                 />
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -422,12 +420,11 @@ android:id="@+id/IdTable"
                 />
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -458,13 +455,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -496,12 +491,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -532,12 +526,11 @@ android:id="@+id/IdTable"
                 />
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -569,12 +562,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -605,13 +597,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -641,14 +631,11 @@ android:id="@+id/IdTable"
                 android:textStyle="bold"
                 />
 
-
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -678,13 +665,11 @@ android:id="@+id/IdTable"
                 android:textStyle="bold"
                 />
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -715,13 +700,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -752,12 +735,11 @@ android:id="@+id/IdTable"
                 />
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -789,12 +771,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -825,13 +806,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -861,13 +840,11 @@ android:id="@+id/IdTable"
                 android:textStyle="bold"
                 />
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -899,13 +876,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -936,13 +911,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -973,12 +946,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1010,13 +982,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1049,12 +1019,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1086,13 +1055,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1124,13 +1091,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1162,13 +1127,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1201,13 +1164,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1237,14 +1198,11 @@ android:id="@+id/IdTable"
                 android:textStyle="bold"
                 />
 
-
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1276,13 +1234,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1315,12 +1271,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1353,12 +1308,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1389,13 +1343,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1429,12 +1381,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1467,12 +1418,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1504,12 +1454,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1540,13 +1489,11 @@ android:id="@+id/IdTable"
                 />
 
 
-
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1580,12 +1527,11 @@ android:id="@+id/IdTable"
 
 
 
-            <TextView
+            <EditText
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
