@@ -52,6 +52,17 @@
                 />
 
 
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="    Discount   "
+                android:textStyle="bold"
+                />
+
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,6 +113,15 @@
                 android:textStyle="bold"
                 />
 
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="discount"
+                android:textStyle="bold"
+                />
+
 
 
 
@@ -144,6 +164,16 @@
                 android:hint="rate"
                 android:textStyle="bold"
                 />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="discount"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -178,6 +208,16 @@
                 android:layout_height="wrap_content"
 
                 android:hint="rate"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="discount"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -217,6 +257,16 @@
                 android:hint="rate"
                 android:textStyle="bold"
                 />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="discount"
+                android:textStyle="bold"
+                />
         </TableRow>
 
         <TableRow
@@ -250,6 +300,16 @@
                 android:layout_height="wrap_content"
 
                 android:hint="rate"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="discount"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -287,6 +347,16 @@
                 android:layout_height="wrap_content"
 
                 android:hint="rate"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="discount"
                 android:textStyle="bold"
                 />
         </TableRow>
