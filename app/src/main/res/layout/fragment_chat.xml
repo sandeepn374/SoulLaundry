@@ -5,10 +5,13 @@
     tools:context="com.soullaundry.DeliveryActivity">
 
 
+
+
+
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:id="@+id/IdTable"
         >
 
 
@@ -34,7 +37,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/qtyText"
-                android:text="Qty/Count   "
+                android:text="Qty/Count"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rate"
+                android:text="    Rate   "
                 android:textStyle="bold"
                 />
 
@@ -44,6 +57,7 @@
                 android:layout_height="wrap_content"
                 android:text="Add"
                 android:layout_alignParentRight="true"
+                android:id="@+id/adder"
                 />
 
 
@@ -73,7 +87,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:textStyle="bold"
+                android:inputType="number"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
 
@@ -105,7 +130,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -130,7 +167,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -155,7 +204,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -180,7 +241,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -205,7 +278,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -230,7 +315,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -255,7 +352,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -280,7 +388,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -305,7 +424,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -330,7 +460,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -355,7 +497,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -380,7 +534,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -405,7 +570,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -430,7 +607,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -455,7 +644,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -480,7 +681,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -505,7 +717,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -530,7 +754,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -555,7 +790,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -580,7 +827,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -605,7 +864,18 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -631,7 +901,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -656,7 +938,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -680,7 +974,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -706,7 +1012,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -732,7 +1050,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -758,7 +1088,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -784,7 +1126,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -810,7 +1164,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -837,7 +1203,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -862,7 +1240,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -888,7 +1278,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -914,7 +1316,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -940,7 +1354,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -965,7 +1391,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -992,7 +1430,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1018,7 +1468,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1043,7 +1505,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1068,7 +1542,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
@@ -1079,6 +1565,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:weightSum="1" >
+
+
 
             <TextView
 
@@ -1093,7 +1581,19 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="     10"
                 android:textStyle="bold"
                 />
         </TableRow>
