@@ -12,16 +12,18 @@ public class BillDetails implements Serializable
 
    public String clothType;
     public int qty;
-    public String price;
+    public int price;
 	public String svcType="";
+	public int discount;
 
 
     public BillDetails(){}
-    public BillDetails(String clothType, String price ,int qty,String svc){
+    public BillDetails(String clothType, int price ,int qty,String svc,int discount){
         this.clothType=clothType;
         this.qty=qty;
         this.price=price;
 		this.svcType=svc;
+		this.discount=discount;
 
 
     }
@@ -34,7 +36,7 @@ public class BillDetails implements Serializable
     public int getQty(){
         return this.qty;
     }
-    public String getPrice(){
+    public int getPrice(){
         return this.price;
     }
 

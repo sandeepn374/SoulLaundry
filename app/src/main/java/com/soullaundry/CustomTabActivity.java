@@ -410,9 +410,10 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                 service="Only Iron";
 
 
-            BillDetails b=new BillDetails(data.get(i).cloth,"10",data.get(i).count,service);
+            BillDetails b=new BillDetails(data.get(i).cloth,data.get(i).rate,data.get(i).count,service,data.get(i).discount);
 
-            total+= data.get(i).count* 10;
+            total+= data.get(i).count* data.get(i).rate;
+
             billDetailsArrayList.add(b);
 
 
