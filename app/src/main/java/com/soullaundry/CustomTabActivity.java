@@ -47,7 +47,8 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
     CallsFragment chatFragment;
     CallsFragment callsFragment;
-    CallsFragment contactsFragment,OnlyIron;
+    CallsFragment dryCleanFragment,OnlyIron;
+    ChatFragment washIronFragment,washFoldFragment;
 
     String[] tabTitle={"Wash/Fold","Wash/Iron","Only Iron","Dry Cleaning"};
     int[] unreadCount={0,5,0};
@@ -339,17 +340,17 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
 
          adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        callsFragment=new CallsFragment();
-        chatFragment=new CallsFragment();
-        contactsFragment=new CallsFragment();
+        washFoldFragment=new ChatFragment();
+        washIronFragment=new ChatFragment();
+        dryCleanFragment=new CallsFragment();
         OnlyIron=new CallsFragment();
 
-        adapter.addFragment(chatFragment,"Wash/Fold");
-        adapter.addFragment(contactsFragment,"Wash/Iron");
+        adapter.addFragment(washFoldFragment,"Wash/Fold");
+        adapter.addFragment(washIronFragment,"Wash/Iron");
 
         adapter.addFragment(OnlyIron,"Only Iron");
 
-        adapter.addFragment(callsFragment,"Dry Cleaning");
+        adapter.addFragment(dryCleanFragment,"Dry Cleaning");
         viewPager.setAdapter(adapter);
     }
 
