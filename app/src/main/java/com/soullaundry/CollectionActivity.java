@@ -312,7 +312,7 @@ if (s.length()==10){
 
 				name=edt_name.getText().toString();
 
-				billNumber=edt_email.getText().toString();
+				billNumber=billNumberText.getText().toString();
 
 				phone=edt_phone.getText().toString();
 				emailStr=edit_email_id.getText().toString().trim();
