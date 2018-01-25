@@ -400,13 +400,13 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
             Integer actualprice = 0;
             String service="";
 
-            if(pos==0)
+            if(pos==4)
                 service="Dry Clean";
-            else if(pos==1)
+            else if(pos==0)
                 service="Wash /Fold";
-            else if(pos==2)
+            else if(pos==1)
                 service="Wash / Iron";
-            else if(pos==3)
+            else if(pos==2)
                 service="Only Iron";
 
 
