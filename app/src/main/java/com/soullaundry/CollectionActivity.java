@@ -74,6 +74,8 @@ public class CollectionActivity extends Activity
 		edt_email= (TextView) findViewById(com.soullaundry.R.id.edt_email);
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
+		deltype=(Spinner)findViewById(R.id.deltype);
+		deldays=(Spinner)findViewById(R.id.deldays);
 
 
        
@@ -316,6 +318,18 @@ if (s.length()==10){
 				}
 				else if((name.length() == 0)){
 					edt_name.setError("Please Enter  Name");
+				}
+				else if(deltype.getSelectedItem().toString().equals("Select Delivery Type")){
+
+					((TextView)deltype.getChildAt(0)).setError("Please select delivery type");
+
+
+				}
+				else if(deldays.getSelectedItem().toString().equals("Select Delivery Days")){
+
+					((TextView)deltype.getChildAt(0)).setError("Please select Delivery days");
+
+
 				}
 				else {
 
