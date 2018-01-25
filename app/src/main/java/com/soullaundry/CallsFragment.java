@@ -22,11 +22,9 @@ import java.util.ArrayList;
  * Created by kshravi on 24/01/2018 AD.
  */
 public class CallsFragment extends Fragment {
+	
+	OnDataPass dataPasser;
 
-
-    public CallsFragment() {
-        // Required empty public constructor
-    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -103,17 +101,12 @@ passData(sending);
         return rootView;
     }
 
-    public interface OnDataPass {
-        public void onDataPass(ArrayList<Detail> data);
-    }
-
-
-    CallsFragment.OnDataPass dataPasser;
+    
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        dataPasser = (CallsFragment.OnDataPass) context;
+        dataPasser = (OnDataPass) context;
     }
 
 

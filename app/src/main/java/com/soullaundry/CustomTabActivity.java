@@ -35,7 +35,7 @@ import java.util.Calendar;
 /**
  * Created by kshravi on 24/01/2018 AD.
  */
-public class CustomTabActivity extends AppCompatActivity implements CallsFragment.OnDataPass {
+public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
     //This is our tablayout
     private TabLayout tabLayout;
