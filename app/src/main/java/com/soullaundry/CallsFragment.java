@@ -92,10 +92,15 @@ ArrayList<Detail> sending=new ArrayList<Detail>();
                 }
 
 passData(sending);
+if(sending.size()==0){
 
-                Toast.makeText(getContext(),"Succesfully Added to the Bill",
-                       Toast.LENGTH_SHORT).show();
-
+    Toast.makeText(getContext(),"You have not entered any item to add",
+            Toast.LENGTH_SHORT).show();
+}
+else {
+    Toast.makeText(getContext(), "Succesfully Added to the Bill",
+            Toast.LENGTH_SHORT).show();
+}
             }
         });
         return rootView;
