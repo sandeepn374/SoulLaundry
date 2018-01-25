@@ -13,7 +13,7 @@ public class BillDetails implements Serializable
     String clothType;
     int qty;
     String price;
-	String svcType;
+	String svcType="";
 
     public BillDetails(){}
     public BillDetails(String clothType, String price ,int qty,String svc){
