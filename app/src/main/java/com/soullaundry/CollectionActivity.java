@@ -365,6 +365,29 @@ if (s.length()==10){
 
 				}
 
+
+				 else if((emailStr.length()!=0)){
+
+					 if (phone.length()!=10) {
+						 edt_phone.setError("Please Enter valid phone number");
+					 }
+
+					 else {
+
+						 Intent z = new Intent(CollectionActivity.this, CustomTabActivity.class);
+
+						 z.putExtra("name", name);
+
+						 z.putExtra("phone", phone);
+						 z.putExtra("billNumber",billNumber);
+						 z.putExtra("deltype",deltype.getSelectedItem().toString());
+						 z.putExtra("deldays", deldays.getSelectedItem().toString());
+						 startActivity(z);
+
+					 }
+
+				 }
+
                  else {
 
                      Intent z = new Intent(CollectionActivity.this, CustomTabActivity.class);
