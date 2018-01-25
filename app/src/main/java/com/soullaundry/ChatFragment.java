@@ -84,6 +84,11 @@ public class ChatFragment extends Fragment {
                                         d.count=Integer.parseInt(ediqty.getText().toString());
                                         d.rate=Integer.parseInt(rate.getText().toString());
 
+                                        EditText dis=(EditText)row.getChildAt(3);
+                                        if(dis.length()!=0)
+                                            d.discount=Integer.parseInt(dis.getText().toString());
+
+
 
 
                                         sending.add(d);
