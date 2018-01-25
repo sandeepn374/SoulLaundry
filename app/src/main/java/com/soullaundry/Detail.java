@@ -8,5 +8,6 @@ class Detail {
 
     public String cloth;
     public int count;
-    public String service;
+    public int rate;
+    public int discount;
 }

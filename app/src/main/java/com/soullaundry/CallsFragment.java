@@ -58,26 +58,30 @@ ArrayList<Detail> sending=new ArrayList<Detail>();
                         TableRow row = (TableRow) child;
 
                         for (int x = 0; x < row.getChildCount(); x++) {
-                            if(x==0) {
-                              //  TextView edi = (TextView) row.getChildAt(x);
-                               // passs+=edi.getText();
 
-                            }
-                            else if(x==1)
+                             if(x==1)
                             {
                                 EditText ediqty=(EditText)row.getChildAt(x);
                                 System.out.println("murugan"+ediqty.getText()+ediqty.getText().toString().length());
                                 if(ediqty.getText().toString().length()==0)
                                     System.out.println("nothing to pass");
                                 else{
-                                    Detail d=new Detail();
-                                    TextView edi = (TextView) row.getChildAt(0);
-                                    d.cloth=edi.getText().toString();
-                                    d.count=Integer.parseInt(ediqty.getText().toString());
+                                    EditText rate=(EditText) row.getChildAt(2);
+                                    if(rate.getText().length()==0){
+
+                                        rate.setError("Please enter rate");
+                                    }
+                                    else{
+
+                                        Detail d=new Detail();
+                                        TextView edi = (TextView) row.getChildAt(0);
+                                        d.cloth=edi.getText().toString();
+                                        d.count=Integer.parseInt(ediqty.getText().toString());
 
 
 
-                                    sending.add(d);
+                                        sending.add(d);
+                                    }
 
                                 }
                             }
