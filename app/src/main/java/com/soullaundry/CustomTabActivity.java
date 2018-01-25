@@ -1,9 +1,11 @@
 package com.soullaundry;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,6 +21,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -73,6 +76,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
     final String[] priceSpinner = {""};
 
     int total=0;
+    int delCharges=0;
 
     ArrayList<BillDetails> billDetailsArrayList= new ArrayList<BillDetails>();
     public Button submitaall;
@@ -146,6 +150,49 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
 
                 else {
+
+
+
+
+                    final AlertDialog.Builder alert = new AlertDialog.Builder(CustomTabActivity.this);
+
+
+                    final EditText edittext = new EditText(CustomTabActivity.this);
+                    alert.setMessage("Please enter if delivery charges applicable");
+                    alert.setTitle("Amount");
+
+                    alert.setView(edittext);
+
+                    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                            // what ever you want to do with No option.
+                            //alert.dismiss();
+                        }
+                    });
+                    alert.setPositiveButton("Pay", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                            //What ever you want to do with the value
+                            //Editable YouEditTextValue = edittext.getText();
+                            //OR
+
+
+                            String partial = edittext.getText().toString();
+                            if(partial.length()!=0)
+                            delCharges = Integer.parseInt(partial);
+
+
+                        }
+                    });
+
+
+
+                    final AlertDialog alert1 = alert.create();
+
+                    alert1.show();
+
+
+
+
 
 
                         final Dialog dialog = new Dialog(CustomTabActivity.this);
@@ -424,6 +471,9 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
         String deltypeI=getIntent().getStringExtra("deltype");
         if(deltypeI.equals("Express Delivery(Normal * 1.5)"))
             total= (int) (total*1.5);
+
+
+        total=total+delCharges;
 
 
 
