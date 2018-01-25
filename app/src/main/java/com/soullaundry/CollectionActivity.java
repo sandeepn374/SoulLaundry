@@ -26,7 +26,7 @@ public class CollectionActivity extends AppCompatActivity
 
 	EditText edt_name;
 	EditText edt_phone,qty,edit_email_id;
-	TextView edt_email,qtytext;
+	TextView billNumberText,qtytext;
 	Spinner price,cloth,service,deltype,deldays;
 
 	Button btn_submit;
@@ -74,7 +74,7 @@ public class CollectionActivity extends AppCompatActivity
 
 		edt_phone= (EditText) findViewById(com.soullaundry.R.id.edt_phone);
 
-		edt_email= (TextView) findViewById(com.soullaundry.R.id.edt_email);
+		billNumberText= (TextView) findViewById(R.id.billnumbertext);
 
 		btn_submit = (Button)findViewById(com.soullaundry.R.id.btn_submit);
 		deltype=(Spinner)findViewById(R.id.deltype);
@@ -189,18 +189,18 @@ if (s.length()==10){
 					if (foo < 9) {
 						String last = String.valueOf(foo);
 						billNumber = "A000" + last;
-						edt_email.setText(billNumber);
+						billNumberText.setText(billNumber);
 					} else if (foo < 99) {
 						String last = String.valueOf(foo);
 						billNumber = "A00" + last;
 
-						edt_email.setText(billNumber);
+						billNumberText.setText(billNumber);
 					}
 				}
 				else{
 
 					billNumber="A0001";
-					edt_email.setText(billNumber);
+					billNumberText.setText(billNumber);
 				}
 
 			}
