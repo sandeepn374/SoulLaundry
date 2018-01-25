@@ -87,15 +87,19 @@ public class CollectionActivity extends AppCompatActivity
 				// your code here
 
 				if (deltype.getSelectedItem().toString().equals("Express Delivery(Normal * 1.5)")){
-deldays.setSelection(1);
-else
-	deldays.setSelection(0);
 
+deltype.setSelection(1);
 
 
 
 
 				}
+				else
+                {
+                    deltype.setSelection(0);
+
+
+                }
 			}
 
 			@Override
