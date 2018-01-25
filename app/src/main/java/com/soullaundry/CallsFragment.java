@@ -73,7 +73,7 @@ ArrayList<Detail> sending=new ArrayList<Detail>();
                             {
                                 EditText ediqty=(EditText)row.getChildAt(x);
                                 System.out.println("murugan"+ediqty.getText()+ediqty.getText().toString().length());
-                                if(ediqty.getText().toString().equals("0"))
+                                if(ediqty.getText().toString().length()==0)
                                     System.out.println("nothing to pass");
                                 else{
                                     Detail d=new Detail();
