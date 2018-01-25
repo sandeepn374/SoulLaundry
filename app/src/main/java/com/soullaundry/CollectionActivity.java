@@ -330,28 +330,27 @@ if (s.length()==10){
 							Toast.LENGTH_LONG).show();
 				}
 
-				else if((emailStr.length() !=0 || phone.length()!=10)){
-					if(emailStr.length()>0)
-						System.out.println("no ptoblem");
-					else
-					{
+                 else if(deltype.getSelectedItem().toString().equals("Select Delivery Type")){
+
+                     ((TextView)deltype.getChildAt(0)).setError("Please select delivery type");
+
+
+                 }
+                 else if(deldays.getSelectedItem().toString().equals("Select Delivery Days")){
+
+                     ((TextView)deldays.getChildAt(0)).setError("Please select Delivery days");
+
+
+                 }
+
+				else if((emailStr.length()==0)){
+
 						if (phone.length()!=0)
 
 							edt_phone.setError("Please Enter valid phone number");
-					}
-				}
-				else if(deltype.getSelectedItem().toString().equals("Select Delivery Type")){
-
-					((TextView)deltype.getChildAt(0)).setError("Please select delivery type");
-
 
 				}
-				else if(deldays.getSelectedItem().toString().equals("Select Delivery Days")){
 
-					((TextView)deldays.getChildAt(0)).setError("Please select Delivery days");
-
-
-				}
 				else {
 
 					Intent z = new Intent(CollectionActivity.this, CustomTabActivity.class);
