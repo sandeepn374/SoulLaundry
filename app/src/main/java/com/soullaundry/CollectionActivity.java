@@ -330,8 +330,15 @@ if (s.length()==10){
 							Toast.LENGTH_LONG).show();
 				}
 
-				else if((phone.length() != 10)){
-					edt_phone.setError("Please Enter valid phone number");
+				else if((emailStr.length() !=0 || phone.length()!=10)){
+					if(emailStr.length()>0)
+						System.out.println("no ptoblem");
+					else
+					{
+						if (phone.length()!=0)
+
+							edt_phone.setError("Please Enter valid phone number");
+					}
 				}
 				else if(deltype.getSelectedItem().toString().equals("Select Delivery Type")){
 
