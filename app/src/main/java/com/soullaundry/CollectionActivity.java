@@ -321,7 +321,7 @@ if (s.length()==10){
 				//String email = emailValidate.getText().toString().trim();
 
 
-				if(phone.length()!=0 && emailStr.length()!=0){
+				if(phone.length()==0 && emailStr.length()==0){
 					Toast.makeText(getApplicationContext(),
 							"Please enter either Email or Phone Number",
 							Toast.LENGTH_LONG).show();
