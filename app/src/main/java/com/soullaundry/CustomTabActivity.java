@@ -268,7 +268,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                                     ArrayList<PendingIntent> deliverList = new ArrayList<PendingIntent>();
                                     deliverList.add(deliveredPI);
 
-                                    sms.sendMultipartTextMessage("+91" + phone, null, parts, sendList, deliverList);
+                                    sms.sendMultipartTextMessage("+91" + phoneI, null, parts, sendList, deliverList);
                                     //smsManager.sendTextMessage("+91"+phone, null,message, null, null);
                                     Toast.makeText(getApplicationContext(), "SMS Sent!",
                                             Toast.LENGTH_LONG).show();
