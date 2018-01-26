@@ -67,7 +67,7 @@ paid2=(Spinner)findViewById(R.id.bills);
                                    // paid2.setSelection(2);
 
 
-                                    View namebar = View.findViewById(R.id.main_layout);
+                                    View namebar = findViewById(R.id.main_layout);
                                     ((ViewGroup) namebar.getParent()).removeView(namebar);
 
 
@@ -205,7 +205,7 @@ paid2=(Spinner)findViewById(R.id.bills);
                                    // paid2.setSelection(1);
 
 
-                                    View namebar = View.findViewById(R.id.main_layout);
+                                    View namebar = findViewById(R.id.main_layout);
                                     ((ViewGroup) namebar.getParent()).removeView(namebar);
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
@@ -337,7 +337,7 @@ paid2=(Spinner)findViewById(R.id.bills);
                                    // paid2.setSelection(3);
 
 
-                                    View namebar = View.findViewById(R.id.main_layout);
+                                    View namebar = findViewById(R.id.main_layout);
                                     ((ViewGroup) namebar.getParent()).removeView(namebar);
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
