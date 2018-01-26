@@ -56,11 +56,12 @@ paid2=(Spinner)findViewById(R.id.bills);
 
 
 
-setContentView(R.layout.shop);
                     FirebaseDatabase.getInstance().getReference().child("usersG")
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
+
+                                    setContentView(R.layout.shop);
 
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
@@ -185,7 +186,6 @@ setContentView(R.layout.shop);
 
 
 
-                    setContentView(R.layout.shop);
 
 
 
@@ -193,6 +193,8 @@ setContentView(R.layout.shop);
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
+
+                                    setContentView(R.layout.shop);
 
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
@@ -313,13 +315,14 @@ setContentView(R.layout.shop);
                 else if(paid2.getSelectedItem().toString().equals("Show all Bills")){
 
 
-                    setContentView(R.layout.shop);
 
 
                     FirebaseDatabase.getInstance().getReference().child("usersG")
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
+
+                                    setContentView(R.layout.shop);
 
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
