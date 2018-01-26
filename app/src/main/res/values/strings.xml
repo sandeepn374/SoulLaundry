@@ -60,6 +60,15 @@
 
     </string-array>
 
+    <string-array name="bills">
+
+        <item>Select Bills</item>
+        <item>Show Paid Bills</item>
+        <item>Show Unpaid Bills</item>
+        <item>Show all Bills</item>
+
+    </string-array>
+
 
     <string-array name="kgpc">
 
