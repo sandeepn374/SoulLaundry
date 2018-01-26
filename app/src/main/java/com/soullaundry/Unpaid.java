@@ -228,6 +228,8 @@ if(user.due!=0)
                                 }
                             });
 
+                            layoutINNER.addView(tr99);
+
 
                             View line = new View(getContext());
                             line.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, 10));
