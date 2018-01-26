@@ -50,7 +50,7 @@ public class SampleActivity extends AppCompatActivity {
         shop.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent i=new Intent(SampleActivity.this,ShopExpenseActivity.class);
+                Intent i=new Intent(SampleActivity.this,ShopExpenseNew.class);
                 startActivity(i);
 
             }

@@ -62,6 +62,8 @@
 		<activity android:name=".ConfirmActivity" />
 		
         <activity android:name=".ShopExpenseActivity" />
+
+        <activity android:name=".ShopExpenseNew" />
 			
     </application>
 
