@@ -51,7 +51,7 @@ ContactsFragment all;
 Paid paid;
 Unpaid unpaid;
 
-    String[] tabTitle={"Paid","Unpaid","All"};
+    String[] tabTitle={"All","Unpaid","Paid"};
     int[] unreadCount={0,0,0};
 
 
@@ -153,11 +153,13 @@ Unpaid unpaid;
         unpaid=new Unpaid();
         all=new ContactsFragment();
 
-        adapter.addFragment(paid,"Paid");
-        adapter.addFragment(unpaid,"Unpaid");
 
         adapter.addFragment(all,"All");
 
+        adapter.addFragment(unpaid,"Unpaid");
+
+
+        adapter.addFragment(paid,"Paid");
         viewPager.setAdapter(adapter);
     }
 
