@@ -59,7 +59,7 @@ paid2=(Spinner)findViewById(R.id.bills);
 
 
 
-
+setContentView(R.layout.shop);
                     FirebaseDatabase.getInstance().getReference().child("usersG")
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
@@ -180,6 +180,9 @@ paid2=(Spinner)findViewById(R.id.bills);
                 else if(paid2.getSelectedItem().toString().equals("Show Paid Bills")){
 
 
+                    setContentView(R.layout.shop);
+
+
 
                     FirebaseDatabase.getInstance().getReference().child("usersG")
                             .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -298,6 +301,9 @@ paid2=(Spinner)findViewById(R.id.bills);
 
                 }
                 else if(paid2.getSelectedItem().toString().equals("Show all Bills")){
+
+
+                    setContentView(R.layout.shop);
 
 
                     FirebaseDatabase.getInstance().getReference().child("usersG")
