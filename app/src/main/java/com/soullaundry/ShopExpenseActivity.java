@@ -62,6 +62,8 @@ paid2=(Spinner)findViewById(R.id.bills);
                                 public void onDataChange(DataSnapshot dataSnapshot) {
 
                                     setContentView(R.layout.shop);
+                                    paid2=(Spinner)findViewById(R.id.bills);
+                                    paid2.setSelection(2);
 
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
@@ -195,6 +197,7 @@ paid2=(Spinner)findViewById(R.id.bills);
                                 public void onDataChange(DataSnapshot dataSnapshot) {
 
                                     setContentView(R.layout.shop);
+                                    paid2.setSelection(1);
 
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
@@ -323,6 +326,7 @@ paid2=(Spinner)findViewById(R.id.bills);
                                 public void onDataChange(DataSnapshot dataSnapshot) {
 
                                     setContentView(R.layout.shop);
+                                    paid2.setSelection(3);
 
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
