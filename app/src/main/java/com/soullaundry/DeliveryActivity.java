@@ -340,10 +340,104 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
                             tr18.setLayoutParams(params);
 
 
+                            Button paid3 = new Button(DeliveryActivity.this);
+                            paid3.setText("Partially Paid");
+                            paid3.setTextColor(Color.BLACK);
+                            paid3.setGravity(Gravity.CENTER);
+                            paid3.setWidth(10);
+                            paid3.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+
+
+                                    user.due = 0;
+
+
+                                    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
+                                    mDatabase.keepSynced(true);
+                                    Query query = mDatabase.child("usersG").orderByChild("billNumber");
+                                    query.addListenerForSingleValueEvent(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(DataSnapshot dataSnapshot) {
+
+                                            //String billNumber=null;
+                                            for (final DataSnapshot child : dataSnapshot.getChildren()) {
+                                                Log.d("User key", child.getKey());
+                                                Log.d("User val", child.child("billNumber").getValue().toString());
+                                                String billNumber = child.child("billNumber").getValue().toString();
+                                                final String[] partial = {""};
+                                                // child.getRef().child("due").setValue(0);
+                                                if (billNumber.equals(user.billNumber)) {
+
+                                                    final AlertDialog.Builder alert = new AlertDialog.Builder(DeliveryActivity.this);
+
+
+                                                    final EditText edittext = new EditText(DeliveryActivity.this);
+                                                    alert.setMessage("Please enter the partial paid amount");
+                                                    alert.setTitle("Amount");
+
+                                                    alert.setView(edittext);
+
+                                                    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                                        public void onClick(DialogInterface dialog, int whichButton) {
+                                                            // what ever you want to do with No option.
+                                                            //alert1.dismiss();
+                                                        }
+                                                    });
+                                                    alert.setPositiveButton("Pay", new DialogInterface.OnClickListener() {
+                                                        public void onClick(DialogInterface dialog, int whichButton) {
+                                                            //What ever you want to do with the value
+                                                            //Editable YouEditTextValue = edittext.getText();
+                                                            //OR
+                                                            String total = child.child("due").getValue().toString();
+                                                            int totalInt = Integer.parseInt(total);
+                                                            String partial = edittext.getText().toString();
+                                                            int partialInt = Integer.parseInt(partial);
+                                                            child.getRef().child("due").setValue(totalInt - partialInt);
+
+                                                            child.getRef().child("discount").setValue(0);
+                                                            // alert1.dismiss();
+                                                            // Toastmsg(DeliveryActivity.this,"Bill Has been Updated");
+                                                            Toastmsg(DeliveryActivity.this, "Bill Has been Updated");
+
+
+                                                        }
+                                                    });
+
+
+
+                                                    final AlertDialog alert1 = alert.create();
+
+                                                    alert1.show();
+
+
+                                                    /*setContentView(com.ravikiraninfotech.abcdrycleaners.R.layout.delivery);
+
+                                                    simpleSearchView = (SearchView) findViewById(com.ravikiraninfotech.abcdrycleaners.R.id.simpleSearchView);
+                                                    simpleSearchView.setOnQueryTextListener(DeliveryActivity.this);*/
+
+                                                }
+
+                                            }
+
+
+                                        }
+
+                                        @Override
+                                        public void onCancelled(DatabaseError databaseError) {
+
+                                        }
+                                    });
+                                    ;
+
+                                }
+                            });
+
 
                             layoutINNER.addView(tr4);
 
                             layoutINNER.addView(tr5);
+                            tr18.addView(paid3);
                             layoutINNER.addView(tr18);
 
                             View line = new View(DeliveryActivity.this);
