@@ -281,14 +281,20 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                                     SmsManager smsManager = SmsManager.getDefault();
 
                                     message = "Your order has been placed successfully with Soul Laundromat";
-                                    for (int i = 0; i < billDetailsArrayList.size(); i++) {
+                                    String rem="\n";
+                                    for (int p = 0; p < user.billDetailsArrayList.size(); p++) {
 
+                                        rem = rem + "Cloth Type  " + user.billDetailsArrayList.get(p).clothType + "\n";
+
+                                        rem = rem + "Quantity  " + user.billDetailsArrayList.get(p).qty + "\n";
+
+                                        rem = rem + "Price  " + user.billDetailsArrayList.get(p).price + "\n";
 
                                     }
                                     message1 += "\n \n Bill no:" + billNumberI + "\nTotal Price :Rs " + total + "\nDelivery date: " + time;
                                     message2 += "\n\nPaytm Number for Payment : " + "9980461461";
                                     message3 += "\n \n Thank you.";
-                                    message += message1 + message2 + message3;
+                                    message += message1 +rem+ message2 + message3;
 
                                     PendingIntent sentPI = PendingIntent.getBroadcast(CustomTabActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
                                     PendingIntent deliveredPI = PendingIntent.getBroadcast(CustomTabActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
