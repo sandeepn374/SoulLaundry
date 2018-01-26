@@ -416,10 +416,10 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
                                                     alert1.show();
 
 
-                                                    /*setContentView(com.ravikiraninfotech.abcdrycleaners.R.layout.delivery);
+                                                    setContentView(R.layout.delivery);
 
-                                                    simpleSearchView = (SearchView) findViewById(com.ravikiraninfotech.abcdrycleaners.R.id.simpleSearchView);
-                                                    simpleSearchView.setOnQueryTextListener(DeliveryActivity.this);*/
+                                                    simpleSearchView = (SearchView) findViewById(R.id.simpleSearchView);
+                                                    simpleSearchView.setOnQueryTextListener(DeliveryActivity.this);
 
                                                 }
 
