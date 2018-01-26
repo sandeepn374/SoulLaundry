@@ -442,7 +442,7 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
 
 
                             final Button paid4 = new Button(DeliveryActivity.this);
-                            paid4.setText("Delivery Reminder");
+                            paid4.setText("Delivery"+"\n"+ "Reminder");
                             paid4.setTextColor(Color.BLACK);
                             paid4.setGravity(Gravity.CENTER);
                             // paid.setLayoutParams(trparams);
@@ -489,6 +489,12 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
                                         }
 
                                         user.due = 0;
+
+
+                                    setContentView(R.layout.delivery);
+
+                                    simpleSearchView = (SearchView) findViewById(R.id.simpleSearchView);
+                                    simpleSearchView.setOnQueryTextListener(DeliveryActivity.this);
 
 
                                         ;
