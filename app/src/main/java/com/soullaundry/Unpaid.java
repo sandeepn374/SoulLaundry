@@ -67,7 +67,7 @@ public class Unpaid extends Fragment {
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
                         LinearLayout main = (LinearLayout) rootView.findViewById(com.soullaundry.R.id.main_layout);
-                        main.removeAllViews();
+
 
 
 

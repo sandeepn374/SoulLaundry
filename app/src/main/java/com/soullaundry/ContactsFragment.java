@@ -60,7 +60,7 @@ public class ContactsFragment extends Fragment {
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
                         LinearLayout main = (LinearLayout) rootView.findViewById(com.soullaundry.R.id.main_layout);
-                        main.removeAllViews();
+
 
 
 
@@ -163,6 +163,9 @@ public class ContactsFragment extends Fragment {
                             line.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, 10));
                             line.setBackgroundColor(Color.rgb(51, 51, 51));
                             layoutINNER.addView(line);
+
+                            if(layoutINNER.getParent()!=null)
+                                ((ViewGroup)layoutINNER.getParent()).removeView(layoutINNER);
 
                             main.addView(layoutINNER);
 
