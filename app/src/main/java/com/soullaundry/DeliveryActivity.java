@@ -441,11 +441,72 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
 
 
 
+                            final Button paid4 = new Button(DeliveryActivity.this);
+                            paid4.setText("Delivery Reminder");
+                            paid4.setTextColor(Color.BLACK);
+                            paid4.setGravity(Gravity.CENTER);
+                            // paid.setLayoutParams(trparams);
+
+                            paid4.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+
+
+
+
+
+
+                                        try {
+                                            SmsManager smsManager = SmsManager.getDefault();
+
+                                            String message = "Your Order is ready for delivery and will be delivered by end of day today."+ "\n"+"From Soul Laundromat"+"\n"+"For any queries please contact"+
+                                                    "\n"+"9980461461"+"\n"+"9008181686";
+
+
+
+                                            PendingIntent sentPI = PendingIntent.getBroadcast(DeliveryActivity.this, 0, new Intent("SENT_SMS_ACTION_NAME"), 0);
+                                            PendingIntent deliveredPI = PendingIntent.getBroadcast(DeliveryActivity.this, 0, new Intent("DELIVERED_SMS_ACTION_NAME"), 0);
+
+
+                                            SmsManager sms = SmsManager.getDefault();
+                                            ArrayList<String> parts = sms.divideMessage(message);
+
+                                            ArrayList<PendingIntent> sendList = new ArrayList<PendingIntent>();
+                                            sendList.add(sentPI);
+
+                                            ArrayList<PendingIntent> deliverList = new ArrayList<PendingIntent>();
+                                            deliverList.add(deliveredPI);
+
+                                            sms.sendMultipartTextMessage("+91" + user.ph, null, parts, sendList, deliverList);
+                                            //smsManager.sendTextMessage("+91"+phone, null,message, null, null);
+                                            Toast.makeText(getApplicationContext(), "SMS Sent!",
+                                                    Toast.LENGTH_LONG).show();
+                                        } catch (Exception e) {
+                                            Toast.makeText(getApplicationContext(),
+                                                    "SMS failed, please try again later!",
+                                                    Toast.LENGTH_LONG).show();
+                                            e.printStackTrace();
+                                        }
+
+                                        user.due = 0;
+
+
+                                        ;
+
+
+
+                                }
+                            });
+
+
+
+
 
                             layoutINNER.addView(tr4);
 
                             layoutINNER.addView(tr5);
                             tr18.addView(paid3);
+                            tr18.addView(paid4);
                             layoutINNER.addView(tr18);
 
                             View line = new View(DeliveryActivity.this);
