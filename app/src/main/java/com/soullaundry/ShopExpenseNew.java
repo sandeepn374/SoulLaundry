@@ -50,7 +50,7 @@ public class ShopExpenseNew extends AppCompatActivity  {
 ContactsFragment paid,unpaid,all;
 
     String[] tabTitle={"Paid","Unpaid","All"};
-    int[] unreadCount={0,5,0};
+    int[] unreadCount={0,0,0};
 
 
     String message;
