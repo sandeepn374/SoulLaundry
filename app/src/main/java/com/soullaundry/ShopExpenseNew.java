@@ -47,7 +47,9 @@ public class ShopExpenseNew extends AppCompatActivity  {
     private ViewPager viewPager;
 
     //Fragments
-ContactsFragment paid,unpaid,all;
+ContactsFragment all;
+Paid paid;
+Unpaid unpaid;
 
     String[] tabTitle={"Paid","Unpaid","All"};
     int[] unreadCount={0,0,0};
@@ -147,8 +149,8 @@ ContactsFragment paid,unpaid,all;
 
 
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        paid=new ContactsFragment();
-        unpaid=new ContactsFragment();
+        paid=new Paid();
+        unpaid=new Unpaid();
         all=new ContactsFragment();
 
         adapter.addFragment(paid,"Paid");
