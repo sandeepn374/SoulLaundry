@@ -345,7 +345,7 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
 
 
                             Button paid3 = new Button(DeliveryActivity.this);
-                            paid3.setText("Partially Paid");
+                            paid3.setText("Partially"+"\n"+"Paid");
                             paid3.setTextColor(Color.BLACK);
                             paid3.setGravity(Gravity.CENTER);
                             paid3.setWidth(10);
@@ -437,6 +437,9 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
 
                                 }
                             });
+
+
+
 
 
                             layoutINNER.addView(tr4);
