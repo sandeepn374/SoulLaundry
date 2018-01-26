@@ -45,9 +45,6 @@ public class ShopExpenseActivity extends AppCompatActivity  {
         setContentView(com.soullaundry.R.layout.shop);
 paid2=(Spinner)findViewById(R.id.bills);
 
-        final LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
-
-        final TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
 
 
 
@@ -64,6 +61,11 @@ setContentView(R.layout.shop);
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
+
+
+                                    LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
+
+                                    TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
                                     int totDue=0;
                                     ArrayList<User> users=new ArrayList<User>();
                                     for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
@@ -159,6 +161,7 @@ setContentView(R.layout.shop);
                                         View line = new View(ShopExpenseActivity.this);
                                         line.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, 10));
                                         line.setBackgroundColor(Color.rgb(51, 51, 51));
+
                                         layoutINNER.addView(line);
 
                                         main.addView(layoutINNER);
@@ -180,6 +183,8 @@ setContentView(R.layout.shop);
                 else if(paid2.getSelectedItem().toString().equals("Show Paid Bills")){
 
 
+
+
                     setContentView(R.layout.shop);
 
 
@@ -188,6 +193,11 @@ setContentView(R.layout.shop);
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
+
+
+                                    LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
+
+                                    TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
                                     int totDue=0;
                                     ArrayList<User> users=new ArrayList<User>();
                                     for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
@@ -310,6 +320,11 @@ setContentView(R.layout.shop);
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
+
+
+                                    LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
+
+                                    TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
                                     int totDue=0;
                                     ArrayList<User> users=new ArrayList<User>();
                                     for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
