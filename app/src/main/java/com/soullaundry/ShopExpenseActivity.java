@@ -54,6 +54,11 @@ public class ShopExpenseActivity extends AppCompatActivity  {
 
 
         final Spinner paid2 = new Spinner(ShopExpenseActivity.this);
+
+        layoutINNER.addView(paid2);
+
+        main.addView(layoutINNER);
+
         ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(ShopExpenseActivity.this
                 , android.R.layout.simple_spinner_item, array); //selected item will look like a spinner set from XML
         spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -62,6 +67,140 @@ public class ShopExpenseActivity extends AppCompatActivity  {
         paid2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+                if(paid2.getSelectedItem().toString().equals("Show Unpaid Bills")){
+
+
+                }
+                else if(paid2.getSelectedItem().toString().equals("Show Paid Bills")){
+
+                }
+                else if(paid2.getSelectedItem().toString().equals("Show all Bills")){
+
+
+                    FirebaseDatabase.getInstance().getReference().child("usersG")
+                            .addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                    int totDue=0;
+                                    ArrayList<User> users=new ArrayList<User>();
+                                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                        final User user = snapshot.getValue(User.class);
+
+                                        users.add(user);
+
+
+                                    }
+                                    java.util.Collections.reverse(users);
+                                    int l=0;
+
+                                    for(final User user:users) {
+                                        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT,
+                                                TableLayout.LayoutParams.WRAP_CONTENT);
+                                        TextView tv1 = new TextView(ShopExpenseActivity.this);
+                                        TextView tv2 = new TextView(ShopExpenseActivity.this);
+
+                                        TextView tv3 = new TextView(ShopExpenseActivity.this);
+
+                                        TextView tv4 = new TextView(ShopExpenseActivity.this);
+
+                                        TextView tv5 = new TextView(ShopExpenseActivity.this);
+
+                                        TextView tv0 = new TextView(ShopExpenseActivity.this);
+
+
+
+
+                                        tv1.setText("Name " + user.name);
+                                        tv2.setText("Bill Number " + user.billNumber);
+                                        tv3.setText("Amount " + user.total);
+                                        tv4.setText("Due  " + user.due);
+                                        tv5.setText("PickUpDate "+user.pickUpDate+"\n"+"DeliveryDate "+user.deliveryDate+"\n"+"Payment Mode  -"+user.paymentMode);
+                                        if (user.due==0)
+                                            tv4.setTextColor(Color.GREEN);
+                                        else
+                                            tv4.setTextColor(Color.RED);
+
+
+                                        TableRow.LayoutParams trparams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);
+                                        tv1.setLayoutParams(trparams);
+                                        tv2.setLayoutParams(trparams);
+                                        tv3.setLayoutParams(trparams);
+                                        tv4.setLayoutParams(trparams);
+                                        tv5.setLayoutParams(trparams);
+                                        tv0.setLayoutParams(trparams);
+
+
+
+
+
+
+
+                                        layoutINNER.setLayoutParams(params);
+                                        TableRow tr = new TableRow(ShopExpenseActivity.this);
+
+                                        tr.setLayoutParams(params);
+                                        tr.addView(tv1);
+                                        TableRow tr2 = new TableRow(ShopExpenseActivity.this);
+
+                                        tr2.setLayoutParams(params);
+                                        tr2.addView(tv2);
+
+                                        TableRow tr3 = new TableRow(ShopExpenseActivity.this);
+
+                                        tr3.setLayoutParams(params);
+                                        tr3.addView(tv3);
+
+
+                                        TableRow tr6 = new TableRow(ShopExpenseActivity.this);
+
+                                        tr6.setLayoutParams(params);
+                                        tr6.addView(tv4);
+
+                                        TableRow tr7 = new TableRow(ShopExpenseActivity.this);
+
+                                        tr7.setLayoutParams(params);
+                                        tr7.addView(tv5);
+
+                                        layoutINNER.addView(tr);
+                                        layoutINNER.addView(tr2);
+
+                                        layoutINNER.addView(tr3);
+
+
+                                        layoutINNER.addView(tr6);
+
+                                        layoutINNER.addView(tr7);
+
+
+                                        View line = new View(ShopExpenseActivity.this);
+                                        line.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, 10));
+                                        line.setBackgroundColor(Color.rgb(51, 51, 51));
+                                        layoutINNER.addView(line);
+
+                                        main.addView(layoutINNER);
+
+                                    }
+
+
+
+
+                                }
+
+                                @Override
+                                public void onCancelled(DatabaseError databaseError) {
+                                }
+                            });
+
+                }
+                else
+                {
+
+
+
+                }
+
+
 
             }
 
@@ -72,125 +211,7 @@ public class ShopExpenseActivity extends AppCompatActivity  {
 
         });
 
-        layoutINNER.addView(paid2);
 
-        FirebaseDatabase.getInstance().getReference().child("usersG")
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        int totDue=0;
-                        ArrayList<User> users=new ArrayList<User>();
-                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                            final User user = snapshot.getValue(User.class);
-
-                                users.add(user);
-
-
-                        }
-                        java.util.Collections.reverse(users);
-                        int l=0;
-                        int tot=0;
-                        for(int h=0;h<users.size();h++){
-                            tot=tot+users.get(h).due;
-                        }
-                        for(final User user:users) {
-                            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT,
-                                    TableLayout.LayoutParams.WRAP_CONTENT);
-                            TextView tv1 = new TextView(ShopExpenseActivity.this);
-                            TextView tv2 = new TextView(ShopExpenseActivity.this);
-
-                            TextView tv3 = new TextView(ShopExpenseActivity.this);
-
-                            TextView tv4 = new TextView(ShopExpenseActivity.this);
-
-                            TextView tv5 = new TextView(ShopExpenseActivity.this);
-
-                            TextView tv0 = new TextView(ShopExpenseActivity.this);
-
-
-
-
-                            tv1.setText("Name " + user.name);
-                            tv2.setText("Bill Number " + user.billNumber);
-                            tv3.setText("Amount " + user.total);
-                            tv4.setText("Due  " + user.due);
-                            tv5.setText("PickUpDate "+user.pickUpDate+"\n"+"DeliveryDate "+user.deliveryDate+"\n"+"Payment Mode  -"+user.paymentMode);
-                            if (user.due==0)
-                                tv4.setTextColor(Color.GREEN);
-                            else
-                                tv4.setTextColor(Color.RED);
-
-
-                            totDue += user.due;
-                            TableRow.LayoutParams trparams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);
-                            tv1.setLayoutParams(trparams);
-                            tv2.setLayoutParams(trparams);
-                            tv3.setLayoutParams(trparams);
-                            tv4.setLayoutParams(trparams);
-                            tv5.setLayoutParams(trparams);
-                            tv0.setLayoutParams(trparams);
-
-
-
-
-
-
-
-                            layoutINNER.setLayoutParams(params);
-                            TableRow tr = new TableRow(ShopExpenseActivity.this);
-
-                            tr.setLayoutParams(params);
-                            tr.addView(tv1);
-                            TableRow tr2 = new TableRow(ShopExpenseActivity.this);
-
-                            tr2.setLayoutParams(params);
-                            tr2.addView(tv2);
-
-                            TableRow tr3 = new TableRow(ShopExpenseActivity.this);
-
-                            tr3.setLayoutParams(params);
-                            tr3.addView(tv3);
-
-
-                            TableRow tr6 = new TableRow(ShopExpenseActivity.this);
-
-                            tr6.setLayoutParams(params);
-                            tr6.addView(tv4);
-
-                            TableRow tr7 = new TableRow(ShopExpenseActivity.this);
-
-                            tr7.setLayoutParams(params);
-                            tr7.addView(tv5);
-
-                            layoutINNER.addView(tr);
-                            layoutINNER.addView(tr2);
-
-                            layoutINNER.addView(tr3);
-
-
-                            layoutINNER.addView(tr6);
-
-                            layoutINNER.addView(tr7);
-
-
-                            View line = new View(ShopExpenseActivity.this);
-                            line.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, 10));
-                            line.setBackgroundColor(Color.rgb(51, 51, 51));
-                            layoutINNER.addView(line);
-
-                            main.addView(layoutINNER);
-
-                        }
-
-
-
-
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-                    }
-                });
 
     }
 
