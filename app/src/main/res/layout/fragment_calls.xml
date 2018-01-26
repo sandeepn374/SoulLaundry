@@ -90,7 +90,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Double Quilt Blanket "
+                android:text="Shirt/T-Shirt(M) "
                 android:textStyle="bold"
                 />
 
@@ -132,7 +132,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Single QuiltBlanket "
+                android:text="Kurta/Long Shirts(M) "
                 android:textStyle="bold"
                 />
 
@@ -170,7 +170,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Suit(2pcs) "
+                android:text="Trousers(M) "
                 android:textStyle="bold"
                 />
 
@@ -205,7 +205,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Half-JacketBlazer "
+                android:text="Jeans(M) "
                 android:textStyle="bold"
                 />
 
@@ -240,7 +240,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Silk Kurta "
+                android:text="Shorts/Boxers(M) "
                 android:textStyle="bold"
                 />
 
@@ -275,43 +275,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fancy Kurta "
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pyjama "
+                android:text="Pyjamas(M) "
                 android:textStyle="bold"
                 />
 
@@ -347,147 +311,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Silk Pyjama "
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lehenga "
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dress -Small "
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Dress- Long"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Anarkali Dress "
+                android:text="Jackets(M) "
                 android:textStyle="bold"
                 />
 
@@ -523,7 +347,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Selwar "
+                android:text="Jackets(Leather)(M)"
                 android:textStyle="bold"
                 />
 
@@ -558,43 +382,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dupatta "
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Kurta "
+                android:text="Winter Wear(Sweater/Hoodies)(M) "
                 android:textStyle="bold"
                 />
 
@@ -629,75 +417,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sweater "
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ladies Skirt "
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ladies Top "
+                android:text="Winter Wear(M)  "
                 android:textStyle="bold"
                 />
 
@@ -732,7 +452,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sherwani "
+                android:text=" Rain Coats(M)"
                 android:textStyle="bold"
                 />
 
@@ -767,7 +487,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Leather Jacket "
+                android:text="Tie(M)"
                 android:textStyle="bold"
                 />
 
@@ -803,7 +523,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jacket Blazer "
+                android:text="Hand kerchief(M) "
                 android:textStyle="bold"
                 />
 
@@ -838,7 +558,287 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gown "
+                android:text="Socks(per pair)(M) "
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blazer(M) "
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhoti/Lungi(M) "
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waist Coat(M) "
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long Coat(M) "
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sherwani/Kurtha(M) "
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scarves(M)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cardigans(M) "
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bath robe(M) "
                 android:textStyle="bold"
                 />
 
@@ -873,7 +873,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Frock "
+                android:text="Cummer Bunds(M) "
                 android:textStyle="bold"
                 />
 
@@ -908,7 +908,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shirts /Tshirts"
+                android:text="Innerwear(M)"
                 android:textStyle="bold"
                 />
 
@@ -942,80 +942,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Trousers/Jeans"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coat"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Single Bedsheet"
+                android:text="Underwear(M)"
                 android:textStyle="bold"
                 />
 
@@ -1052,7 +979,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cotton Saree"
+                android:text="Rain Coats(W)"
                 android:textStyle="bold"
                 />
 
@@ -1088,186 +1015,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Silk Saree (Fancy)"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Silk Saree"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="PLain Saree"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Shall"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Carpet"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="0"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:textStyle="bold"
-                />
-        </TableRow>
-
-
-        <TableRow
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:weightSum="1" >
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="OverCoat"
+                android:text="Tie(W)"
                 android:textStyle="bold"
                 />
 
@@ -1304,7 +1052,259 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Double Bedsheet"
+                android:text="Hand Kerchief(W)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Socks (per pair)(W)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blazer/Coat(W)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Saree(Cotton/Normal)(W)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saree(Silk)(W)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saree(Rich Silk/Wedding Sarees)(W)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Night Gown/Night Dress(W)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bath Robe(W)"
                 android:textStyle="bold"
                 />
 
@@ -1340,7 +1340,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pillow Cover"
+                android:text="Innerwear(Bras/Vests)(W)"
                 android:textStyle="bold"
                 />
 
@@ -1377,7 +1377,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Door Curtain"
+                android:text="Underwear(W)"
                 android:textStyle="bold"
                 />
 
@@ -1414,7 +1414,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Window Curtain"
+                android:text="Hand Towel(H)"
                 android:textStyle="bold"
                 />
 
@@ -1450,7 +1450,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Towel"
+                android:text="Bath Towel(Normal)(H)"
                 android:textStyle="bold"
                 />
 
@@ -1486,7 +1486,7 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dhoti Cotton"
+                android:text="Bath Towel(Large)(H)"
                 android:textStyle="bold"
                 />
 
@@ -1523,7 +1523,123 @@ android:id="@+id/IdTable"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dhoti Silk"
+                android:text="Bedsheet/Bedspread(Single)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bedsheet/Bedspread(Double)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bedsheet/Bedspread(King)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quilt/Blanket(Single)(H)"
                 android:textStyle="bold"
                 />
 
@@ -1550,6 +1666,513 @@ android:id="@+id/IdTable"
 
 
 
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quilt/Blanket(Double)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quilt/Blanket(H/L)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pillow Case(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pillow Case(Fiber)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mattress Cover(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table Cloth(S/M)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table Cloth(Large)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cushion Cover(S/M)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cushion Cover(Large)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curtain(S/M)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curtain(Large)(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apron(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:weightSum="1" >
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Clothes(H)"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textStyle="bold"
+                />
+        </TableRow>
 
 
     </TableLayout>
