@@ -82,6 +82,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
     public Button submitaall;
 
     public ViewPagerAdapter adapter;
+    public TextView tv81;
 
 
     private void Toastmsg(CustomTabActivity collectionActivity, String p1)
@@ -154,41 +155,6 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
 
 
-                    final AlertDialog.Builder alert = new AlertDialog.Builder(CustomTabActivity.this);
-
-
-                    final EditText edittext = new EditText(CustomTabActivity.this);
-                    alert.setMessage("Please enter if delivery charges applicable");
-                    alert.setTitle("Amount");
-
-                    alert.setView(edittext);
-
-                    alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int whichButton) {
-                            // what ever you want to do with No option.
-                            //alert.dismiss();
-                        }
-                    });
-                    alert.setPositiveButton("Pay", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int whichButton) {
-                            //What ever you want to do with the value
-                            //Editable YouEditTextValue = edittext.getText();
-                            //OR
-
-
-                            String partial = edittext.getText().toString();
-                            if(partial.length()!=0)
-                            delCharges = Integer.parseInt(partial);
-
-
-                        }
-                    });
-
-
-
-                    final AlertDialog alert1 = alert.create();
-
-                    alert1.show();
 
 
 
@@ -261,7 +227,8 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
 
                         TableRow tr81 = new TableRow(CustomTabActivity.this);
-                        TextView tv81 = new TextView(CustomTabActivity.this);
+                        tv81 = new TextView(CustomTabActivity.this);
+
                         tv81.setText("Total Bill = " + total);
                         tv81.setTextColor(Color.BLACK);
                         tv81.setGravity(Gravity.CENTER);
@@ -369,6 +336,47 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
 
                 }
+
+
+                final AlertDialog.Builder alert = new AlertDialog.Builder(CustomTabActivity.this);
+
+
+                final EditText edittext = new EditText(CustomTabActivity.this);
+                alert.setMessage("Please enter if delivery charges applicable");
+                alert.setTitle("Amount");
+
+                alert.setView(edittext);
+
+                alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        // what ever you want to do with No option.
+                        //alert.dismiss();
+                    }
+                });
+                alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        //What ever you want to do with the value
+                        //Editable YouEditTextValue = edittext.getText();
+                        //OR
+
+
+                        String partial = edittext.getText().toString();
+                        if(partial.length()!=0) {
+                            delCharges = Integer.parseInt(partial);
+                            total+=delCharges;
+
+                            tv81.setText("Total Bill = " + total);
+                        }
+
+
+                    }
+                });
+
+
+
+                final AlertDialog alert1 = alert.create();
+
+                alert1.show();
 
             }
         });

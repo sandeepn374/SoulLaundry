@@ -133,6 +133,7 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
                             tv2.setText("Bill Number " + user.billNumber);
                             tv3.setText("Amount " + user.total);
                             tv4.setText("Due  " + user.due);
+                            tv5.setText(rem);
                             if (user.due==0)
                                 tv4.setTextColor(Color.GREEN);
                             else
