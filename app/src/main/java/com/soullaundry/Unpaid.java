@@ -237,6 +237,10 @@ if(user.due!=0)
                             line.setBackgroundColor(Color.rgb(51, 51, 51));
                             layoutINNER.addView(line);
 
+                            // TEXTVIEW
+                            if(main.getParent()!=null)
+                                ((ViewGroup)main.getParent()).removeView(main);
+
                             main.addView(layoutINNER);
 
                         }
