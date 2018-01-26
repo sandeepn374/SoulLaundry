@@ -8,14 +8,6 @@
 
 
 
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/bills"
-        android:id="@+id/bills"
-        android:spinnerMode="dialog">
-
-    </Spinner>
 
 
 
@@ -26,6 +18,15 @@
         android:id="@+id/main_layout"
         android:orientation="vertical"
         android:focusableInTouchMode="true">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/bills"
+            android:id="@+id/bills"
+            android:spinnerMode="dialog">
+
+        </Spinner>
 
 
 
