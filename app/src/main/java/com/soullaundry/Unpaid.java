@@ -238,8 +238,8 @@ if(user.due!=0)
                             layoutINNER.addView(line);
 
                             // TEXTVIEW
-                            if(main.getParent()!=null)
-                                ((ViewGroup)main.getParent()).removeView(main);
+                            if(layoutINNER.getParent()!=null)
+                                ((ViewGroup)layoutINNER.getParent()).removeView(layoutINNER);
 
                             main.addView(layoutINNER);
 
