@@ -10,10 +10,13 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -38,6 +41,37 @@ public class ShopExpenseActivity extends Activity  {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(com.soullaundry.R.layout.shop);
+
+
+        final LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
+
+        final TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
+
+
+        String[] array = {"Show Unpaid Bills", "Show Paid Bills", "Show all Bills"};
+
+
+
+        final Spinner paid2 = new Spinner(ShopExpenseActivity.this);
+        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(ShopExpenseActivity.this
+                , android.R.layout.simple_spinner_item, array); //selected item will look like a spinner set from XML
+        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        paid2.setAdapter(spinnerArrayAdapter);
+
+        paid2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // your code here
+            }
+
+        });
+
+        layoutINNER.addView(paid2);
 
         FirebaseDatabase.getInstance().getReference().child("usersG")
                 .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -97,7 +131,6 @@ public class ShopExpenseActivity extends Activity  {
 
 
 
-                            TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
 
 
 
@@ -143,7 +176,6 @@ public class ShopExpenseActivity extends Activity  {
                             line.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT, 10));
                             line.setBackgroundColor(Color.rgb(51, 51, 51));
                             layoutINNER.addView(line);
-                            LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
 
                             main.addView(layoutINNER);
 
