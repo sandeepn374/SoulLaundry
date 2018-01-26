@@ -77,9 +77,9 @@ paid2=(Spinner)findViewById(R.id.bills);
                                             TableLayout.LayoutParams.WRAP_CONTENT);
                                     TextView tvhead = new TextView(ShopExpenseActivity.this);
                                     tvhead.setText("Unpaid Bills");
-                                    tvhead.setTextColor(Color.RED);
+                                    tvhead.setTextColor(Color.BLACK);
                                     tvhead.setGravity(Gravity.CENTER);
-                                    tvhead.setTextSize(15);
+                                    tvhead.setTextSize(30);
 
                                     TableRow trhead = new TableRow(ShopExpenseActivity.this);
 
