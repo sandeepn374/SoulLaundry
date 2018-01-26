@@ -61,6 +61,8 @@ public class Paid extends Fragment {
 
                         LinearLayout main = (LinearLayout) rootView.findViewById(com.soullaundry.R.id.main_layout);
 
+                        main.removeAllViews();
+
 
 
                         TableLayout layoutINNER = new TableLayout(getContext());
