@@ -11,6 +11,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -61,9 +62,13 @@ paid2=(Spinner)findViewById(R.id.bills);
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
 
-                                    setContentView(R.layout.shop);
-                                    paid2=(Spinner)findViewById(R.id.bills);
-                                    paid2.setSelection(2);
+                                   // setContentView(R.layout.shop);
+                                  //  paid2=(Spinner)findViewById(R.id.bills);
+                                   // paid2.setSelection(2);
+
+
+                                    View namebar = View.findViewById(R.id.main_layout);
+                                    ((ViewGroup) namebar.getParent()).removeView(namebar);
 
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
@@ -196,9 +201,12 @@ paid2=(Spinner)findViewById(R.id.bills);
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
 
-                                    setContentView(R.layout.shop);
-                                    paid2.setSelection(1);
+                                   // setContentView(R.layout.shop);
+                                   // paid2.setSelection(1);
 
+
+                                    View namebar = View.findViewById(R.id.main_layout);
+                                    ((ViewGroup) namebar.getParent()).removeView(namebar);
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
 
@@ -325,9 +333,12 @@ paid2=(Spinner)findViewById(R.id.bills);
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
 
-                                    setContentView(R.layout.shop);
-                                    paid2.setSelection(3);
+                                   // setContentView(R.layout.shop);
+                                   // paid2.setSelection(3);
 
+
+                                    View namebar = View.findViewById(R.id.main_layout);
+                                    ((ViewGroup) namebar.getParent()).removeView(namebar);
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
 
