@@ -95,6 +95,10 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
 
                             }
                         }
+                        if(users.size()==0){
+
+                            Toastmsg(DeliveryActivity.this,"No Bill Found");
+                        }
                         java.util.Collections.reverse(users);
                         int l=0;
                         int tot=0;
