@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -32,7 +33,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class ShopExpenseActivity extends Activity  {
+public class ShopExpenseActivity extends AppCompatActivity  {
 
 
 
@@ -48,7 +49,7 @@ public class ShopExpenseActivity extends Activity  {
         final TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
 
 
-        String[] array = {"Show Unpaid Bills", "Show Paid Bills", "Show all Bills"};
+        String[] array = {"Select Bills ","Show Unpaid Bills", "Show Paid Bills", "Show all Bills"};
 
 
 
