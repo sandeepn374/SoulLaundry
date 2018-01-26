@@ -381,7 +381,7 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
                                                     alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                                                         public void onClick(DialogInterface dialog, int whichButton) {
                                                             // what ever you want to do with No option.
-                                                            //alert1.dismiss();
+                                                            dialog.dismiss();
                                                         }
                                                     });
                                                     alert.setPositiveButton("Pay", new DialogInterface.OnClickListener() {
@@ -396,6 +396,7 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
                                                             child.getRef().child("due").setValue(totalInt - partialInt);
 
                                                             child.getRef().child("discount").setValue(0);
+                                                            dialog.dismiss();
                                                             // alert1.dismiss();
                                                             // Toastmsg(DeliveryActivity.this,"Bill Has been Updated");
                                                             Toastmsg(DeliveryActivity.this, "Bill Has been Updated");
