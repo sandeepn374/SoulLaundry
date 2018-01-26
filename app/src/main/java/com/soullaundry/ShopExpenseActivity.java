@@ -200,6 +200,27 @@ paid2=(Spinner)findViewById(R.id.bills);
 
 
 
+                    setContentView(R.layout.shop);
+
+
+
+
+                    LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
+
+
+
+                    TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
+
+                    LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT,
+                            TableLayout.LayoutParams.WRAP_CONTENT);
+                    TextView tvhead = new TextView(ShopExpenseActivity.this);
+                    tvhead.setText("Paid Bills");
+
+                    TableRow trhead = new TableRow(ShopExpenseActivity.this);
+
+                    trhead.setLayoutParams(params);
+                    trhead.addView(tvhead);
+                    layoutINNER.addView(trhead);
 
 
 
@@ -332,6 +353,29 @@ paid2=(Spinner)findViewById(R.id.bills);
 
                 }
                 else if(paid2.getSelectedItem().toString().equals("Show all Bills")){
+
+
+                    setContentView(R.layout.shop);
+
+
+
+
+                    LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
+
+
+
+                    TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
+
+                    LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(TableLayout.LayoutParams.FILL_PARENT,
+                            TableLayout.LayoutParams.WRAP_CONTENT);
+                    TextView tvhead = new TextView(ShopExpenseActivity.this);
+                    tvhead.setText("All Bills");
+
+                    TableRow trhead = new TableRow(ShopExpenseActivity.this);
+
+                    trhead.setLayoutParams(params);
+                    trhead.addView(tvhead);
+                    layoutINNER.addView(trhead);
 
 
 
