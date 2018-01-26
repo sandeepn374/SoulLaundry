@@ -233,10 +233,6 @@ paid2=(Spinner)findViewById(R.id.bills);
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
 
-                                   // setContentView(R.layout.shop);
-                                   // paid2.setSelection(1);
-
-                                    setContentView(R.layout.shop);
 
 
 
@@ -387,10 +383,9 @@ paid2=(Spinner)findViewById(R.id.bills);
                             .addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
-                                    setContentView(R.layout.shop);
+
 
                                     LinearLayout main = (LinearLayout) findViewById(com.soullaundry.R.id.main_layout);
-
                                     TableLayout layoutINNER = new TableLayout(ShopExpenseActivity.this);
                                     int totDue=0;
                                     ArrayList<User> users=new ArrayList<User>();
