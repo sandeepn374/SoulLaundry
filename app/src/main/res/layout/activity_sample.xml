@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:orientation="vertical">
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#ff0000"
+	>
 
 
 	<ImageView
@@ -19,10 +21,10 @@
 		android:id="@+id/collection"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="@drawable/button_selector"
+		android:background="@drawable/spiner_selector"
+		android:textColor="#ffffff"
 		android:drawableLeft="@drawable/collection"
 		android:text="PICK UP"
-		android:textColor="#ff0000"
 		android:textSize="@dimen/text_size"
 		android:layout_marginBottom="40dp"
 		android:layout_marginLeft="10dp"
@@ -33,10 +35,10 @@
 		android:id="@+id/delivery"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:background="@drawable/button_selector"
+		android:background="@drawable/spiner_selector"
 		android:drawableLeft="@drawable/delivery"
 		android:text="DELIVERY"
-		android:textColor="#ff0000"
+		android:textColor="#ffffff"
 		android:textSize="@dimen/text_size"
 		android:layout_marginBottom="40dp"
 
@@ -48,11 +50,10 @@
 		android:id="@+id/shop_expense"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-
-		android:background="@drawable/button_selector"
+		android:background="@drawable/spiner_selector"
 		android:drawableLeft="@drawable/shopexpense"
 		android:text="SOUL EXPENSE"
-		android:textColor="#ff0000"
+		android:textColor="#ffffff"
 		android:textSize="@dimen/text_size"
 		android:layout_marginBottom="40dp"
 

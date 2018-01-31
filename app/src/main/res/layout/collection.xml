@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/drawer_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+
 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="vertical"
+		android:background="#ffffff"
+		
 	>
 
 
@@ -19,7 +18,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Phone No"
-
+			android:textColor="#000000"
 			android:textStyle="bold"
 		/>
 
@@ -35,6 +34,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Name"
+			android:textColor="#000000"
 			android:textStyle="bold" />
 
 		<EditText
@@ -48,7 +48,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Email"
-
+			android:textColor="#000000"
 			android:textStyle="bold"
 			/>
 
@@ -66,6 +66,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Bill No"
+			android:textColor="#000000"
 			android:layout_marginTop="20dp"
 			android:textStyle="bold"
 			android:inputType="none"
@@ -77,12 +78,14 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:inputType="text"
+			android:textColor="#000000"
 			android:text="A0001"
 		/>
 		<TextView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Delivery type"
+			android:textColor="#000000"
 			android:layout_marginTop="20dp"
 			android:textStyle="bold"/>
 		<Spinner
@@ -96,6 +99,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="Delivery days"
+			android:textColor="#000000"
 			android:layout_marginTop="20dp"
 			android:textStyle="bold"/>
 
@@ -113,12 +117,13 @@
 			android:layout_height="wrap_content"
 			android:layout_marginTop="25dp"
 			android:text="Click to Proceed"
+			android:background="@drawable/button_selector"
+			android:textSize="@dimen/text_size"
+			
 		/>
 
 
 
 	</LinearLayout>
 
-
-</android.support.v4.widget.DrawerLayout>
 

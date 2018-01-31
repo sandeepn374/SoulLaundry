@@ -256,7 +256,7 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
                                         try {
                                             SmsManager smsManager = SmsManager.getDefault();
 
-                                            String message = "Thank you for using the service of SoulLaundry"+"\n"+"For more details Contact"+"\n"+"9980461461";
+                                            String message = "Thank you for using the service of SoulLaundromat"+"\n"+"For more details Contact"+"\n"+"9980461461";
 
 
 
