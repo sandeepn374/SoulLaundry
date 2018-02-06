@@ -234,7 +234,23 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                         tv81.setGravity(Gravity.CENTER);
                         tr81.addView(tv81);
                         stk.addView(tr81);
+					TableRow trdeltype = new TableRow(CustomTabActivity.this);
+					TextView tvdeltype = new TextView(CustomTabActivity.this);
+					
+					if(getIntent().getStringExtra("deltype").equals("Normal Delivery"))
+						
 
+					tvdeltype.setText("Del Type = " + "Normal");
+				
+					else if(getIntent().getStringExtra("deltype").equals("Express Delivery(Normal * 1.5)"))
+						tvdeltype.setText("Del Type = " + "Express");
+					
+						
+					tvdeltype.setTextColor(Color.BLACK);
+					tvdeltype.setGravity(Gravity.LEFT);
+					trdeltype.addView(tvdeltype);
+					stk.addView(trdeltype);
+					
 
                         Button confirm = (Button) dialog.findViewById(com.soullaundry.R.id.btn_dialog);
                         confirm.setText("Confirm");
