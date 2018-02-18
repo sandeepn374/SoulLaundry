@@ -75,7 +75,7 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
 
     final String[] priceSpinner = {""};
 
-    int total=0;
+    float total=0;
     int delCharges=0;
 
     ArrayList<BillDetails> billDetailsArrayList= new ArrayList<BillDetails>();

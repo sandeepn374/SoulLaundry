@@ -57,6 +57,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/qtyText"
                 android:text="KG"
+				android:inputType="datetime"
                 android:textStyle="bold"
                 />
 
@@ -111,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:hint="0"
                 android:textStyle="bold"
-                android:inputType="number"
+				android:inputType="numberDecimal"
                 />
 
 
@@ -162,7 +163,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="0"
-                android:inputType="number"
+				android:inputType="numberDecimal"
                 android:textStyle="bold"
                 />
 
@@ -208,7 +209,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="0"
-                android:inputType="number"
+				android:inputType="numberDecimal"
                 android:textStyle="bold"
                 />
 
@@ -254,7 +255,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="0"
-                android:inputType="number"
+				android:inputType="numberDecimal"
                 android:textStyle="bold"
                 />
 
@@ -301,7 +302,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="0"
-                android:inputType="number"
+				android:inputType="numberDecimal"
                 android:textStyle="bold"
                 />
 
@@ -346,7 +347,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="0"
-                android:inputType="number"
+				android:inputType="numberDecimal"
                 android:textStyle="bold"
                 />
 

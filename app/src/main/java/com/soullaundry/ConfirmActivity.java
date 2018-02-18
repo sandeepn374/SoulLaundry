@@ -65,7 +65,7 @@ public class ConfirmActivity extends Activity{
 			tbrow.addView(t1v);
 
 			TextView t2v = new TextView(ConfirmActivity.this);
-			t2v.setText(billDetailsArrayList.get(i).getQty());
+			t2v.setText(""+billDetailsArrayList.get(i).getQty());
 			t2v.setTextColor(Color.BLACK);
 			t2v.setGravity(Gravity.CENTER);
 			tbrow.addView(t2v);
@@ -111,14 +111,14 @@ public class ConfirmActivity extends Activity{
 					mDatabase.child(userId).setValue(user);
 					//dialog.dismiss();
 					//Toastmsg(CollectionActivity.this,"Your Order has been placed Successfully");
-					int qtyTotal = 0;
+					float qtyTotal = 0;
 					try {
 						SmsManager smsManager = SmsManager.getDefault();
 
 						String message = "Your order has been done successfully";
 						for (int i = 0; i < billDetailsArrayList.size(); i++) {
 
-							int qty = billDetailsArrayList.get(i).getQty();
+							float qty = billDetailsArrayList.get(i).getQty();
 							qtyTotal += qty;
 
 						}

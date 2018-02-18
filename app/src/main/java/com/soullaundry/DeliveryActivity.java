@@ -101,7 +101,7 @@ public class DeliveryActivity extends AppCompatActivity implements SearchView.On
                         }
                         java.util.Collections.reverse(users);
                         int l=0;
-                        int tot=0;
+                        float tot=0;
                         for(int h=0;h<users.size();h++){
                             tot=tot+users.get(h).due;
                         }

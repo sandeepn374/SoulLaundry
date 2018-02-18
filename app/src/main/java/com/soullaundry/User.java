@@ -15,8 +15,8 @@ public class User implements Serializable {
     public String ph="";
    public ArrayList<BillDetails> billDetailsArrayList;
    
-    public int total=0;
-    public int due;
+    public float total=0;
+    public float due;
     public int discount;
     public String deliveryDate;
     public String pickUpDate;
@@ -27,7 +27,7 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(String name, String ph, ArrayList<BillDetails> billDetailsArrayList, String bill, int total, int due, int discount,String del,String pick) {
+    public User(String name, String ph, ArrayList<BillDetails> billDetailsArrayList, String bill, float total, float due, int discount,String del,String pick) {
         this.ph=ph;
         this.name = name;
 this.billDetailsArrayList=billDetailsArrayList;

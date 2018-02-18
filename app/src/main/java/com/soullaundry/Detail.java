@@ -7,7 +7,7 @@ package com.soullaundry;
 class Detail {
 
     public String cloth;
-    public int count;
+    public Float count;
     public int rate;
     public int discount;
 }

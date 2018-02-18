@@ -81,7 +81,7 @@ public class ChatFragment extends Fragment {
                                         Detail d=new Detail();
                                         TextView edi = (TextView) row.getChildAt(0);
                                         d.cloth=edi.getText().toString();
-                                        d.count=Integer.parseInt(ediqty.getText().toString());
+                                        d.count=Float.parseFloat(ediqty.getText().toString());
                                         d.rate=Integer.parseInt(rate.getText().toString());
 
                                         EditText dis=(EditText)row.getChildAt(3);
