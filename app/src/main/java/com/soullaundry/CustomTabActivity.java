@@ -487,9 +487,9 @@ public class CustomTabActivity extends AppCompatActivity implements OnDataPass {
                 service="Only Iron";
 
 
-            BillDetails b=new BillDetails(data.get(i).cloth,data.get(i).rate,data.get(i).count,service,data.get(i).discount);
+            BillDetails b=new BillDetails(data.get(i).cloth,data.get(i).rate,data.get(i).count,service);
 
-            total+= (data.get(i).count* data.get(i).rate)-data.get(i).discount;
+            total+= (data.get(i).count* data.get(i).rate);
 
 
 

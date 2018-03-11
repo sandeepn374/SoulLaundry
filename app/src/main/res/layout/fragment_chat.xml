@@ -73,13 +73,6 @@
 
 
 
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="    Discount   "
-                android:textStyle="bold"
-                />
 
 
 
@@ -125,14 +118,7 @@
                 android:textStyle="bold"
                 />
 
-            <EditText
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="discount"
-                android:textStyle="bold"
-                />
 
 
 
@@ -178,14 +164,6 @@
                 />
 
 
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="discount"
-                android:textStyle="bold"
-                />
         </TableRow>
 
         <TableRow
@@ -223,15 +201,6 @@
                 android:textStyle="bold"
                 />
 
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="discount"
-                android:textStyle="bold"
-                />
         </TableRow>
 
         <TableRow
@@ -271,14 +240,6 @@
                 />
 
 
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="discount"
-                android:textStyle="bold"
-                />
         </TableRow>
 
         <TableRow
@@ -316,14 +277,6 @@
                 />
 
 
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="discount"
-                android:textStyle="bold"
-                />
         </TableRow>
 
         <TableRow
@@ -362,15 +315,6 @@
                 android:textStyle="bold"
                 />
 
-
-            <EditText
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="discount"
-                android:textStyle="bold"
-                />
         </TableRow>
 
 

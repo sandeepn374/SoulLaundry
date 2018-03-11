@@ -9,5 +9,5 @@ class Detail {
     public String cloth;
     public Float count;
     public int rate;
-    public int discount;
+
 }
